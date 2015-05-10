@@ -1,0 +1,24 @@
+[submodule "jedi-vim"]
+	path = jedi-vim
+	url = ./bundle/jedi-vim/
+[submodule "vim-airline"]
+	path = vim-airline
+	url = ./bundle/vim-airline/
+[submodule "vim-fugitive"]
+	path = vim-fugitive
+	url = ./bundle/vim-fugitive/
+[submodule "vim-javascript"]
+	path = vim-javascript
+	url = ./bundle/vim-javascript/
+[submodule "vim-plugin-dirsettings"]
+	path = vim-plugin-dirsettings
+	url = ./bundle/vim-plugin-dirsettings/
+[submodule "python-mode"]
+	path = python-mode
+	url = ./bundle/python-mode/
+[submodule "syntastic"]
+	path = syntastic
+	url = ./bundle/syntastic/
+[submodule "lusty"]
+	path = lusty
+	url = ./bundle/lusty/
