@@ -19,3 +19,6 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = git@github.com:klen/python-mode.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
