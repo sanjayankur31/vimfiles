@@ -16,3 +16,6 @@
 [submodule "bundle/vim-plugin-dirsettings"]
 	path = bundle/vim-plugin-dirsettings
 	url = git@github.com:mantiz/vim-plugin-dirsettings.git
+[submodule "bundle/python-mode"]
+	path = bundle/python-mode
+	url = git@github.com:klen/python-mode.git
