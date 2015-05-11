@@ -1,3 +1,6 @@
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = git@github.com:davidhalter/jedi-vim.git
+[submodule "bundle/lusty"]
+	path = bundle/lusty
+	url = git@github.com:sjbach/lusty.git
