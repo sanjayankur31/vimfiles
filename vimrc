@@ -64,6 +64,8 @@ au FileType tex setlocal spell spelllang=en_gb
 " to enable \ll to run automatically for pdfs
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_MultipleCompileFormats='dvi,pdf'
+let g:Tex_UseMakefile = 1
+let g:Tex_EchoBibFields = 0
 
 " Folding in C,CPP files
 au FileType c,cpp setl foldenable foldmethod=syntax 
@@ -99,6 +101,10 @@ au BufWinEnter *.* silent! loadview
 "	call delete(a:fname)
 "	return v:shell_error
 "endfunc
+"let &printexpr="(v:cmdarg=='' ? ".
+"    \"system('lpr' . (&printdevice == '' ? '' : ' -P' . &printdevice)".
+"    \". ' ' . v:fname_in) . delete(v:fname_in) + v:shell_error".
+"    \" : system('mv '.v:fname_in.' '.v:cmdarg) + v:shell_error)"
 set pdev=cups-pdf
 set printoptions=paper:A4,syntax:y,wrap:y,number:y
 
@@ -106,29 +112,28 @@ set printoptions=paper:A4,syntax:y,wrap:y,number:y
 "Folding 
 set foldcolumn=5
 
-
 " Colourscheme from learning vim and vi
-colorscheme default
-function SetTimeOfDayColours()
-    let currentHour = strftime("%H")
-    if currentHour < 6 + 0
-        let colorScheme = "candy"
-    elseif currentHour < 12 + 0
-        let colorScheme = "distinguished"
-    elseif currentHour < 18 + 0
-        let colorScheme = "jellybeans"
-    else
-        let colorScheme = "jellybeans"
-    endif
-
-    if g:colors_name !~ colorScheme 
-        "echo "Setting color scheme to " . colorScheme
-        execute "colorscheme " . colorScheme
-    endif
-endfunction
-
-" I need to find a good set of schemes before using this
-" call SetTimeOfDayColours()
+"colorscheme default
+"function SetTimeOfDayColours()
+"    let currentHour = strftime("%H")
+"    if currentHour < 6 + 0
+"        let colorScheme = "candy"
+"    elseif currentHour < 12 + 0
+"        let colorScheme = "distinguished"
+"    elseif currentHour < 18 + 0
+"        let colorScheme = "jellybeans"
+"    else
+"        let colorScheme = "jellybeans"
+"    endif
+"
+"    if g:colors_name !~ colorScheme 
+"        "echo "Setting color scheme to " . colorScheme
+"        execute "colorscheme " . colorScheme
+"    endif
+"endfunction
+"
+"" I need to find a good set of schemes before using this
+"call SetTimeOfDayColours()
 "
 
 " Vim filetype detection
@@ -211,3 +216,7 @@ let g:pymode_rope = 1
 
 " Ignore some extensions
 set wildignore=*.o,*~,*.pyc,*.aux
+
+" for sh
+let g:sh_fold_enabled = 1
+
