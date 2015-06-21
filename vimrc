@@ -221,5 +221,5 @@ set wildignore=*.o,*~,*.pyc,*.aux
 let g:sh_fold_enabled = 1
 
 " some pelican helpers
-command! GetCategoryList :read !grep -o -h ":category:.*" content/*rst  | sed "s/:category: //" | tr ',' '\n' | sed 's/^[[:space:]]*//' | sort | uniq | sed '/^[[:space:]]*$/ d' | tr '\n' ',' | sed "s/,/, /g" | sed "s/,[[:space:]]*$//"
-command! GetTagList :read !grep -o -h ":tags:.*" content/*rst  | sed "s/:tags: //" | tr ',' '\n' | sed 's/^[[:space:]]*//' | sort | uniq | sed '/^[[:space:]]*$/ d' | tr '\n' ',' | sed "s/,/, /g" | sed "s/,[[:space:]]*$//"
+command! GetCategoryList :read !grep -o -h '^:category:.*' content/*rst  | sed 's/:category: //' | tr ',' '\n' | sed 's/^[[:space:]]*//' | sort | uniq | sed '/^[[:space:]]*$/ d' | tr '\n' ',' | sed 's/,/, /g' | sed 's/,[[:space:]]*$//'
+command! GetTagList :read !grep -o -h '^:tags:.*' content/*rst  | sed 's/:tags: //' | tr ',' '\n' | sed 's/^[[:space:]]*//' | sort | uniq | sed '/^[[:space:]]*$/ d' | tr '\n' ',' | sed 's/,/, /g' | sed 's/,[[:space:]]*$//'
