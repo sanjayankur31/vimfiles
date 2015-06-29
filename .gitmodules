@@ -25,3 +25,6 @@
 [submodule "bundle/vim-table-mode"]
 	path = bundle/vim-table-mode
 	url = git@github.com:dhruvasagar/vim-table-mode.git
+[submodule "bundle/vim-taskwarrior"]
+	path = bundle/vim-taskwarrior
+	url = https://github.com/farseer90718/vim-taskwarrior
