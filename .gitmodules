@@ -28,3 +28,6 @@
 [submodule "bundle/vim-taskwarrior"]
 	path = bundle/vim-taskwarrior
 	url = https://github.com/farseer90718/vim-taskwarrior
+[submodule "bundle/unite"]
+	path = bundle/unite
+	url = git@github.com:Shougo/unite.vim.git
