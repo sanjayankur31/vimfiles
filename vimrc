@@ -238,7 +238,7 @@ let g:task_gui_term        = 1
 " allows user to override task configurations. Seperated by space. Defaults to ''
 let g:task_rc_override     = 'rc.defaultwidth=999'
 " default fields to ask when adding a new task
-let g:task_default_prompt  = ['project', 'priority', 'tags', 'due', 'description']
+let g:task_default_prompt  = ['project', 'priority', 'tags', 'scheduled', 'due', 'description']
 " whether the info window is splited vertically
 let g:task_info_vsplit     = 0
 " info window size
