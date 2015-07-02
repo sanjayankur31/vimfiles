@@ -1,3 +1,10 @@
+" pathogen
+execute pathogen#infect()
+execute pathogen#helptags()
+
+"dirsettings
+call dirsettings#Install()
+
 " Turn on syntax highlighting
 syntax on
 
@@ -206,9 +213,6 @@ let g:airline#extensions#tabline#left_sep = '>'
 let g:airline#extensions#tabline#left_alt_sep = '>'
 "let g:airline_theme='wombat'
 
-" pathogen
-execute pathogen#infect()
-execute pathogen#helptags()
 
 " pymode
 let g:pymode_lint_on_write = 0
@@ -260,7 +264,20 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_cpp_auto_refresh_includes = 0
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
-
+let g:syntastic_cpp_no_default_include_dirs = 1
+let g:syntastic_cpp_remove_include_errors = 1
+let g:syntastic_cpp_compiler = 'g++'
+let g:syntastic_cpp_no_include_search = 1
+"let g:syntastic_cpp_checkers = ['gcc', 'clang_check', 'cppcheck']
+let g:syntastic_cpp_checkers = ['gcc']
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
+let g:syntastic_mode_map = {
+            \ "mode": "passive",
+            \ "passive_filetypes": ["cpp", "c"],
+            \ "active_filetypes": []
+            \ }
