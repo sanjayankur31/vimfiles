@@ -282,3 +282,6 @@ let g:syntastic_mode_map = {
             \ "passive_filetypes": ["cpp", "c"],
             \ "active_filetypes": []
             \ }
+
+let g:table_mode_corner_corner="+"
+let g:table_mode_header_fillchar="="
