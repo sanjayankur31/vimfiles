@@ -218,6 +218,8 @@ let g:airline#extensions#tabline#left_alt_sep = '>'
 let g:pymode_lint_on_write = 1
 let g:pymode_rope = 1
 let g:pymode_lint_checkers = ['pep8', 'pep257']
+let g:pymode_breakpoint = 1
+let g:pymode_breakpoint_bind = '<leader>b'
 
 " Ignore some extensions
 set wildignore=*.o,*~,*.pyc,*.aux
