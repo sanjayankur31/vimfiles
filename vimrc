@@ -285,3 +285,8 @@ let g:syntastic_mode_map = {
 
 let g:table_mode_corner_corner="+"
 let g:table_mode_header_fillchar="="
+
+
+set background=dark
+colorscheme solarized
+
