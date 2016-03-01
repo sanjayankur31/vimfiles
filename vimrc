@@ -297,3 +297,6 @@ colorscheme solarized
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=black
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
+
+" sli
+au BufRead,BufNewFile *.sli set filetype=sli
