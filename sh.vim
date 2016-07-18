@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright 2015 Ankur Sinha 
+# Copyright 2016 Ankur Sinha 
 # Author: Ankur Sinha <sanjay DOT ankur AT gmail DOT com> 
 #
 # This program is free software: you can redistribute it and/or modify
