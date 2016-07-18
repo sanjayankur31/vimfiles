@@ -8,6 +8,10 @@ call dirsettings#Install()
 " Turn on syntax highlighting
 syntax on
 
+" Enable filetype plugins
+filetype on
+filetype plugin indent on
+
 " Always display status line
 set laststatus=2
 
@@ -57,13 +61,10 @@ set title
 au FileType txt,c,cpp,otl set textwidth=79
 au FileType spec set textwidth=79
 
-" Enable filetype plugins
-filetype on
-filetype plugin indent on
-
 " latex stuff
 let g:tex_flavor='latex'
 " indentation for tex files
+au BufRead,BufNewFile *.sty set filetype=tex
 au FileType tex set sw=2
 "Spell check
 au FileType tex setlocal spell spelllang=en_gb
@@ -300,3 +301,6 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
 
 " sli
 au BufRead,BufNewFile *.sli set filetype=sli
+au FileType sli setl foldenable foldmethod=syntax 
+
+command! GetIndexList :read !grep -nro '\\index{[a-zA-Z!-]\+}' * | sed 's/\\index{\(.*\)}/\1/' | cut -d ":" -f 3 |  sort | uniq | tr '!' ':' | tr '\n' ',' | sed 's/,/, /g'
