@@ -304,3 +304,5 @@ au BufRead,BufNewFile *.sli set filetype=sli
 au FileType sli setl foldenable foldmethod=syntax 
 
 command! GetIndexList :read !grep -nro '\\index{[a-zA-Z!-]\+}' * | sed 's/\\index{\(.*\)}/\1/' | cut -d ":" -f 3 |  sort | uniq | tr '!' ':' | tr '\n' ',' | sed 's/,/, /g'
+
+au BufRead,BufNewFile *.hoc set filetype=hoc

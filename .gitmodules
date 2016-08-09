@@ -46,3 +46,6 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/hoc.vim"]
+	path = bundle/hoc.vim
+	url = git@github.com:sanjayankur31/hoc.vim.git
