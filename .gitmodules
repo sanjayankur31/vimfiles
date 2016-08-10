@@ -49,3 +49,6 @@
 [submodule "bundle/hoc.vim"]
 	path = bundle/hoc.vim
 	url = git@github.com:sanjayankur31/hoc.vim.git
+[submodule "bundle/nmodl.vim"]
+	path = bundle/nmodl.vim
+	url = git@github.com:sanjayankur31/nmodl.vim.git
