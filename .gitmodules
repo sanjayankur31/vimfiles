@@ -1,54 +1,54 @@
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
-	url = git@github.com:davidhalter/jedi-vim.git
+	url = https:github.comdavidhalter/jedi-vim
 [submodule "bundle/lusty"]
 	path = bundle/lusty
-	url = git@github.com:sjbach/lusty.git
+	url = https:github.comsjbach/lusty
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
-	url = git@github.com:bling/vim-airline.git
+	url = https:github.combling/vim-airline
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
+	url = https:github.comtpope/vim-fugitive
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
-	url = git@github.com:pangloss/vim-javascript.git
+	url = https:github.compangloss/vim-javascript
 [submodule "bundle/vim-plugin-dirsettings"]
 	path = bundle/vim-plugin-dirsettings
-	url = git@github.com:mantiz/vim-plugin-dirsettings.git
+	url = https:github.commantiz/vim-plugin-dirsettings
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
-	url = git@github.com:klen/python-mode.git
+	url = https:github.comklen/python-mode
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = git@github.com:scrooloose/syntastic.git
+	url = https:github.comscrooloose/syntastic
 [submodule "bundle/vim-table-mode"]
 	path = bundle/vim-table-mode
-	url = git@github.com:dhruvasagar/vim-table-mode.git
+	url = https:github.comdhruvasagar/vim-table-mode
 [submodule "bundle/vim-taskwarrior"]
 	path = bundle/vim-taskwarrior
 	url = https://github.com/farseer90718/vim-taskwarrior
 [submodule "bundle/unite"]
 	path = bundle/unite
-	url = git@github.com:Shougo/unite.vim.git
+	url = https:github.comShougo/unite.vim
 [submodule "bundle/vim-speeddating"]
 	path = bundle/vim-speeddating
-	url = git@github.com:tpope/vim-speeddating.git
+	url = https:github.comtpope/vim-speeddating
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
+	url = https://github.com/Valloric/YouCompleteMe
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
-	url = https://github.com/nathanaelkane/vim-indent-guides.git
+	url = https://github.com/nathanaelkane/vim-indent-guides
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter.git
+	url = https://github.com/airblade/vim-gitgutter
 [submodule "bundle/hoc.vim"]
 	path = bundle/hoc.vim
-	url = git@github.com:sanjayankur31/hoc.vim.git
+	url = https:github.comsanjayankur31/hoc.vim
 [submodule "bundle/nmodl.vim"]
 	path = bundle/nmodl.vim
-	url = git@github.com:sanjayankur31/nmodl.vim.git
+	url = https:github.comsanjayankur31/nmodl.vim
