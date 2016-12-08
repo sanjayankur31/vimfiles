@@ -43,6 +43,9 @@ set confirm
 " Show me line numbers
 set nu
 
+" Highlight current line
+set cursorline
+
 " Number of spaces a tab stands for
 set tabstop=4
 set softtabstop=4
