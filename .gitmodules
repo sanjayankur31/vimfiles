@@ -52,3 +52,6 @@
 [submodule "bundle/nmodl.vim"]
 	path = bundle/nmodl.vim
 	url = https:github.comsanjayankur31/nmodl.vim
+[submodule "bundle/vim-autotags"]
+	path = bundle/vim-autotags
+	url = https://github.com/basilgor/vim-autotags.git
