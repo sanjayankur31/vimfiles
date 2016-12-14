@@ -18,11 +18,13 @@ set laststatus=2
 " Permit unsaved buffers
 set hidden
 
-" Buffer mappings
-map <leader>bn :bn<cr>
-map <leader>bp :bp<cr>
-map <leader>bd :bd<cr>
-map <leader>bt :TlistToggle<cr>
+" For buffers
+nnoremap <Leader>bn :bn<CR>
+nnoremap <Leader>bp :bp<CR>
+nnoremap <leader>bd :bd<cr>
+nnoremap <Leader>bc :bp\|bd #<CR>
+nnoremap <Leader>bl :ls<CR>
+nnoremap <leader>bt :TlistToggle<cr>
 
 " Abbreviations
 ab inout input
@@ -123,90 +125,27 @@ set printoptions=paper:A4,syntax:y,wrap:y,number:y
 "Folding 
 set foldcolumn=5
 
-" Colourscheme from learning vim and vi
-"colorscheme default
-"function SetTimeOfDayColours()
-"    let currentHour = strftime("%H")
-"    if currentHour < 6 + 0
-"        let colorScheme = "candy"
-"    elseif currentHour < 12 + 0
-"        let colorScheme = "distinguished"
-"    elseif currentHour < 18 + 0
-"        let colorScheme = "jellybeans"
-"    else
-"        let colorScheme = "jellybeans"
-"    endif
-"
-"    if g:colors_name !~ colorScheme 
-"        "echo "Setting color scheme to " . colorScheme
-"        execute "colorscheme " . colorScheme
-"    endif
-"endfunction
-"
-"" I need to find a good set of schemes before using this
-"call SetTimeOfDayColours()
-"
-
 " Vim filetype detection
 " Language: TaskJuggler
 " Maintainer: Max Meyer <dev@fedux.org>
 autocmd BufNewFile,BufRead *.tj3,*.taskjuggler,*.tji,*.tjp set ft=tjp
 autocmd FileType tjp nmap <Leader>tm :make %<CR>
 
-
-
 " For rpmbuilding
-nmap <Leader>rbs :!rm ../SRPMS/%:r*.src.rpm; rpmbuild -bs %<CR>
-nmap <Leader>rba :!rpmbuild -ba %<CR>
-nmap <Leader>rls :!rpmlint %<CR>
-nmap <Leader>rla :!rpmlint % ../SRPMS/%:r*.src.rpm<CR>
-nmap <Leader>mlrx :tabedit /var/lib/mock/fedora-rawhide-x86_64/result<CR>
-nmap <Leader>mlri :tabedit /var/lib/mock/fedora-rawhide-i386/result<CR>
-nmap <Leader>mlsx :tabedit /var/lib/mock/fedora-18-x86_64/result<CR>
-nmap <Leader>mlsi :tabedit /var/lib/mock/fedora-18-i386/result<CR>
+nnoremap <Leader>rbs :!rm ../SRPMS/%:r*.src.rpm; rpmbuild -bs %<CR>
+nnoremap <Leader>rba :!rpmbuild -ba %<CR>
+nnoremap <Leader>rls :!rpmlint %<CR>
+nnoremap <Leader>rla :!rpmlint % ../SRPMS/%:r*.src.rpm<CR>
+nnoremap <Leader>mlrx :tabedit /var/lib/mock/fedora-rawhide-x86_64/result<CR>
+nnoremap <Leader>mlri :tabedit /var/lib/mock/fedora-rawhide-i386/result<CR>
 
-" For buffers
-nnoremap <Leader>bn :bn<CR>
-nnoremap <Leader>bp :bp<CR>
-nnoremap <Leader>bc :bp\|bd #<CR>
-nnoremap <Leader>bl :ls<CR>
-
-" More for ctags, cscope
-" Autoload cscope on start
-function! LoadCscope()
-  let db = findfile("cscope.out", ".;")
-  if (!empty(db))
-    let path = strpart(db, 0, match(db, "/cscope.out$"))
-    set nocscopeverbose " suppress 'duplicate connection' error
-    exe "cs add " . db . " " . path
-    set cscopeverbose
-  endif
-endfunction
-au BufEnter /* call LoadCscope()
-
-" Only updates and resets an existing, single cscope connection
-" Will do nothing if a cscope connection doesn't already exist
-function! RefreshCscope ()
-    let db = findfile("cscope.out", ".;")
-    if (!empty(db))
-        let path = strpart(db, 0, match(db, "/cscope.out$"))
-        if (!empty(path))
-            exe ":!cscope -bR -s" . path
-        else
-            exe ":!cscope -bR"
-        endif
-        set nocscopeverbose
-        exe ":cs reset"
-        set cscopeverbose
-    endif
-endfunction
-map <C-\>r :call RefreshCscope ()<CR><CR>
 " New tab versions of the normal cscope mappings
-map <C-\>G :tab split<CR>:exec("cscope find g ".expand("<cword>"))<CR>
-map <C-\>S :tab split<CR>:exec("cscope find s ".expand("<cword>"))<CR>
-map <C-\>C :tab split<CR>:exec("cscope find c ".expand("<cword>"))<CR>
+noremap <Leader>csu :call AutotagsUpdate()<CR>
+noremap <C-\>G :tab split<CR>:exec("cscope find g ".expand("<cword>"))<CR>
+noremap <C-\>S :tab split<CR>:exec("cscope find s ".expand("<cword>"))<CR>
+noremap <C-\>C :tab split<CR>:exec("cscope find c ".expand("<cword>"))<CR>
 
-map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+noremap <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " Disable jedi features
 let g:jedi#show_call_signatures = "1"
@@ -308,5 +247,6 @@ au FileType sli setl foldenable foldmethod=syntax
 
 command! GetIndexList :read !grep -nro '\\index{[a-zA-Z!-]\+}' * | sed 's/\\index{\(.*\)}/\1/' | cut -d ":" -f 3 |  sort | uniq | tr '!' ':' | tr '\n' ',' | sed 's/,/, /g'
 
+" Some neuron stuff
 au BufRead,BufNewFile *.hoc set filetype=hoc
 au BufRead,BufNewFile *.mod set filetype=nmodl
