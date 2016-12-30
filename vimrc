@@ -1,11 +1,34 @@
-" pathogen
-execute pathogen#infect()
-execute pathogen#helptags()
+" Vundle
+set nocompatible
 
-"dirsettings
+" Required Vundle setup
+filetype off
+set runtimepath+=~/.vim/bundle/vundle
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'sanjayankur31/hoc.vim'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'sjbach/lusty'
+Bundle 'sanjayankur31/nmodl.vim'
+Bundle 'klen/python-mode'
+Bundle 'scrooloose/syntastic'
+Bundle 'Shougo/unite.vim'
+Bundle 'bling/vim-airline'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'pangloss/vim-javascript'
+Bundle 'mantiz/vim-plugin-dirsettings'
+Bundle 'tpope/vim-speeddating'
+Bundle 'dhruvasagar/vim-table-mode'
+Bundle 'farseer90718/vim-taskwarrior'
+
+" dirsettings
 call dirsettings#Install()
 
-" Turn on syntax highlighting
+"Syntax
 syntax on
 
 " Enable filetype plugins
