@@ -114,11 +114,7 @@ set listchars=tab:\|\ ,trail:-,eol:$
 " set foldenable
 
 " Different file comment templates
-autocmd BufNewFile *.php 0r ~/.vim/php.vim
-autocmd BufNewFile *.html 0r ~/.vim/html.vim
-autocmd BufNewFile *.sh 0r ~/.vim/sh.vim
 autocmd BufNewFile *.py 0r ~/.vim/py.vim
-autocmd BufNewFile *.pl 0r ~/.vim/pl.vim
 autocmd BufNewFile *.fedreview 0r ~/.vim/fedreview.vim
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 " GNUPlot 
