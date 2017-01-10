@@ -24,6 +24,7 @@ Plugin 'mantiz/vim-plugin-dirsettings'
 Plugin 'tpope/vim-speeddating'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'farseer90718/vim-taskwarrior'
+Plugin 'rdnetto/YCM-Generator'
 call vundle#end()
 
 " dirsettings
