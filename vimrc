@@ -270,3 +270,6 @@ command! GetIndexList :read !grep -nro '\\index{[a-zA-Z!-]\+}' * | sed 's/\\inde
 " Some neuron stuff
 au BufRead,BufNewFile *.hoc set filetype=hoc
 au BufRead,BufNewFile *.mod set filetype=nmodl
+
+" ycm
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
