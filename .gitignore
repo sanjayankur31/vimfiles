@@ -1,4 +1,7 @@
 view/
 .netrwhist
 *.swp
-bundle/
+
+# everything other than vundle
+bundle/*
+!bundle/Vundle.vim
