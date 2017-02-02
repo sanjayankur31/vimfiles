@@ -25,6 +25,8 @@ Plugin 'tpope/vim-speeddating'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'farseer90718/vim-taskwarrior'
 Plugin 'rdnetto/YCM-Generator'
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdcommenter'
 call vundle#end()
 
 " dirsettings
