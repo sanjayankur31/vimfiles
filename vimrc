@@ -28,6 +28,7 @@ Plugin 'rdnetto/YCM-Generator'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'vim-latex/vim-latex'
 call vundle#end()
 
 " dirsettings
