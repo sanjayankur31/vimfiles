@@ -27,6 +27,7 @@ Plugin 'farseer90718/vim-taskwarrior'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'sheerun/vim-polyglot'
 call vundle#end()
 
 " dirsettings
@@ -80,8 +81,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-
-" I have a ftplugin for python files
 
 set syn=auto
 set showmatch
@@ -276,3 +275,6 @@ au BufRead,BufNewFile *.mod set filetype=nmodl
 
 " ycm
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+
+" disable python from polyglot
+let g:polyglot_disabled = ['python']
