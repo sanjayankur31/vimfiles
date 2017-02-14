@@ -11,7 +11,7 @@ Plugin 'sanjayankur31/hoc.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'sjbach/lusty'
 Plugin 'sanjayankur31/nmodl.vim'
-Plugin 'klen/python-mode'
+Plugin 'python-mode/python-mode'
 Plugin 'scrooloose/syntastic'
 Plugin 'Shougo/unite.vim'
 Plugin 'bling/vim-airline'
@@ -182,10 +182,11 @@ let g:airline#extensions#tabline#left_alt_sep = '>'
 
 " pymode
 let g:pymode_lint_on_write = 1
-let g:pymode_rope = 1
+let g:pymode_rope = 0
+let g:pymode_rope_complete_on_dot = 0
 let g:pymode_lint_checkers = ['pep8', 'pep257']
-let g:pymode_breakpoint = 1
-let g:pymode_breakpoint_bind = '<leader>b'
+" let g:pymode_breakpoint = 1
+" let g:pymode_breakpoint_bind = '<leader>b'
 
 " Ignore some extensions
 set wildignore=*.o,*~,*.pyc,*.aux
