@@ -99,6 +99,8 @@ let g:tex_flavor='latex'
 " indentation for tex files
 au BufRead,BufNewFile *.sty set filetype=tex
 au FileType tex set sw=2
+au FileType tex set tabstop=2
+au FileType tex set softtabstop=2
 "Spell check
 au FileType tex setlocal spell spelllang=en_gb
 " Vim-latex rules: 
