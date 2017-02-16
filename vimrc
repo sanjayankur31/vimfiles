@@ -174,7 +174,9 @@ noremap <C-\>C :tab split<CR>:exec("cscope find c ".expand("<cword>"))<CR>
 noremap <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " Disable jedi features
-let g:jedi#show_call_signatures = "1"
+let g:jedi#show_call_signatures = "0"
+" YCM uses jedi already
+let g:jedi#completions_enabled = "0"
 
 " Vim airline show buffers
 let g:airline#extensions#tabline#enabled = 1
