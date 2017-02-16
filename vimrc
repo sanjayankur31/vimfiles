@@ -29,6 +29,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'vim-latex/vim-latex'
+Plugin 'Konfekt/FastFold'
 call vundle#end()
 
 " dirsettings
