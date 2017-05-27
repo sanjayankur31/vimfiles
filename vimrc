@@ -13,13 +13,11 @@ Plugin 'sjbach/lusty'
 Plugin 'sanjayankur31/nmodl.vim'
 Plugin 'python-mode/python-mode'
 Plugin 'scrooloose/syntastic'
-Plugin 'Shougo/unite.vim'
 Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'pangloss/vim-javascript'
 Plugin 'mantiz/vim-plugin-dirsettings'
 Plugin 'tpope/vim-speeddating'
 Plugin 'dhruvasagar/vim-table-mode'
@@ -281,7 +279,7 @@ au BufRead,BufNewFile *.hoc set filetype=hoc
 au BufRead,BufNewFile *.mod set filetype=nmodl
 
 " ycm
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 
 " disable python from polyglot
 let g:polyglot_disabled = ['python']
