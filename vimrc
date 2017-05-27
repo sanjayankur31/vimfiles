@@ -164,13 +164,23 @@ nnoremap <Leader>mlrx :tabedit /var/lib/mock/fedora-rawhide-x86_64/result<CR>
 nnoremap <Leader>mlri :tabedit /var/lib/mock/fedora-rawhide-i386/result<CR>
 
 " New tab versions of the normal cscope mappings
-noremap <Leader>csu :call AutotagsUpdate()<CR>
+set tags=./tags;
 noremap <C-\>G :tab split<CR>:exec("cscope find g ".expand("<cword>"))<CR>
 noremap <C-\>S :tab split<CR>:exec("cscope find s ".expand("<cword>"))<CR>
 noremap <C-\>C :tab split<CR>:exec("cscope find c ".expand("<cword>"))<CR>
-
 noremap <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-
+" http://vim.wikia.com/wiki/Autoloading_Cscope_Database
+function! LoadCscope()
+  let db = findfile("cscope.out", ".;")
+  if (!empty(db))
+    let path = strpart(db, 0, match(db, "/cscope.out$"))
+    set nocscopeverbose " suppress 'duplicate connection' error
+    exe "cs add " . db . " " . path
+    set cscopeverbose
+  endif
+endfunction
+au BufEnter /* call LoadCscope()
+"
 " Disable jedi features
 let g:jedi#show_call_signatures = "0"
 " YCM uses jedi already
@@ -283,3 +293,6 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 
 " disable python from polyglot
 let g:polyglot_disabled = ['python']
+
+set modeline
+set modelines=4
