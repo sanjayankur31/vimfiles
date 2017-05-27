@@ -261,7 +261,7 @@ let g:syntastic_aggregate_errors = 1
 let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 let g:syntastic_mode_map = {
             \ "mode": "passive",
-            \ "passive_filetypes": ["cpp", "c"],
+            \ "passive_filetypes": ["cpp", "c", "py"],
             \ "active_filetypes": []
             \ }
 
@@ -294,5 +294,16 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 " disable python from polyglot
 let g:polyglot_disabled = ['python']
 
+" Modelines for files
 set modeline
 set modelines=4
+
+" NERDCommenter
+"" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1 NERDcommenter
