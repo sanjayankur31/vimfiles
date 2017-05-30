@@ -28,6 +28,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'vim-latex/vim-latex'
 Plugin 'Konfekt/FastFold'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 call vundle#end()
 
 " dirsettings
