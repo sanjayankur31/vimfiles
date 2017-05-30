@@ -30,6 +30,8 @@ Plugin 'vim-latex/vim-latex'
 Plugin 'Konfekt/FastFold'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 call vundle#end()
 
 " dirsettings
