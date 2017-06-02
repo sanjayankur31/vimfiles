@@ -6,7 +6,6 @@ filetype off
 set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'sanjayankur31/hoc.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'sjbach/lusty'
@@ -32,6 +31,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
 " dirsettings
@@ -184,8 +184,15 @@ function! LoadCscope()
   endif
 endfunction
 au BufEnter /* call LoadCscope()
-"
+
+" ycm
+let g:ycm_server_python_interpreter = 'python3'
+let g:ycm_python_binary_path = 'python3'
+let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+
+
 " Disable jedi features
+let g:jedi#force_py_version = 3
 let g:jedi#show_call_signatures = "0"
 " YCM uses jedi already
 let g:jedi#completions_enabled = "0"
@@ -198,6 +205,7 @@ let g:airline#extensions#tabline#left_alt_sep = '>'
 
 
 " pymode
+let g:pymode_python = 'python3'
 let g:pymode_lint_on_write = 1
 let g:pymode_rope = 0
 let g:pymode_rope_complete_on_dot = 0
@@ -291,9 +299,6 @@ command! GetIndexList :read !grep -nro '\\index{[a-zA-Z!-]\+}' * | sed 's/\\inde
 " Some neuron stuff
 au BufRead,BufNewFile *.hoc set filetype=hoc
 au BufRead,BufNewFile *.mod set filetype=nmodl
-
-" ycm
-let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 
 " disable python from polyglot
 let g:polyglot_disabled = ['python']
