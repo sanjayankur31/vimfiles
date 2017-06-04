@@ -32,6 +32,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'rhysd/vim-grammarous'
 call vundle#end()
 
 " dirsettings
