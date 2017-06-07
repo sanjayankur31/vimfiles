@@ -16,7 +16,6 @@ Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'mantiz/vim-plugin-dirsettings'
 Plugin 'tpope/vim-speeddating'
 Plugin 'dhruvasagar/vim-table-mode'
@@ -33,6 +32,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rhysd/vim-grammarous'
+Plugin 'Yggdroot/indentLine'
 call vundle#end()
 
 " dirsettings
@@ -285,11 +285,6 @@ let g:table_mode_header_fillchar="="
 " solarized
 set background=dark
 colorscheme solarized
-
-" indent plugin
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=black
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
 
 " sli
 au BufRead,BufNewFile *.sli set filetype=sli
