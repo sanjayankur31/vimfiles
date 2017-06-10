@@ -33,6 +33,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rhysd/vim-grammarous'
 Plugin 'Yggdroot/indentLine'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'mtth/scratch.vim'
 call vundle#end()
 
 " dirsettings
