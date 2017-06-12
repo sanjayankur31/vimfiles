@@ -35,6 +35,7 @@ Plugin 'rhysd/vim-grammarous'
 Plugin 'Yggdroot/indentLine'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mtth/scratch.vim'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 call vundle#end()
 
 " dirsettings
