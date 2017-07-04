@@ -54,14 +54,6 @@ set laststatus=2
 " Permit unsaved buffers
 set hidden
 
-" For buffers
-nnoremap <Leader>bn :bn<CR>
-nnoremap <Leader>bp :bp<CR>
-nnoremap <leader>bd :bd<cr>
-nnoremap <Leader>bc :bp\|bd #<CR>
-nnoremap <Leader>bl :ls<CR>
-nnoremap <leader>bt :TlistToggle<cr>
-
 " Abbreviations
 ab inout input
 ab sop System.out.println(
@@ -70,7 +62,7 @@ ab sforge http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 
 " ChangeLog for specs
 let spec_chglog_format = "%a %b %d %Y Ankur Sinha <ankursinha AT fedoraproject DOT org>"
-iab clog <c-r>=strftime("%a %b %d 20%y")<cr> Ankur Sinha <ankursinha AT fedoraproject DOT org>
+iab clog <c-r>=strftime("%a %b %d 20%y")<CR> Ankur Sinha <ankursinha AT fedoraproject DOT org>
 
 " Automatically write a file when leaving a modified buffer
 set autowrite
@@ -319,3 +311,13 @@ let g:NERDTrimTrailingWhitespace = 1
 let NERDTreeIgnore = ['\.pyc$', '\.aux$', '\.bbl$', '\.blg', '\.brf$', '\.out$', '\.fls$']
 
 let g:indentLine_setColors = 0
+
+" Lustyjuggler
+let g:LustyJugglerDefaultMappings = 0
+nnoremap <Leader>ljb :LustyJuggler<CR>
+
+" For buffers
+nnoremap <Leader>bn :bn<CR>
+nnoremap <Leader>bp :bp<CR>
+nnoremap <leader>bd :bd<CR>
+nnoremap <Leader>bc :bp\|bd #<CR>
