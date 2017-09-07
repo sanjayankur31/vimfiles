@@ -93,6 +93,7 @@ au FileType txt,c,cpp,otl set textwidth=79
 au FileType spec set textwidth=79
 
 " latex stuff
+set grepprg="grep\ -nH\ $*"
 let g:tex_flavor='latex'
 " indentation for tex files
 au BufRead,BufNewFile *.sty set filetype=tex
@@ -104,7 +105,9 @@ au FileType tex setlocal spell spelllang=en_gb
 " Vim-latex rules: 
 " to enable \ll to run automatically for pdfs
 let g:Tex_DefaultTargetFormat='pdf'
-let g:Tex_MultipleCompileFormats='dvi,pdf'
+let g:Tex_MultipleCompileFormats='pdf'
+let g:Tex_BibtexFlavor = 'biber'
+let g:Tex_CompileRule_pdf='latexmk -pdf -recorder -pdflatex="pdflatex -interaction=nonstopmode --shell-escape" -use-make -bibtex $*'
 let g:Tex_UseMakefile = 1
 let g:Tex_EchoBibFields = 0
 
@@ -205,6 +208,7 @@ let g:pymode_python = 'python3'
 let g:pymode_lint_on_write = 1
 let g:pymode_rope = 0
 let g:pymode_rope_complete_on_dot = 0
+"let g:pymode_lint_checkers = ['pyflakes', 'mccabe', 'pep8', 'pep257']
 let g:pymode_lint_checkers = ['pyflakes', 'pylint', 'mccabe', 'pep8', 'pep257']
 " let g:pymode_breakpoint = 1
 " let g:pymode_breakpoint_bind = '<leader>b'
