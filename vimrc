@@ -28,14 +28,16 @@ Plugin 'vim-latex/vim-latex'
 Plugin 'Konfekt/FastFold'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Bundle 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'rhysd/vim-grammarous'
 Plugin 'Yggdroot/indentLine'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mtth/scratch.vim'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'KeitaNakamura/tex-conceal.vim'
 call vundle#end()
 
 " dirsettings
@@ -53,6 +55,9 @@ set laststatus=2
 
 " Permit unsaved buffers
 set hidden
+
+" Enable conceal
+set conceallevel=2
 
 " Abbreviations
 ab inout input
@@ -100,6 +105,7 @@ au BufRead,BufNewFile *.sty set filetype=tex
 au FileType tex set sw=2
 au FileType tex set tabstop=2
 au FileType tex set softtabstop=2
+au FileType tex IndentLinesDisable
 "Spell check
 au FileType tex setlocal spell spelllang=en_gb
 " Vim-latex rules: 
@@ -325,3 +331,18 @@ nnoremap <Leader>bn :bn<CR>
 nnoremap <Leader>bp :bp<CR>
 nnoremap <leader>bd :bd<CR>
 nnoremap <Leader>bc :bp\|bd #<CR>
+
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsUsePythonVersion = 3
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+
+let g:tex_conceal="abdgm"
