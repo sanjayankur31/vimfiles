@@ -21,10 +21,11 @@ Plugin 'tpope/vim-speeddating'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'farseer90718/vim-taskwarrior'
 Plugin 'rdnetto/YCM-Generator'
+Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'vim-latex/vim-latex'
+Plugin 'lervag/vimtex'
 Plugin 'Konfekt/FastFold'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
@@ -65,10 +66,6 @@ ab sop System.out.println(
 ab pvsm public static void main (String [] args)
 ab sforge http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 
-" ChangeLog for specs
-let spec_chglog_format = "%a %b %d %Y Ankur Sinha <ankursinha AT fedoraproject DOT org>"
-iab clog <c-r>=strftime("%a %b %d 20%y")<CR> Ankur Sinha <ankursinha AT fedoraproject DOT org>
-
 " Automatically write a file when leaving a modified buffer
 set autowrite
 
@@ -106,17 +103,33 @@ au FileType tex set sw=2
 au FileType tex set tabstop=2
 au FileType tex set softtabstop=2
 au FileType tex IndentLinesDisable
-au FileType tex let g:ycm_auto_trigger=0
+"au FileType tex let g:ycm_auto_trigger=0
 "Spell check
 au FileType tex setlocal spell spelllang=en_gb
-" Vim-latex rules: 
-" to enable \ll to run automatically for pdfs
-let g:Tex_DefaultTargetFormat='pdf'
-let g:Tex_MultipleCompileFormats='pdf'
-let g:Tex_BibtexFlavor = 'biber'
-let g:Tex_CompileRule_pdf='latexmk -pdf -recorder -pdflatex="pdflatex -interaction=nonstopmode --shell-escape" -use-make -bibtex $*'
-let g:Tex_UseMakefile = 1
-let g:Tex_EchoBibFields = 0
+let g:tex_conceal="abdgm"
+let g:tex_fold_enabled=1
+
+" vimtex
+let g:vimtex_compiler_latexmk = {
+            \ 'backend' : 'jobs',
+            \ 'background' : 1,
+            \ 'build_dir' : '',
+            \ 'callback' : 1,
+            \ 'continuous' : 1,
+            \ 'executable' : 'latexmk',
+            \ 'options' : [
+            \   '-pdf',
+            \   '-verbose',
+            \   '-recorder',
+            \   '-pdflatex="pdflatex"',
+            \   '--shell-escape',
+            \   '-use-make',
+            \   '-bibtex',
+            \   '-file-line-error',
+            \   '-synctex=1',
+            \   '-interaction=nonstopmode',
+            \ ],
+            \}
 
 " Folding in C,CPP files
 au FileType c,cpp setl foldenable foldmethod=syntax 
@@ -172,6 +185,10 @@ nnoremap <Leader>rls :!rpmlint %<CR>
 nnoremap <Leader>rla :!rpmlint % ../SRPMS/%:r*.src.rpm<CR>
 nnoremap <Leader>mlrx :tabedit /var/lib/mock/fedora-rawhide-x86_64/result<CR>
 nnoremap <Leader>mlri :tabedit /var/lib/mock/fedora-rawhide-i386/result<CR>
+" ChangeLog for specs
+let spec_chglog_format = "%a %b %d %Y Ankur Sinha <ankursinha AT fedoraproject DOT org>"
+iab clog <c-r>=strftime("%a %b %d 20%y")<CR> Ankur Sinha <ankursinha AT fedoraproject DOT org>
+
 
 " New tab versions of the normal cscope mappings
 set tags=./tags;
@@ -281,8 +298,10 @@ let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 let g:syntastic_mode_map = {
             \ "mode": "passive",
             \ "passive_filetypes": ["cpp", "c", "py"],
-            \ "active_filetypes": []
+            \ "active_filetypes": ["tex"]
             \ }
+let g:syntastic_tex_checkers = ['lacheck', 'chktex']
+
 
 let g:table_mode_corner_corner="+"
 let g:table_mode_header_fillchar="="
@@ -339,11 +358,8 @@ let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
 
-" better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-
-
-let g:tex_conceal="abdgm"
+" better key bindings for UltiSnipsExpandTrigger
+"let g:UltiSnipsExpandTrigger = "<tab>"
+"let g:UltiSnipsJumpForwardTrigger = "<tab>"
+"let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
