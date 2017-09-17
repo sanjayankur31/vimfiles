@@ -103,7 +103,7 @@ au FileType tex set sw=2
 au FileType tex set tabstop=2
 au FileType tex set softtabstop=2
 au FileType tex IndentLinesDisable
-"au FileType tex let g:ycm_auto_trigger=0
+au FileType tex let g:ycm_auto_trigger=0
 "Spell check
 au FileType tex setlocal spell spelllang=en_gb
 let g:tex_conceal="abdgm"
