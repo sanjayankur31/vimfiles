@@ -7,10 +7,8 @@ set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'sanjayankur31/hoc.vim'
-Plugin 'davidhalter/jedi-vim'
 Plugin 'sjbach/lusty'
 Plugin 'sanjayankur31/nmodl.vim'
-Plugin 'python-mode/python-mode'
 Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
@@ -213,29 +211,12 @@ let g:ycm_server_python_interpreter = 'python3'
 let g:ycm_python_binary_path = 'python3'
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 
-
-" Disable jedi features
-let g:jedi#force_py_version = 3
-let g:jedi#show_call_signatures = "0"
-" YCM uses jedi already
-let g:jedi#completions_enabled = "0"
-
 " Vim airline show buffers
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = '>'
 let g:airline#extensions#tabline#left_alt_sep = '>'
 "let g:airline_theme='wombat'
 
-
-" pymode
-let g:pymode_python = 'python3'
-let g:pymode_lint_on_write = 1
-let g:pymode_rope = 0
-let g:pymode_rope_complete_on_dot = 0
-"let g:pymode_lint_checkers = ['pyflakes', 'mccabe', 'pep8', 'pep257']
-let g:pymode_lint_checkers = ['pyflakes', 'pylint', 'mccabe', 'pep8', 'pep257']
-" let g:pymode_breakpoint = 1
-" let g:pymode_breakpoint_bind = '<leader>b'
 
 " Ignore some extensions
 set wildignore=*.o,*~,*.pyc,*.aux
@@ -284,7 +265,7 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_cpp_auto_refresh_includes = 0
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_cpp_no_default_include_dirs = 1
@@ -297,10 +278,12 @@ let g:syntastic_aggregate_errors = 1
 let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 let g:syntastic_mode_map = {
             \ "mode": "passive",
-            \ "passive_filetypes": ["cpp", "c", "py"],
-            \ "active_filetypes": ["tex"]
+            \ "passive_filetypes": ["cpp", "c"],
+            \ "active_filetypes": ["tex", "python"]
             \ }
 let g:syntastic_tex_checkers = ['lacheck', 'chktex']
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_flake8_exec = "flake8-3"
 
 
 let g:table_mode_corner_corner="+"
