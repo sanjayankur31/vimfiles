@@ -304,9 +304,6 @@ command! GetIndexList :read !grep -nro '\\index{[a-zA-Z!-]\+}' * | sed 's/\\inde
 au BufRead,BufNewFile *.hoc set filetype=hoc
 au BufRead,BufNewFile *.mod set filetype=nmodl
 
-" disable python from polyglot
-let g:polyglot_disabled = ['python']
-
 " Modelines for files
 set modeline
 set modelines=4
