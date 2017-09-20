@@ -23,6 +23,8 @@ Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'Vimjas/vim-python-pep8-indent'
+Plugin 'vim-python/python-syntax'
 Plugin 'lervag/vimtex'
 Plugin 'Konfekt/FastFold'
 Plugin 'scrooloose/nerdtree'
@@ -343,3 +345,8 @@ let g:UltiSnipsUsePythonVersion = 3
 "let g:UltiSnipsExpandTrigger = "<tab>"
 "let g:UltiSnipsJumpForwardTrigger = "<tab>"
 "let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+" disable polyglot for python for the time being
+" https://github.com/sheerun/vim-polyglot/issues/209
+let g:polyglot_disabled = ['python']
+let g:python_highlight_all = 1
