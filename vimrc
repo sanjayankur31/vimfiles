@@ -92,8 +92,7 @@ set showmatch
 set title 
 
 "Line length above which to break a line
-au FileType txt,c,cpp,otl set textwidth=79
-au FileType spec set textwidth=79
+set textwidth=79
 
 " latex stuff
 set grepprg="grep\ -nH\ $*"
