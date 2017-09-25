@@ -275,8 +275,7 @@ let g:syntastic_cpp_no_default_include_dirs = 1
 let g:syntastic_cpp_remove_include_errors = 1
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_no_include_search = 1
-"let g:syntastic_cpp_checkers = ['gcc', 'clang_check', 'cppcheck']
-let g:syntastic_cpp_checkers = ['gcc']
+let g:syntastic_cpp_checkers = ['gcc', 'clang_check', 'cppcheck']
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 let g:syntastic_mode_map = {
@@ -351,3 +350,7 @@ let g:UltiSnipsUsePythonVersion = 3
 " https://github.com/sheerun/vim-polyglot/issues/209
 let g:polyglot_disabled = ['python']
 let g:python_highlight_all = 1
+
+" Permit per project vimrc customisations
+set exrc
+set secure
