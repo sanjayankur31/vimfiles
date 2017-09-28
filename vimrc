@@ -92,20 +92,21 @@ set showmatch
 set title 
 
 "Line length above which to break a line
-set textwidth=79
+au FileType python,cpp,c,text,rst,markdown,sh setl textwidth=79
 
 " latex stuff
 set grepprg="grep\ -nH\ $*"
 let g:tex_flavor='latex'
 " indentation for tex files
-au BufRead,BufNewFile *.sty set filetype=tex
-au FileType tex set sw=2
-au FileType tex set tabstop=2
-au FileType tex set softtabstop=2
+au BufRead,BufNewFile *.sty setl filetype=tex
+au FileType tex setl sw=2
+au FileType tex setl tabstop=2
+au FileType tex setl softtabstop=2
+au FileType tex setl softtabstop=2
 au FileType tex IndentLinesDisable
 au FileType tex let g:ycm_auto_trigger=0
 "Spell check
-au FileType tex setlocal spell spelllang=en_gb
+au FileType tex,markdown,rst setl spell spelllang=en_gb
 let g:tex_conceal="abdgm"
 let g:tex_fold_enabled=1
 
@@ -143,7 +144,7 @@ set listchars=tab:\|\ ,trail:-,eol:$
 " Different file comment templates
 autocmd BufNewFile *.py 0r ~/.vim/py.vim
 autocmd BufNewFile *.fedreview 0r ~/.vim/fedreview.vim
-au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
+au BufRead,BufNewFile jquery.*.js setl ft=javascript syntax=jquery
 " GNUPlot 
 au BufNewFile,BufRead *.plt,.gnuplot setf gnuplot
 
@@ -280,7 +281,7 @@ let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 let g:syntastic_mode_map = {
             \ "mode": "passive",
             \ "passive_filetypes": ["cpp", "c"],
-            \ "active_filetypes": ["tex", "python"]
+            \ "active_filetypes": ["tex", "python", "sh", "spec"]
             \ }
 let g:syntastic_tex_checkers = ['lacheck', 'chktex']
 let g:syntastic_python_checkers = ['flake8']
