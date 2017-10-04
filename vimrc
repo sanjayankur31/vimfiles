@@ -40,6 +40,7 @@ Plugin 'mtth/scratch.vim'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'KeitaNakamura/tex-conceal.vim'
+Plugin 'sanjayankur31/sli.vim'
 call vundle#end()
 
 " dirsettings
@@ -131,6 +132,12 @@ let g:vimtex_compiler_latexmk = {
             \   '-interaction=nonstopmode',
             \ ],
             \}
+
+if !exists('g:ycm_semantic_triggers')
+    let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers.tex = g:vimtex#re#youcompleteme
+
 
 " Folding in C,CPP files
 au FileType c,cpp setl foldenable foldmethod=syntax 
@@ -354,3 +361,6 @@ let g:python_highlight_all = 1
 " Permit per project vimrc customisations
 set exrc
 set secure
+
+
+let g:LustyJugglerSuppressRubyWarning = 1
