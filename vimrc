@@ -93,7 +93,7 @@ set showmatch
 set title 
 
 "Line length above which to break a line
-au FileType python,cpp,c,text,rst,markdown,sh setl textwidth=79
+au FileType python,cpp,c,text,rst,markdown,sh,sli setl textwidth=79
 
 " latex stuff
 set grepprg="grep\ -nH\ $*"
@@ -137,6 +137,7 @@ if !exists('g:ycm_semantic_triggers')
     let g:ycm_semantic_triggers = {}
 endif
 let g:ycm_semantic_triggers.tex = g:vimtex#re#youcompleteme
+let g:vimtex_complete_recursive_bib = 1
 
 
 " Folding in C,CPP files
@@ -310,7 +311,7 @@ au FileType sli setl foldenable foldmethod=syntax
 command! GetIndexList :read !grep -nro '\\index{[a-zA-Z!-]\+}' * | sed 's/\\index{\(.*\)}/\1/' | cut -d ":" -f 3 |  sort | uniq | tr '!' ':' | tr '\n' ',' | sed 's/,/, /g'
 
 " Some neuron stuff
-au BufRead,BufNewFile *.hoc set filetype=hoc
+au BufRead,BufNewFile *.hoc,*.oc set filetype=hoc
 au BufRead,BufNewFile *.mod set filetype=nmodl
 
 " Modelines for files
