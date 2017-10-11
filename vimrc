@@ -365,3 +365,8 @@ set secure
 
 
 let g:LustyJugglerSuppressRubyWarning = 1
+
+" A function to trim all trailing whitespace
+function! TrimTrailingWhiteSpace()
+    %s/\s\+$//e
+endfunction
