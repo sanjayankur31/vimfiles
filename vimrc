@@ -373,3 +373,6 @@ let g:LustyJugglerSuppressRubyWarning = 1
 function! TrimTrailingWhiteSpace()
     %s/\s\+$//e
 endfunction
+function! UpdatePostDate()
+    %s/:date: .*$/\=strftime(":date: %Y-%m-%d %H:%M:%S")/
+endfunction
