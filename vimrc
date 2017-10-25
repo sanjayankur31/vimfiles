@@ -290,11 +290,13 @@ let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 let g:syntastic_mode_map = {
             \ "mode": "passive",
             \ "passive_filetypes": ["cpp", "c"],
-            \ "active_filetypes": ["tex", "python", "sh", "spec"]
+            \ "active_filetypes": ["tex", "python", "sh", "spec", "rst"]
             \ }
 let g:syntastic_tex_checkers = ['lacheck', 'chktex']
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_exec = "flake8-3"
+let g:syntastic_rst_checkers = ['rstcheck']
+let g:syntastic_rst_rstcheck_exec = "rstcheck-3"
 
 
 let g:table_mode_corner_corner="+"
