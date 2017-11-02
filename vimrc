@@ -376,3 +376,8 @@ endfunction
 function! UpdatePostDate()
     %s/^:date: .*$/\=strftime(":date: %Y-%m-%d %H:%M:%S")/
 endfunction
+
+" Some easytag configs
+let g:easytags_syntax_keyword = 'always'
+let g:easytags_dynamic_files = 2
+let g:easytags_events = ['BufWritePost']
