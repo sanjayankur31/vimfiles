@@ -292,7 +292,7 @@ let g:syntastic_mode_map = {
             \ "passive_filetypes": ["cpp", "c"],
             \ "active_filetypes": ["tex", "python", "sh", "spec", "rst"]
             \ }
-let g:syntastic_tex_checkers = ['lacheck', 'chktex']
+let g:syntastic_tex_checkers = ['chktex']
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_exec = "flake8-3"
 let g:syntastic_rst_checkers = ['rstcheck']
