@@ -30,7 +30,7 @@ Plugin 'Konfekt/FastFold'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ivalkeen/nerdtree-execute'
-Bundle 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'rhysd/vim-grammarous'
@@ -42,6 +42,7 @@ Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'KeitaNakamura/tex-conceal.vim'
 Plugin 'sanjayankur31/sli.vim'
+Plugin 'szw/vim-dict'
 call vundle#end()
 
 " dirsettings
