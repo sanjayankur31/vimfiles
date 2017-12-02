@@ -360,7 +360,7 @@ let g:UltiSnipsUsePythonVersion = 3
 
 " disable polyglot for python for the time being
 " https://github.com/sheerun/vim-polyglot/issues/209
-let g:polyglot_disabled = ['python']
+let g:polyglot_disabled = ['python', 'latex']
 let g:python_highlight_all = 1
 
 " Permit per project vimrc customisations
