@@ -63,6 +63,7 @@ set hidden
 
 " Enable conceal
 set conceallevel=2
+set concealcursor=nc
 
 " Abbreviations
 ab inout input
@@ -109,7 +110,8 @@ au FileType tex setl softtabstop=2
 au FileType tex IndentLinesDisable
 au FileType tex let g:ycm_auto_trigger=0
 "Spell check
-au FileType tex,markdown,rst,mail setl spell spelllang=en_gb
+au FileType tex,markdown,rst,mail,markdown setl spell spelllang=en_gb
+let g:tex_conceal="abdgm"
 let g:tex_conceal="abdgm"
 let g:tex_fold_enabled=1
 
