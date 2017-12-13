@@ -385,3 +385,7 @@ let g:easytags_syntax_keyword = 'always'
 let g:easytags_dynamic_files = 2
 let g:easytags_events = ['BufWritePost']
 let g:easytags_async = 1
+
+" Underline bad spellings, undercurl doesn't show on my config
+hi clear SpellBad
+hi SpellBad cterm=underline
