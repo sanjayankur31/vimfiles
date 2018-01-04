@@ -58,6 +58,12 @@ filetype plugin indent on
 " Always display status line
 set laststatus=2
 
+" set some context
+set scrolloff=1
+
+" enable increamental search
+set incsearch
+
 " Permit unsaved buffers
 set hidden
 
@@ -389,3 +395,6 @@ let g:easytags_async = 1
 " Underline bad spellings, undercurl doesn't show on my config
 hi clear SpellBad
 hi SpellBad cterm=underline
+
+" Use matchit
+runtime! macros/matchit.vim
