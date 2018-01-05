@@ -99,7 +99,7 @@ set syn=auto
 set showmatch
 
 "Show info in the window title
-set title 
+set title
 
 "Line length above which to break a line
 au FileType python,cpp,c,text,rst,markdown,sh,sli setl textwidth=79
@@ -151,7 +151,7 @@ let g:vimtex_complete_recursive_bib = 1
 
 
 " Folding in C,CPP files
-au FileType c,cpp setl foldenable foldmethod=syntax 
+au FileType c,cpp setl foldenable foldmethod=syntax
 
 " This is for vertical indenting
 set list
@@ -163,7 +163,7 @@ set listchars=tab:\|\ ,trail:-,eol:$
 autocmd BufNewFile *.py 0r ~/.vim/py.vim
 autocmd BufNewFile *.fedreview 0r ~/.vim/fedreview.vim
 au BufRead,BufNewFile jquery.*.js setl ft=javascript syntax=jquery
-" GNUPlot 
+" GNUPlot
 au BufNewFile,BufRead *.plt,.gnuplot setf gnuplot
 
 " Save and automatically load folds
@@ -188,7 +188,7 @@ set pdev=cups-pdf
 set printoptions=paper:A4,syntax:y,wrap:y,number:y
 
 
-"Folding 
+"Folding
 set foldcolumn=5
 
 " Vim filetype detection
@@ -318,7 +318,7 @@ colorscheme solarized
 
 " sli
 au BufRead,BufNewFile *.sli set filetype=sli
-au FileType sli setl foldenable foldmethod=syntax 
+au FileType sli setl foldenable foldmethod=syntax
 
 command! GetIndexList :read !grep -nro '\\index{[a-zA-Z!-]\+}' * | sed 's/\\index{\(.*\)}/\1/' | cut -d ":" -f 3 |  sort | uniq | tr '!' ':' | tr '\n' ',' | sed 's/,/, /g'
 
