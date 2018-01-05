@@ -398,3 +398,6 @@ hi SpellBad cterm=underline
 
 " Use matchit
 runtime! macros/matchit.vim
+
+" Delete comment character when joining commented lines
+set formatoptions+=j
