@@ -148,6 +148,8 @@ if !exists('g:ycm_semantic_triggers')
 endif
 let g:ycm_semantic_triggers.tex = g:vimtex#re#youcompleteme
 let g:vimtex_complete_recursive_bib = 1
+" Do not open the quickfix window automatically for warnings.
+let g:vimtex_quickfix_open_on_warning = 0
 
 
 " Folding in C,CPP files
