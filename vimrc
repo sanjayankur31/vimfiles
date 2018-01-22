@@ -403,3 +403,11 @@ runtime! macros/matchit.vim
 
 " Delete comment character when joining commented lines
 set formatoptions+=j
+
+" Update binary spell file automatically
+" https://vi.stackexchange.com/questions/5050/how-to-share-vim-spellchecking-additions-between-multiple-machines
+for d in glob('~/.vim/spell/*.add', 1, 1)
+    if filereadable(d) && (!filereadable(d . '.spl') || getftime(d) > getftime(d . '.spl'))
+        exec 'mkspell! ' . fnameescape(d)
+    endif
+endfor
