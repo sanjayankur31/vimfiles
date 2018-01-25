@@ -11,7 +11,7 @@ Plugin 'sjbach/lusty'
 Plugin 'sanjayankur31/nmodl.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'romainl/flattened'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mhinz/vim-signify'
 Plugin 'mantiz/vim-plugin-dirsettings'
@@ -315,8 +315,9 @@ let g:table_mode_header_fillchar="="
 
 
 " solarized
-set background=dark
-colorscheme solarized
+" set background=dark
+"colorscheme solarized
+colorscheme flattened_dark
 
 " sli
 au BufRead,BufNewFile *.sli set filetype=sli
@@ -344,7 +345,8 @@ let g:NERDTrimTrailingWhitespace = 1
 " Ignore temporary files
 let NERDTreeIgnore = ['\.pyc$', '\.aux$', '\.bbl$', '\.blg', '\.brf$', '\.out$', '\.fls$']
 
-let g:indentLine_setColors = 0
+" Neater with flattened
+let g:indentLine_setColors = 1
 
 " Lustyjuggler
 let g:LustyJugglerDefaultMappings = 0
