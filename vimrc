@@ -414,3 +414,6 @@ endfor
 
 " vim-signify
 let g:signify_vcs_list = ['git']
+
+" Enable spelling for git commit temporary files
+autocmd FileType gitcommit setlocal spell
