@@ -1,51 +1,55 @@
-" Vundle
 set nocompatible
+call plug#begin('~/.vim/plugged')
 
-" Required Vundle setup
 filetype off
-set runtimepath+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'sanjayankur31/hoc.vim'
-Plugin 'sjbach/lusty'
-Plugin 'sanjayankur31/nmodl.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'bling/vim-airline'
-Plugin 'sanjayankur31/vim-colors-solarized'
-Plugin 'tpope/vim-fugitive'
-Plugin 'gregsexton/gitv'
-Plugin 'mhinz/vim-signify'
-Plugin 'mantiz/vim-plugin-dirsettings'
-Plugin 'tpope/vim-speeddating'
-Plugin 'tpope/vim-surround'
-Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'farseer90718/vim-taskwarrior'
-Plugin 'rdnetto/YCM-Generator'
-Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'Vimjas/vim-python-pep8-indent'
-Plugin 'vim-python/python-syntax'
-Plugin 'lervag/vimtex'
-Plugin 'Konfekt/FastFold'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'ivalkeen/nerdtree-execute'
-Plugin 'ervandew/supertab'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'rhysd/vim-grammarous'
-Plugin 'Yggdroot/indentLine'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'mtth/scratch.vim'
-Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'KeitaNakamura/tex-conceal.vim'
-Plugin 'sanjayankur31/sli.vim'
-Plugin 'szw/vim-dict'
-call vundle#end()
+Plug 'sanjayankur31/hoc.vim'
+Plug 'sjbach/lusty'
+Plug 'sanjayankur31/nmodl.vim'
+Plug 'scrooloose/syntastic'
+Plug 'bling/vim-airline'
+Plug 'sanjayankur31/vim-colors-solarized'
+Plug 'tpope/vim-fugitive'
+Plug 'gregsexton/gitv'
+Plug 'mhinz/vim-signify'
+Plug 'mantiz/vim-plugin-dirsettings'
+Plug 'tpope/vim-speeddating'
+Plug 'tpope/vim-surround'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'farseer90718/vim-taskwarrior'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'majutsushi/tagbar'
+Plug 'scrooloose/nerdcommenter'
+Plug 'sheerun/vim-polyglot'
+Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'vim-python/python-syntax'
+Plug 'lervag/vimtex'
+Plug 'Konfekt/FastFold'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ivalkeen/nerdtree-execute'
+Plug 'ervandew/supertab'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'rhysd/vim-grammarous'
+Plug 'Yggdroot/indentLine'
+Plug 'jiangmiao/auto-pairs'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mtth/scratch.vim'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
+
+" Autobuild YCM after update
+function! BuildYCM(info)
+  if a:info.status == 'installed' || a:info.force
+    !~/updateYCM.sh
+  endif
+endfunction
+Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
+
+Plug 'KeitaNakamura/tex-conceal.vim'
+Plug 'sanjayankur31/sli.vim'
+Plug 'szw/vim-dict'
+Plug 'sanjayankur31/vim-extra-ultisnips'
+call plug#end()
 
 " dirsettings
 call dirsettings#Install()
@@ -53,9 +57,10 @@ call dirsettings#Install()
 "Syntax
 syntax on
 
+" vim-plug does this already, not required
 " Enable filetype plugins
-filetype on
-filetype plugin indent on
+" filetype on
+" filetype plugin indent on
 
 " Always display status line
 set laststatus=2
