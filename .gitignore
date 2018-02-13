@@ -2,11 +2,10 @@ view/
 .netrwhist
 *.swp
 
-# everything other than vundle
-bundle/*
-!bundle/Vundle.vim
-
 tags
 tags.*
 
 *.spl
+
+# ignore the plugin directory
+plugged/*
