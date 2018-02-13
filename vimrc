@@ -40,7 +40,7 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 " Autobuild YCM after update
 function! BuildYCM(info)
   if a:info.status == 'installed' || a:info.force
-    !~/updateYCM.sh
+    !~/bin/updateYCM.sh
   endif
 endfunction
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
