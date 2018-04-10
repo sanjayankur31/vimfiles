@@ -316,7 +316,7 @@ let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_exec = "flake8-3"
 let g:syntastic_rst_checkers = ['rstcheck']
 let g:syntastic_rst_rstcheck_exec = "rstcheck"
-
+let g:syntastic_perl_checkers = ['perlcritic']
 
 let g:table_mode_corner_corner="+"
 let g:table_mode_header_fillchar="="
