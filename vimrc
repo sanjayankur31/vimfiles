@@ -403,8 +403,10 @@ let g:easytags_events = ['BufWritePost']
 let g:easytags_async = 1
 
 " Underline bad spellings, undercurl doesn't show on my config
+" https://vi.stackexchange.com/questions/15015/how-do-i-turn-off-undercurls-in-vim-guis
+" https://stackoverflow.com/questions/6008921/how-do-i-change-the-highlight-style-in-vim-spellcheck
 hi clear SpellBad
-hi SpellBad cterm=underline
+hi SpellBad cterm=underline gui=underline
 
 " Use matchit
 runtime! macros/matchit.vim
