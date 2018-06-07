@@ -9,3 +9,6 @@ tags.*
 
 # ignore the plugin directory
 plugged/*
+
+# do not track the thesaurus file
+mthesaur.txt

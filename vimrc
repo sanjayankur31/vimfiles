@@ -427,3 +427,8 @@ let g:signify_vcs_list = ['git']
 
 " Enable spelling for git commit temporary files
 autocmd FileType gitcommit setlocal spell
+
+" set thesaurus to moby's
+" don't track the file though, remember to download it
+" wget https://www.gutenberg.org/files/3202/files/mthesaur.txt
+set thesaurus+=~/.vim/mthesaur.txt
