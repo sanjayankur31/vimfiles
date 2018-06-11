@@ -36,15 +36,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mtth/scratch.vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
-
-" Autobuild YCM after update
-function! BuildYCM(info)
-  if a:info.status == 'installed' || a:info.force
-    !~/bin/updateYCM.sh
-  endif
-endfunction
-Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
-
+Plug 'Valloric/YouCompleteMe'
 Plug 'KeitaNakamura/tex-conceal.vim'
 Plug 'sanjayankur31/sli.vim'
 Plug 'szw/vim-dict'
@@ -366,15 +358,16 @@ nnoremap <Leader>bc :bp\|bd #<CR>
 
 
 " make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_key_list_select_completion = ['<C-n>']
+let g:ycm_key_list_previous_completion = ['<C-p>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
 
 let g:UltiSnipsUsePythonVersion = 3
 " better key bindings for UltiSnipsExpandTrigger
-"let g:UltiSnipsExpandTrigger = "<tab>"
-"let g:UltiSnipsJumpForwardTrigger = "<tab>"
-"let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " disable polyglot for python for the time being
 " https://github.com/sheerun/vim-polyglot/issues/209
@@ -432,3 +425,5 @@ autocmd FileType gitcommit setlocal spell
 " don't track the file though, remember to download it
 " wget https://www.gutenberg.org/files/3202/files/mthesaur.txt
 set thesaurus+=~/.vim/mthesaur.txt
+
+set completeopt-=preview
