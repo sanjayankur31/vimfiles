@@ -366,9 +366,9 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 
 let g:UltiSnipsUsePythonVersion = 3
 " better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+" let g:UltiSnipsExpandTrigger = "<tab>"
+" let g:UltiSnipsJumpForwardTrigger = "<tab>"
+" let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " disable polyglot for python for the time being
 " https://github.com/sheerun/vim-polyglot/issues/209
@@ -427,4 +427,5 @@ autocmd FileType gitcommit setlocal spell
 " wget https://www.gutenberg.org/files/3202/files/mthesaur.txt
 set thesaurus+=~/.vim/mthesaur.txt
 
-set completeopt-=preview
+" Disable the complete window
+" set completeopt-=preview
