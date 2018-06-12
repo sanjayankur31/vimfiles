@@ -41,6 +41,7 @@ Plug 'KeitaNakamura/tex-conceal.vim'
 Plug 'sanjayankur31/sli.vim'
 Plug 'szw/vim-dict'
 Plug 'sanjayankur31/vim-extra-ultisnips'
+Plug 'tpope/vim-repeat'
 call plug#end()
 
 " dirsettings
