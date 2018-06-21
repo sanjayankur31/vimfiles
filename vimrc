@@ -42,6 +42,12 @@ Plug 'sanjayankur31/sli.vim'
 Plug 'szw/vim-dict'
 Plug 'sanjayankur31/vim-extra-ultisnips'
 Plug 'tpope/vim-repeat'
+" Requires the server to be installed. Install in the pelican virtual-env:
+" pip install https://github.com/gu-fan/instant-rst.py/archive/master.zip --upgrade
+" Upstream needs to merge a PR, so use this until that is done
+" pip install https://github.com/tlinhart/instant-rst.py/archive/master.zip --upgrade
+" Requires python3-gevent on Fedora
+Plug 'gu-fan/InstantRst'
 call plug#end()
 
 " dirsettings
