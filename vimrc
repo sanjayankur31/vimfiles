@@ -53,6 +53,10 @@ Plug 'ternjs/tern_for_vim'
 " pip install https://github.com/tlinhart/instant-rst.py/archive/master.zip --upgrade
 " Requires python3-gevent on Fedora
 Plug 'gu-fan/InstantRst'
+" Requires the_silver_surfer to be installed
+Plug 'lokikl/vim-ctrlp-ag'
+" Requires Ctrlp
+Plug 'ivalkeen/vim-ctrlp-tjump'
 call plug#end()
 
 " dirsettings
@@ -440,3 +444,17 @@ set thesaurus+=~/.vim/mthesaur.txt
 
 " Disable the complete window
 " set completeopt-=preview
+"
+
+" InstantRst
+let g:instant_rst_slow = 1
+
+" CtrlPag
+let g:ctrlp_ag_ignores = '--ignore .git
+    \ --ignore "deps/*"
+    \ --ignore "_build/*"
+    \ --ignore "node_modules/*"'
+
+" ignore these file types completely
+" LaTeX temporary files
+set wildignore+=*.aux,*.bbl,*.bcf,*.blg,*.fls,*.idx,*.ilg,*.ind,*.log,*.out,*.run.xml,*synctex.gz,*.fdb_latexmk,*.nav,*.snm,*.toc,*.vrb,*.cut,*.lo,*.brf
