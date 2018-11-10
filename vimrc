@@ -57,6 +57,8 @@ Plug 'gu-fan/InstantRst'
 Plug 'lokikl/vim-ctrlp-ag'
 " Requires Ctrlp
 Plug 'ivalkeen/vim-ctrlp-tjump'
+" sideways
+Plug 'AndrewRadev/sideways.vim'
 call plug#end()
 
 " dirsettings
