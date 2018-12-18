@@ -164,7 +164,10 @@ if !exists('g:ycm_semantic_triggers')
     let g:ycm_semantic_triggers = {}
 endif
 let g:ycm_semantic_triggers.tex = g:vimtex#re#youcompleteme
-let g:vimtex_complete_recursive_bib = 1
+let g:vimtex_complete_bib = {
+            \ 'recursive': 0,
+            \ 'simple': 1,
+            \}
 " Do not open the quickfix window automatically for warnings.
 let g:vimtex_quickfix_open_on_warning = 0
 let g:vimtex_fold_enabled = 1
@@ -460,3 +463,6 @@ let g:ctrlp_ag_ignores = '--ignore .git
 " ignore these file types completely
 " LaTeX temporary files
 set wildignore+=*.aux,*.bbl,*.bcf,*.blg,*.fls,*.idx,*.ilg,*.ind,*.log,*.out,*.run.xml,*synctex.gz,*.fdb_latexmk,*.nav,*.snm,*.toc,*.vrb,*.cut,*.lo,*.brf
+
+" set relative numbers for use with numbertoggle
+set number relativenumber
