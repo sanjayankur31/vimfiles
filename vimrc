@@ -183,12 +183,18 @@ set listchars=tab:\|\ ,trail:-,eol:$
 " set foldenable
 
 " Different file comment templates
-autocmd BufNewFile *.py 0r ~/.vim/py.vim
-autocmd BufNewFile *.fedreview 0r ~/.vim/fedreview.vim
-autocmd BufRead,BufNewFile jquery.*.js setl ft=javascript syntax=jquery
+" Python
+autocmd BufNewFile *.py 0r ~/.vim/file-templates/py.vim
+" Fedora review
+autocmd BufNewFile *.fedreview 0r ~/.vim/file-templates/fedreview.vim
 " GNUPlot
 autocmd BufNewFile,BufRead *.plt,.gnuplot setf gnuplot
-autocmd BufNewFile *.plt,.gnuplot 0r ~/.vim/gnuplot.vim
+autocmd BufNewFile *.plt,.gnuplot 0r ~/.vim/file-templates/gnuplot.vim
+" Shell scripts
+autocmd BufNewFile *.sh 0r ~/.vim/file-templates/sh.vim
+
+" Jquery and javascript syntax
+autocmd BufRead,BufNewFile jquery.*.js setl ft=javascript syntax=jquery
 
 " Save and automatically load folds
 " You need to make a ~/.vim/views folder and chmod it to 755
