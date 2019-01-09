@@ -188,6 +188,7 @@ autocmd BufNewFile *.fedreview 0r ~/.vim/fedreview.vim
 autocmd BufRead,BufNewFile jquery.*.js setl ft=javascript syntax=jquery
 " GNUPlot
 autocmd BufNewFile,BufRead *.plt,.gnuplot setf gnuplot
+autocmd BufNewFile *.plt,.gnuplot 0r ~/.vim/gnuplot.vim
 
 " Save and automatically load folds
 " You need to make a ~/.vim/views folder and chmod it to 755
