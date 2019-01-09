@@ -119,21 +119,21 @@ set showmatch
 set title
 
 "Line length above which to break a line
-au FileType python,cpp,c,text,rst,markdown,sh,sli setl textwidth=79
+autocmd FileType python,cpp,c,text,rst,markdown,sh,sli setl textwidth=79
 
 " latex stuff
 set grepprg="grep\ -nH\ $*"
 let g:tex_flavor='latex'
 " indentation for tex files
-au BufRead,BufNewFile *.sty setl filetype=tex
-au FileType tex setl sw=2
-au FileType tex setl tabstop=2
-au FileType tex setl softtabstop=2
-au FileType tex setl softtabstop=2
-au FileType tex IndentLinesDisable
-au FileType tex let g:ycm_auto_trigger=0
+autocmd BufRead,BufNewFile *.sty setl filetype=tex
+autocmd FileType tex setl sw=2
+autocmd FileType tex setl tabstop=2
+autocmd FileType tex setl softtabstop=2
+autocmd FileType tex setl softtabstop=2
+autocmd FileType tex IndentLinesDisable
+autocmd FileType tex let g:ycm_auto_trigger=0
 "Spell check
-au FileType tex,markdown,rst,mail,markdown setl spell spelllang=en_gb
+autocmd FileType tex,markdown,rst,mail,markdown setl spell spelllang=en_gb
 let g:tex_conceal="abdgm"
 let g:tex_conceal="abdgm"
 let g:tex_fold_enabled=1
@@ -174,7 +174,7 @@ let g:vimtex_fold_enabled = 1
 
 
 " Folding in C,CPP files
-au FileType c,cpp setl foldenable foldmethod=syntax
+autocmd FileType c,cpp setl foldenable foldmethod=syntax
 
 " This is for vertical indenting
 set list
@@ -185,16 +185,16 @@ set listchars=tab:\|\ ,trail:-,eol:$
 " Different file comment templates
 autocmd BufNewFile *.py 0r ~/.vim/py.vim
 autocmd BufNewFile *.fedreview 0r ~/.vim/fedreview.vim
-au BufRead,BufNewFile jquery.*.js setl ft=javascript syntax=jquery
+autocmd BufRead,BufNewFile jquery.*.js setl ft=javascript syntax=jquery
 " GNUPlot
-au BufNewFile,BufRead *.plt,.gnuplot setf gnuplot
+autocmd BufNewFile,BufRead *.plt,.gnuplot setf gnuplot
 
 " Save and automatically load folds
 " You need to make a ~/.vim/views folder and chmod it to 755
 " mkdir -p ~/.vim/view
 " chmod 755 ~/.vim/view
-au BufWinLeave *.* silent! mkview
-au BufWinEnter *.* silent! loadview
+autocmd BufWinLeave *.* silent! mkview
+autocmd BufWinEnter *.* silent! loadview
 
 " printing
 "set printexpr=PrintFile(v:fname_in)
@@ -248,7 +248,7 @@ function! LoadCscope()
     set cscopeverbose
   endif
 endfunction
-au BufEnter /* call LoadCscope()
+autocmd BufEnter /* call LoadCscope()
 
 " ycm
 let g:ycm_server_python_interpreter = 'python3'
@@ -340,14 +340,14 @@ set background=dark
 colorscheme solarized
 
 " sli
-au BufRead,BufNewFile *.sli set filetype=sli
-au FileType sli setl foldenable foldmethod=syntax
+autocmd BufRead,BufNewFile *.sli set filetype=sli
+autocmd FileType sli setl foldenable foldmethod=syntax
 
 command! GetIndexList :read !grep -nro '\\index{[a-zA-Z!-]\+}' * | sed 's/\\index{\(.*\)}/\1/' | cut -d ":" -f 3 |  sort | uniq | tr '!' ':' | tr '\n' ',' | sed 's/,/, /g'
 
 " Some neuron stuff
-au BufRead,BufNewFile *.hoc,*.oc set filetype=hoc
-au BufRead,BufNewFile *.mod set filetype=nmodl
+autocmd BufRead,BufNewFile *.hoc,*.oc set filetype=hoc
+autocmd BufRead,BufNewFile *.mod set filetype=nmodl
 
 " Modelines for files
 set modeline
