@@ -59,6 +59,8 @@ Plug 'lokikl/vim-ctrlp-ag'
 Plug 'ivalkeen/vim-ctrlp-tjump'
 " sideways
 Plug 'AndrewRadev/sideways.vim'
+" ack for ag
+Plug 'mileszs/ack.vim'
 call plug#end()
 
 " dirsettings
@@ -473,3 +475,8 @@ set wildignore+=*.aux,*.bbl,*.bcf,*.blg,*.fls,*.idx,*.ilg,*.ind,*.log,*.out,*.ru
 
 " set relative numbers for use with numbertoggle
 set number relativenumber
+
+" Use silver searcher instead of ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
