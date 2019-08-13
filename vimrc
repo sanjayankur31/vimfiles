@@ -136,6 +136,7 @@ autocmd FileType tex IndentLinesDisable
 autocmd FileType tex let g:ycm_auto_trigger=0
 "Spell check
 autocmd FileType tex,markdown,rst,mail,markdown setl spell spelllang=en_gb
+autocmd FileType tex,markdown,rst,mail,markdown setl linebreak
 let g:tex_conceal="abdgm"
 let g:tex_conceal="abdgm"
 let g:tex_fold_enabled=1
@@ -318,8 +319,8 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_cpp_auto_refresh_includes = 0
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_cpp_no_default_include_dirs = 1
 let g:syntastic_cpp_remove_include_errors = 1
