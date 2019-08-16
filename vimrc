@@ -61,6 +61,9 @@ Plug 'ivalkeen/vim-ctrlp-tjump'
 Plug 'AndrewRadev/sideways.vim'
 " ack for ag
 Plug 'mileszs/ack.vim'
+" Open browser since netrw's gx no longer works for URLs
+" https://github.com/vim/vim/issues/4738
+Plug 'tyru/open-browser.vim'
 call plug#end()
 
 " dirsettings
@@ -481,3 +484,13 @@ set number relativenumber
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+" Open browser plugin
+let g:netrw_nogx = 1 " disable netrw's gx mapping.
+nmap gx <Plug>(openbrowser-smart-search)
+vmap gx <Plug>(openbrowser-smart-search)
+let g:openbrowser_default_search = "ddg"
+let g:openbrowser_search_engines = {
+            \ 'ddg': 'http://duckduckgo.com/?q={query}',
+            \ 'github': 'http://github.com/search?q={query}',
+            \ }
