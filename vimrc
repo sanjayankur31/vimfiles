@@ -246,7 +246,7 @@ nnoremap <Leader>mlrx :tabedit /var/lib/mock/fedora-rawhide-x86_64/result<CR>
 nnoremap <Leader>mlri :tabedit /var/lib/mock/fedora-rawhide-i386/result<CR>
 " ChangeLog for specs
 let spec_chglog_format = "%a %b %d %Y Ankur Sinha <ankursinha AT fedoraproject DOT org>"
-iab clog <c-r>=strftime("%a %b %d 20%y")<CR> Ankur Sinha <ankursinha AT fedoraproject DOT org>
+" iab clog <c-r>=strftime("%a %b %d 20%y")<CR> Ankur Sinha <ankursinha AT fedoraproject DOT org>
 
 
 " New tab versions of the normal cscope mappings
