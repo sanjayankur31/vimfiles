@@ -148,6 +148,10 @@ let g:tex_conceal="abdgm"
 let g:tex_conceal="abdgm"
 let g:tex_fold_enabled=1
 
+" For these files, set it to :Dict which I use more commonly. Can always use
+" :Man if needed
+autocmd FileType tex,markdown,rst,mail,markdown nnoremap K :Dict<CR>
+
 " vimtex
 let g:vimtex_compiler_latexmk = {
             \ 'backend' : 'jobs',
