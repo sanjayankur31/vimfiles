@@ -64,6 +64,10 @@ Plug 'mileszs/ack.vim'
 " Open browser since netrw's gx no longer works for URLs
 " https://github.com/vim/vim/issues/4738
 Plug 'tyru/open-browser.vim'
+" Taskjuggler
+Plug 'sigmike/vim-taskjuggler'
+" man pages using vim plugin when available
+Plug 'jez/vim-superman'
 call plug#end()
 
 " dirsettings
