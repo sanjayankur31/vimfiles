@@ -498,3 +498,10 @@ let g:openbrowser_search_engines = {
             \ 'ddg': 'http://duckduckgo.com/?q={query}',
             \ 'github': 'http://github.com/search?q={query}',
             \ }
+
+" Activate vim man page viewer
+runtime ftplugin/man.vim
+" Use this for shift K
+set keywordprg=:Man
+" Make it cleaner
+autocmd FileType man setlocal nomod nolist noexpandtab tabstop=8 softtabstop=8 shiftwidth=8
