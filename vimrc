@@ -509,3 +509,9 @@ runtime ftplugin/man.vim
 set keywordprg=:Man
 " Make it cleaner
 autocmd FileType man setlocal nomod nolist noexpandtab tabstop=8 softtabstop=8 shiftwidth=8
+
+" Fedora antora rebuild
+augroup fedora_docs
+    autocmd!
+    autocmd BufWritePost *adoc !./build.sh
+augroup END
