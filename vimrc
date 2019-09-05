@@ -8,6 +8,7 @@ Plug 'sanjayankur31/nmodl.vim'
 Plug 'scrooloose/syntastic'
 Plug 'bling/vim-airline'
 Plug 'sanjayankur31/vim-colors-solarized'
+" Plug 'lifepillar/vim-solarized8'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 Plug 'gregsexton/gitv'
@@ -511,4 +512,13 @@ autocmd FileType man setlocal nomod nolist noexpandtab tabstop=8 softtabstop=8 s
 augroup fedora_docs
     autocmd!
     autocmd BufWritePost *adoc !./build.sh
+augroup END
+
+
+" Do not list quickfix and location list buffer in the buffer list, otherwise
+" :bnext goes to quickfix
+" https://stackoverflow.com/questions/28613190/exclude-quickfix-buffer-from-bnext-bprevious
+augroup qf
+    autocmd!
+    autocmd FileType qf set nobuflisted
 augroup END
