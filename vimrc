@@ -7,8 +7,7 @@ Plug 'sjbach/lusty'
 Plug 'sanjayankur31/nmodl.vim'
 Plug 'scrooloose/syntastic'
 Plug 'bling/vim-airline'
-Plug 'sanjayankur31/vim-colors-solarized'
-" Plug 'lifepillar/vim-solarized8'
+Plug 'lifepillar/vim-solarized8'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 Plug 'gregsexton/gitv'
@@ -353,10 +352,17 @@ let g:syntastic_perl_checkers = ['perlcritic']
 let g:table_mode_corner_corner="+"
 let g:table_mode_header_fillchar="="
 
+" True color
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
+" must follow the above settings
 " solarized
 set background=dark
-colorscheme solarized
+colorscheme solarized8_flat
+" Because it must use the terminal's pallette
+let g:solarized_use16=1
 
 " sli
 autocmd BufRead,BufNewFile *.sli set filetype=sli
