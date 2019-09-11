@@ -69,6 +69,8 @@ Plug 'tyru/open-browser.vim'
 Plug 'sigmike/vim-taskjuggler'
 " man pages using vim plugin when available
 Plug 'jez/vim-superman'
+" Media wiki syntax highlight
+Plug 'chikamichi/mediawiki.vim'
 call plug#end()
 
 " dirsettings
