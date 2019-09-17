@@ -8,7 +8,12 @@ Plug 'sanjayankur31/nmodl.vim'
 Plug 'scrooloose/syntastic'
 Plug 'bling/vim-airline'
 Plug 'lifepillar/vim-solarized8'
+" Git
 Plug 'tpope/vim-fugitive'
+" Fugitive + Github
+Plug 'tpope/vim-rhubarb'
+" Fugitive + Pagure
+Plug 'FrostyX/fugitive-pagure-vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'gregsexton/gitv'
 Plug 'mhinz/vim-signify'
