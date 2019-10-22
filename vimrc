@@ -248,10 +248,10 @@ autocmd BufNewFile,BufRead *.tj3,*.taskjuggler,*.tji,*.tjp set ft=tjp
 autocmd FileType tjp nmap <Leader>tm :make %<CR>
 
 " For rpmbuilding
-nnoremap <Leader>rbs :!rm ../SRPMS/%:r*.src.rpm; rpmbuild -bs %<CR>
+nnoremap <Leader>rbs :!rm ./%:r*.src.rpm; rpmbuild -bs %<CR>
 nnoremap <Leader>rba :!rpmbuild -ba %<CR>
 nnoremap <Leader>rls :!rpmlint %<CR>
-nnoremap <Leader>rla :!rpmlint % ../SRPMS/%:r*.src.rpm<CR>
+nnoremap <Leader>rla :!rpmlint % ./%:r*.src.rpm<CR>
 nnoremap <Leader>mlrx :tabedit /var/lib/mock/fedora-rawhide-x86_64/result<CR>
 nnoremap <Leader>mlri :tabedit /var/lib/mock/fedora-rawhide-i386/result<CR>
 " ChangeLog for specs
