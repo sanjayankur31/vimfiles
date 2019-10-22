@@ -540,3 +540,10 @@ augroup END
 
 " For ledger
 let g:ledger_maxwidth = 80
+autocmd BufRead,BufNewFile *.ledger set filetype=ledger
+au FileType ledger noremap { ?^\d<CR>
+au FileType ledger noremap } /^\d<CR>
+let g:ledger_extra_options = '--pedantic --explicit --check-payees'
+if exists('g:ycm_filetype_blacklist')
+    call extend(g:ycm_filetype_blacklist, { 'ledger': 1 })
+endif
