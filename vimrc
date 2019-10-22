@@ -76,6 +76,8 @@ Plug 'sigmike/vim-taskjuggler'
 Plug 'jez/vim-superman'
 " Media wiki syntax highlight
 Plug 'chikamichi/mediawiki.vim'
+" For ledger
+Plug 'ledger/vim-ledger'
 call plug#end()
 
 " dirsettings
@@ -535,3 +537,6 @@ augroup qf
     autocmd!
     autocmd FileType qf set nobuflisted
 augroup END
+
+" For ledger
+let g:ledger_maxwidth = 80
