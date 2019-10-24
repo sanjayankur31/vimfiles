@@ -547,3 +547,4 @@ let g:ledger_extra_options = '--pedantic --explicit --check-payees'
 if exists('g:ycm_filetype_blacklist')
     call extend(g:ycm_filetype_blacklist, { 'ledger': 1 })
 endif
+let g:ledger_bin = 'ledger'
