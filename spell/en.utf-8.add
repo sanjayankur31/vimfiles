@@ -21,11 +21,14 @@ biomimetic
 bouton
 boutons
 Burjorji
+bylaws
 CA1
 CaMKII
 Cowan
 Curzon
+cytoarchitectural
 Cytosol
+deafferent
 deafferentated/!
 Deafferentated
 deafferentation
@@ -43,6 +46,7 @@ eGFP
 ensheathe
 entorhinal
 EPBs
+epileptiform
 epileptogenic
 excitotoxicity
 eYFP
@@ -79,6 +83,7 @@ indegree
 INSA
 intracortical
 ionotropic
+ischemia
 isoxazole
 Jamsetji
 JVM
@@ -138,12 +143,15 @@ Ribosomes
 saccadic
 sanjay
 Schaffer
+Schuemann
 Shri
 SIGKDD
 Sinha
 somata
+spec
 spinogenesis
 Sprekeler
+standalone
 STDP
 Steuber
 striatum
@@ -174,10 +182,3 @@ Vogels
 Wodeyar
 younglings
 Zhang
-deafferent
-epileptiform
-standalone
-ischemia
-bylaws
-cytoarchitectural
-spec
