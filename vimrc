@@ -78,6 +78,8 @@ Plug 'jez/vim-superman'
 Plug 'chikamichi/mediawiki.vim'
 " For ledger
 Plug 'ledger/vim-ledger'
+" For ruby on rails
+Plug 'tpope/vim-rails'
 call plug#end()
 
 " dirsettings
