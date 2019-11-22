@@ -80,6 +80,7 @@ Plug 'chikamichi/mediawiki.vim'
 Plug 'ledger/vim-ledger'
 " For ruby on rails
 Plug 'tpope/vim-rails'
+" Plug 'mildred/vim-ledger-mode'
 call plug#end()
 
 " dirsettings
