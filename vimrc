@@ -167,7 +167,7 @@ let g:vimtex_compiler_latexmk = {
             \ 'background' : 1,
             \ 'build_dir' : '',
             \ 'callback' : 1,
-            \ 'continuous' : 1,
+            \ 'continuous' : 0,
             \ 'executable' : 'latexmk',
             \ 'options' : [
             \   '-pdf',
@@ -194,6 +194,13 @@ let g:vimtex_complete_bib = {
 " Do not open the quickfix window automatically for warnings.
 let g:vimtex_quickfix_open_on_warning = 0
 let g:vimtex_fold_enabled = 1
+
+let g:vimtex_toc_config = {
+            \ 'mode': 1,
+            \ 'fold_enable': 0,
+            \ 'split_pos': 'vert botright',
+            \ 'split_width': 60
+            \}
 
 
 " Folding in C,CPP files
