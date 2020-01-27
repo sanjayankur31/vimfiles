@@ -20,6 +20,7 @@ Plug 'mhinz/vim-signify'
 Plug 'mantiz/vim-plugin-dirsettings'
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf.vim'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'farseer90718/vim-taskwarrior'
 Plug 'ludovicchabant/vim-gutentags'
@@ -559,3 +560,8 @@ if exists('g:ycm_filetype_blacklist')
     call extend(g:ycm_filetype_blacklist, { 'ledger': 1 })
 endif
 let g:ledger_bin = 'ledger'
+
+
+" Add syntax for Cref and cref from cleverref
+" Tweaked from /usr/share/vim/vim82/syntax/tex.vim
+syn region texRefZone     matchgroup=texStatement start="\\v\=cref{"       end="}\|%stopzone\>"    contains=@texRefGroup
