@@ -565,3 +565,40 @@ let g:ledger_bin = 'ledger'
 " Add syntax for Cref and cref from cleverref
 " Tweaked from /usr/share/vim/vim82/syntax/tex.vim
 syn region texRefZone     matchgroup=texStatement start="\\v\=cref{"       end="}\|%stopzone\>"    contains=@texRefGroup
+
+" A function to load the right signature when I'm using neomutt
+function! LoadSignature(signature)
+    " Only work for mail files
+    let this_file_type = &filetype
+    if this_file_type != "mail"
+        echo "This is not a mail file! Not running!"
+    endif
+
+    " Get the current signature's line
+    " Go to last line
+    let saved_cursor_position = getpos('.')
+    " Set cursor to file end and search backwards
+    call cursor(99999999999999999999,0)
+    let l:sigstart = search('-- ', 'b')
+    " Confirm that the line was found
+    if sigstart == 0
+        echo "No signatures detected."
+        return 1
+    endif
+
+    " Check if signature file exists
+    let l:sigdir = escape(expand('$HOME'), '\') . "/Sync/99_private/neomuttdir/"
+    let l:sigfile = sigdir . a:signature . ".sig"
+    if filereadable(sigfile)
+        " delete the current lines after the "-- " line
+        let l:delstart = sigstart + 1
+        execute delstart . ",$d"
+        " Read the new signature
+        execute sigstart . "read " . sigfile
+        " Return cursor to wherever it was
+        call setpos('.', saved_cursor_position)
+    else
+        echo "File " . sigfile . " not found!"
+        echo "Available signature files:\n" . globpath(sigdir, '*.sig')
+    endif
+endfunction
