@@ -602,3 +602,6 @@ function! LoadSignature(signature)
         echo "Available signature files:\n" . globpath(sigdir, '*.sig')
     endif
 endfunction
+
+" For docker related files
+autocmd FileType yaml.docker-compose setl expandtab
