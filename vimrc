@@ -126,6 +126,9 @@ set confirm
 " Show me line numbers
 set nu
 
+" split vertically to right
+set splitright
+
 " Highlight current line
 set cursorline
 
@@ -140,6 +143,11 @@ set showmatch
 
 "Show info in the window title
 set title
+
+" for searching
+" https://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim
+set ignorecase
+set smartcase
 
 "Line length above which to break a line
 autocmd FileType python,cpp,c,text,rst,markdown,sh,sli setl textwidth=79
@@ -203,6 +211,9 @@ let g:vimtex_toc_config = {
             \ 'split_width': 60
             \}
 
+let g:vimtex_view_method = "zathura"
+let g:vimtex_view_general_viewer = "zathura"
+let g:vimtex_view_forward_search_on_start = 1
 
 " Folding in C,CPP files
 autocmd FileType c,cpp setl foldenable foldmethod=syntax
@@ -603,3 +614,6 @@ function! LoadSignature(signature)
         echo "Available signature files:\n" . globpath(sigdir, '*.sig')
     endif
 endfunction
+
+" For docker related files
+autocmd FileType yaml.docker-compose setl expandtab
