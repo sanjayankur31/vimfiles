@@ -15,7 +15,9 @@ astrocyte
 astrocytic
 ATP
 attractorless
+autapses
 autocorrelogram
+AWS
 Bhabha
 Bicuculline
 Biocomputation
@@ -45,6 +47,7 @@ DG
 disinhibition
 dMEC
 dnf
+Dockerfile
 dopaminergic
 dorsocaudal
 dorsomedial
@@ -104,6 +107,7 @@ ischemia
 isoxazole
 Izhikevich
 Jamsetji
+JSON
 JVM
 kainate
 KDD
@@ -113,6 +117,7 @@ Krishnaraja
 lamellipodium
 laminin
 LHSP
+localhost
 LPZ
 LTP
 macular
@@ -126,6 +131,7 @@ Metzner
 MSB
 mutative
 myelinated
+mysql
 neurite
 neurites
 neuro
@@ -160,6 +166,7 @@ peri
 peroxidation
 peroxisomes
 PKA
+podman
 Poisson
 postsubicular
 postsubiculum
@@ -184,6 +191,7 @@ Schaffer
 Schuemann
 scotoma
 Scousers
+SELinux
 Shri
 SIGKDD
 SilverLab
@@ -238,5 +246,6 @@ Waitrose
 Weisel
 wikipedia
 Wodeyar
+yaml
 younglings
 Zhang
