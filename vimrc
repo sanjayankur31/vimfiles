@@ -211,6 +211,9 @@ let g:vimtex_toc_config = {
             \ 'split_width': 60
             \}
 
+let g:vimtex_view_method = "zathura"
+let g:vimtex_view_general_viewer = "zathura"
+let g:vimtex_view_forward_search_on_start = 1
 
 " Folding in C,CPP files
 autocmd FileType c,cpp setl foldenable foldmethod=syntax
