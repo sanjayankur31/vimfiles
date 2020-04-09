@@ -10,6 +10,7 @@ Plug 'bling/vim-airline'
 Plug 'lifepillar/vim-solarized8'
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'rbong/vim-flog'
 " Fugitive + Github
 Plug 'tpope/vim-rhubarb'
 " Fugitive + Pagure
