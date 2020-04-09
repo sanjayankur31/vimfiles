@@ -126,6 +126,9 @@ set confirm
 " Show me line numbers
 set nu
 
+" split vertically to right
+set splitright
+
 " Highlight current line
 set cursorline
 
