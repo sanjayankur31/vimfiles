@@ -144,6 +144,11 @@ set showmatch
 "Show info in the window title
 set title
 
+" for searching
+" https://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim
+set ignorecase
+set smartcase
+
 "Line length above which to break a line
 autocmd FileType python,cpp,c,text,rst,markdown,sh,sli setl textwidth=79
 
