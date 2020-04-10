@@ -41,7 +41,6 @@ Plug 'honza/vim-snippets'
 Plug 'rhysd/vim-grammarous'
 Plug 'Yggdroot/indentLine'
 Plug 'jiangmiao/auto-pairs'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mtth/scratch.vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'Valloric/YouCompleteMe'
@@ -61,10 +60,6 @@ Plug 'ternjs/tern_for_vim'
 " pip install https://github.com/tlinhart/instant-rst.py/archive/master.zip --upgrade
 " Requires python3-gevent on Fedora
 Plug 'gu-fan/InstantRst'
-" Requires the_silver_surfer to be installed
-Plug 'lokikl/vim-ctrlp-ag'
-" Requires Ctrlp
-Plug 'ivalkeen/vim-ctrlp-tjump'
 " sideways
 Plug 'AndrewRadev/sideways.vim'
 " ack for ag
@@ -214,7 +209,6 @@ let g:vimtex_toc_config = {
 
 let g:vimtex_view_method = "zathura"
 let g:vimtex_view_general_viewer = "zathura"
-let g:vimtex_view_forward_search_on_start = 1
 
 " Folding in C,CPP files
 autocmd FileType c,cpp setl foldenable foldmethod=syntax
@@ -511,12 +505,6 @@ set thesaurus+=~/.vim/mthesaur.txt
 
 " InstantRst
 let g:instant_rst_slow = 1
-
-" CtrlPag
-let g:ctrlp_ag_ignores = '--ignore .git
-    \ --ignore "deps/*"
-    \ --ignore "_build/*"
-    \ --ignore "node_modules/*"'
 
 " ignore these file types completely
 " LaTeX temporary files
