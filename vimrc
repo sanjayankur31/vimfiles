@@ -606,3 +606,7 @@ endfunction
 
 " For docker related files
 autocmd FileType yaml.docker-compose setl expandtab
+
+" Remap CTRL-P for FZF
+nnoremap <C-P> :Files <CR>
+nnoremap <C-N> :GFiles <CR>
