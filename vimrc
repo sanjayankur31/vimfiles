@@ -53,7 +53,6 @@ Plug 'tpope/vim-repeat'
 " https://oli.me.uk/2013/06/29/equipping-vim-for-javascript/
 Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
-Plug 'ternjs/tern_for_vim'
 " Requires the server to be installed. Install in the pelican virtual-env:
 " pip install https://github.com/gu-fan/instant-rst.py/archive/master.zip --upgrade
 " Upstream needs to merge a PR, so use this until that is done
