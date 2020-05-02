@@ -78,6 +78,8 @@ Plug 'ledger/vim-ledger'
 Plug 'mildred/vim-ledger-mode'
 " For ruby on rails
 Plug 'tpope/vim-rails'
+" fix whitespaces
+Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
 
 " dirsettings
@@ -454,10 +456,7 @@ set secure
 
 let g:LustyJugglerSuppressRubyWarning = 1
 
-" A function to trim all trailing whitespace
-function! TrimTrailingWhiteSpace()
-    %s/\s\+$//e
-endfunction
+" Update post date for rst blog source files
 function! UpdatePostDate()
     %s/^:date: .*$/\=strftime(":date: %Y-%m-%d %H:%M:%S")/
 endfunction
@@ -610,3 +609,7 @@ autocmd FileType yaml.docker-compose setl expandtab
 " Remap CTRL-P for FZF
 nnoremap <C-P> :Files <CR>
 nnoremap <C-N> :GFiles <CR>
+
+" Defaults for vim-better-whitespace
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=0
