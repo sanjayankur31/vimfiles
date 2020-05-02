@@ -366,7 +366,7 @@ let g:syntastic_aggregate_errors = 1
 let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 let g:syntastic_mode_map = {
             \ "mode": "passive",
-            \ "passive_filetypes": ["cpp", "c"],
+            \ "passive_filetypes": ["cpp", "c", "javascript"],
             \ "active_filetypes": ["tex", "python", "sh", "spec", "rst"]
             \ }
 let g:syntastic_tex_checkers = ['chktex']
@@ -376,6 +376,8 @@ let g:syntastic_rst_checkers = ['rstcheck']
 let g:syntastic_rst_rstcheck_exec = "rstcheck"
 let g:syntastic_perl_checkers = ['perlcritic']
 let g:syntastic_ignore_files = ['texlive.spec']
+let g:syntastic_javascript_checkers = ['closurecompiler']
+let g:syntastic_javascript_closurecompiler_script = 'closure-compiler'
 
 let g:table_mode_corner_corner="+"
 let g:table_mode_header_fillchar="="
