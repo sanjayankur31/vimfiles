@@ -213,6 +213,8 @@ let g:vimtex_view_general_viewer = "zathura"
 
 " Folding in C,CPP files
 autocmd FileType c,cpp setl foldenable foldmethod=syntax
+" Folding in javascript
+autocmd FileType js setl foldenable foldmethod=syntax
 
 " This is for vertical indenting
 set list
