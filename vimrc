@@ -557,11 +557,12 @@ let g:ledger_maxwidth = 80
 autocmd BufRead,BufNewFile *.ledger set filetype=ledger
 au FileType ledger noremap { ?^\d<CR>
 au FileType ledger noremap } /^\d<CR>
-let g:ledger_extra_options = '--pedantic --explicit --check-payees'
+let g:ledger_extra_options = '--pedantic --strict'
 if exists('g:ycm_filetype_blacklist')
     call extend(g:ycm_filetype_blacklist, { 'ledger': 1 })
 endif
 let g:ledger_bin = 'ledger'
+let g:ledger_date_format = '%m-%d'
 
 
 " Add syntax for Cref and cref from cleverref
@@ -616,3 +617,6 @@ nnoremap <C-N> :GFiles <CR>
 " Defaults for vim-better-whitespace
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=0
+
+" Folding with Java
+autocmd FileType java setl foldenable foldmethod=syntax
