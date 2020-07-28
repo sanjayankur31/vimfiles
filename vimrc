@@ -620,3 +620,8 @@ let g:strip_whitespace_on_save=0
 
 " Folding with Java
 autocmd FileType java setl foldenable foldmethod=syntax
+
+" Octave syntax
+augroup filetypedetect
+  au! BufRead,BufNewFile *.m,*.oct set filetype=octave
+augroup END
