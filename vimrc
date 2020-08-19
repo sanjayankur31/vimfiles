@@ -79,6 +79,8 @@ Plug 'mildred/vim-ledger-mode'
 Plug 'tpope/vim-rails'
 " fix whitespaces
 Plug 'ntpeters/vim-better-whitespace'
+" editorconfig
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 " dirsettings
@@ -620,3 +622,6 @@ let g:strip_whitespace_on_save=0
 
 " Folding with Java
 autocmd FileType java setl foldenable foldmethod=syntax
+
+" for editorconfig
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
