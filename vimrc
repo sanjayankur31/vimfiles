@@ -625,3 +625,8 @@ autocmd FileType java setl foldenable foldmethod=syntax
 
 " for editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
+" Octave syntax
+augroup filetypedetect
+  au! BufRead,BufNewFile *.m,*.oct set filetype=octave
+augroup END
