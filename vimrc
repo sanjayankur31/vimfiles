@@ -376,6 +376,10 @@ let g:syntastic_mode_map = {
 let g:syntastic_tex_checkers = ['chktex']
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_exec = "flake8-3"
+let g:syntastic_python_flake8_quiet_messages = {
+            \ "level": [],
+            \ "type": [],
+            \ }
 let g:syntastic_rst_checkers = ['rstcheck']
 let g:syntastic_rst_rstcheck_exec = "rstcheck"
 let g:syntastic_perl_checkers = ['perlcritic']
@@ -494,6 +498,7 @@ endfor
 
 " vim-signify
 let g:signify_vcs_list = ['git']
+let g:signify_priority = 1
 
 " Enable spelling for git commit temporary files
 autocmd FileType gitcommit setlocal spell
@@ -555,7 +560,8 @@ augroup qf
 augroup END
 
 " For ledger
-let g:ledger_maxwidth = 80
+let g:ledger_maxwidth = 120
+let g:ledger_align_at = 117
 autocmd BufRead,BufNewFile *.ledger set filetype=ledger
 au FileType ledger noremap { ?^\d<CR>
 au FileType ledger noremap } /^\d<CR>
