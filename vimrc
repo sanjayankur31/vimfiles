@@ -1,3 +1,9 @@
+" disable polyglot for python for the time being
+" https://github.com/sheerun/vim-polyglot/issues/209
+" Need to be done at top of vimrc
+let g:polyglot_disabled = ['python', 'latex']
+let g:python_highlight_all = 1
+
 set nocompatible
 call plug#begin('~/.vim/plugged')
 
@@ -277,6 +283,7 @@ nnoremap <Leader>rla :!rpmlint % ./%:r*.src.rpm<CR>
 nnoremap <Leader>mlrx :tabedit /var/lib/mock/fedora-rawhide-x86_64/result<CR>
 nnoremap <Leader>mlri :tabedit /var/lib/mock/fedora-rawhide-i386/result<CR>
 " ChangeLog for specs
+autocmd BufNewFile,BufRead *.spec set ft=spec
 let spec_chglog_format = "%a %b %d %Y Ankur Sinha <ankursinha AT fedoraproject DOT org>"
 " iab clog <c-r>=strftime("%a %b %d 20%y")<CR> Ankur Sinha <ankursinha AT fedoraproject DOT org>
 
@@ -453,10 +460,6 @@ let g:UltiSnipsUsePythonVersion = 3
 " let g:UltiSnipsJumpForwardTrigger = "<tab>"
 " let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
-" disable polyglot for python for the time being
-" https://github.com/sheerun/vim-polyglot/issues/209
-let g:polyglot_disabled = ['python', 'latex']
-let g:python_highlight_all = 1
 
 " Permit per project vimrc customisations
 set exrc
