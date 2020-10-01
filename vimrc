@@ -154,8 +154,9 @@ set title
 set ignorecase
 set smartcase
 
-"Line length above which to break a line
-autocmd FileType python,cpp,c,text,rst,markdown,sh,sli setl textwidth=79
+" Line length above which to break a line
+" Don't break for text writing: TeX, md, rst
+autocmd FileType python,cpp,c,sh,sli setl textwidth=79
 
 " latex stuff
 set grepprg="grep\ -nH\ $*"
@@ -436,6 +437,8 @@ let g:NERDTrimTrailingWhitespace = 1
 let NERDTreeIgnore = ['\.pyc$', '\.aux$', '\.bbl$', '\.blg', '\.brf$', '\.out$', '\.fls$']
 
 let g:indentLine_setColors = 0
+" Do not conceal in insert mode
+let g:indentLine_concealcursor = 'nc'
 
 " Lustyjuggler
 let g:LustyJugglerDefaultMappings = 0
