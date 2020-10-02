@@ -74,6 +74,7 @@ ChR2
 Cisco
 CN
 colliculus
+Connectomics
 COPR
 CORS
 cortico
@@ -117,12 +118,15 @@ dopaminergic
 dorsocaudal
 dorsomedial
 downregulation
+DRL
 DRN
 dysregulated
 dysrhythmia
 EDLDS
 EE
 eGFP
+eigen
+eigenspace
 ELFN2
 eLife
 emboliform
@@ -335,6 +339,7 @@ NPEs
 npm
 NTC
 NullPointerException
+nullspace
 Nusserwanji
 NWB
 NWBExplorer
@@ -423,6 +428,7 @@ Ribosomes
 Richa
 Rishaan
 Ritesh
+RL
 RNN
 RR
 RTD
