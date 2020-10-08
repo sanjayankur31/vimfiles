@@ -1,7 +1,7 @@
 " disable polyglot for python for the time being
 " https://github.com/sheerun/vim-polyglot/issues/209
 " Need to be done at top of vimrc
-let g:polyglot_disabled = ['python', 'latex']
+let g:polyglot_disabled = ['python']
 let g:python_highlight_all = 1
 
 set nocompatible
@@ -33,10 +33,9 @@ Plug 'farseer90718/vim-taskwarrior'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdcommenter'
-Plug 'sheerun/vim-polyglot'
+Plug 'lervag/vimtex'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'vim-python/python-syntax'
-Plug 'lervag/vimtex'
 Plug 'Konfekt/FastFold'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -87,6 +86,8 @@ Plug 'tpope/vim-rails'
 Plug 'ntpeters/vim-better-whitespace'
 " editorconfig
 Plug 'editorconfig/editorconfig-vim'
+" Run at end so it doesn't override other plugins
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " dirsettings
