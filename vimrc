@@ -90,6 +90,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
 " Sentence chopper
 Plug 'Konfekt/vim-sentence-chopper'
+" Unicode marker
+Plug 'Konfekt/vim-unicode-homoglyphs'
+
 call plug#end()
 
 " dirsettings
