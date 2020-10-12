@@ -88,6 +88,8 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'editorconfig/editorconfig-vim'
 " Run at end so it doesn't override other plugins
 Plug 'sheerun/vim-polyglot'
+" Sentence chopper
+Plug 'Konfekt/vim-sentence-chopper'
 call plug#end()
 
 " dirsettings
