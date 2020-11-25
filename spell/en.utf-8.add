@@ -1,9 +1,12 @@
 AAVs
+ACC
 acousto
 adeno
 AdEx
 adoc
 AIIMS
+AIN
+AIS
 Albus
 aldolase
 Alessandro
@@ -15,6 +18,8 @@ AMPA
 Ankit
 ankur
 Ankur
+ANNs
+Antora
 apodictic
 apposed
 APs
@@ -29,6 +34,7 @@ arm7hl
 ASAP1
 ASAP2s
 ASAP3b
+asciidoc
 ASD
 Astrid
 Astrid's
@@ -58,6 +64,8 @@ boutons
 BrainScaleS
 bugfix
 Burjorji
+Busse
+Butz
 bylaws
 CA1
 CA3
@@ -65,7 +73,11 @@ callosotomy
 calmodulin
 CaMKII
 CaMKIV
+Casellato
 caudate
+CCA
+cerebello
+cerebro
 cerebropontine
 cgroups
 ChannelML
@@ -75,6 +87,8 @@ Cisco
 CN
 colliculus
 Connectomics
+convulsants
+Copelli
 COPR
 CORS
 cortico
@@ -91,6 +105,7 @@ cytoarchitectural
 Cytosol
 D3D
 Dandi
+DCN
 deafferent
 deafferentated/!
 Deafferentated
@@ -130,6 +145,7 @@ eigenspace
 ELFN2
 eLife
 emboliform
+EMG
 endocytosis
 eNpHR
 ensheathe
@@ -155,7 +171,11 @@ fibrillar
 fibronectin
 Fillippo
 Firewalld
+Flake8
+Fleur
+Fleur's
 FlicR1
+floccular
 flocculonodular
 flouxetine
 folia
@@ -166,12 +186,15 @@ furloughed
 GABA
 GABAergic
 GBC
+GC
 GCs
+GECIs
 geniculocortical
 gephyrin
 geppetto
 Geppetto
 GEVI
+Gjorgjieva
 glia
 glial
 glutamatergic
@@ -218,11 +241,13 @@ iGlu
 IISc
 immunofluorescence
 INAE
+INCF
 indegree
 infragranular
 INSA
 interhemispheric
 intracortical
+IO
 ionotropic
 ipsi
 ipsilateral
@@ -232,10 +257,13 @@ Izhikevich
 JabRef
 Jamsetji
 Jaya
+jLEMS
 jnml
+jPCA
 JS
 json
 JSON
+Julijana
 Jupyter
 JVM
 kainate
@@ -261,6 +289,7 @@ LC
 LCoS
 LDS
 LEMS
+LGN
 LHSP
 localhost
 lpz
@@ -268,6 +297,7 @@ LPZ
 LSO
 LTP
 M1
+Maass
 mAChRs
 macular
 Maharaja
@@ -277,6 +307,8 @@ Manish
 Marder
 Marr
 MatLab
+Matteo
+Mauro
 mausaji
 Mausaji's
 mausi
@@ -285,6 +317,7 @@ Maven
 Merzenich
 metabotropic
 Metacell
+MetaCell
 metaplasticity
 Metzner
 mGluR
@@ -298,8 +331,10 @@ mommy
 Monodelphis
 monosynaptic
 MorphML
+mRNAs
 MSB
 msmtp
+MSP
 Mukesh
 multiplot
 mutative
@@ -312,6 +347,7 @@ Nanaji
 Nananji
 nanomodules
 Neomutt
+Nerst
 NetPyNE
 NetworkML
 neurite
@@ -324,10 +360,12 @@ neurogranin
 Neurogranin
 neuroml
 NeuroML
+NeuroMLlite
 neuromodulatory
 neuromorphic
 neuropil
 neuroscientific
+neurotrophins
 newsboat
 Newsboat
 nigra
@@ -352,6 +390,7 @@ offlineimap
 olfaction
 oligodendricytes
 olivary
+OMV
 OpenConnect
 opensourcebrain
 opsin
@@ -364,12 +403,14 @@ oriens
 OSB
 OSBv1
 OSBv2
+Ostojic
 outdegree
 Padshah
 Pagure
 palmar
 Papez
 Parabrachial
+parameterized
 parasaggital
 parasubiculum
 parvalbumin
@@ -378,6 +419,7 @@ PCA
 PCAs
 perceptron
 Perceptron
+Perez
 peri
 perisomatic
 peroxidation
@@ -387,6 +429,7 @@ piriform
 PKA
 PLoS
 Plotly
+PNAS
 PNG
 podman
 Podman
@@ -394,6 +437,7 @@ Poisson
 pomodoros
 pontine
 Pos6
+positus
 postsubicular
 postsubiculum
 potentiation
@@ -423,6 +467,7 @@ recombinase
 reconsolidation
 Redish
 redmine
+reStructuredText
 retinotopic
 retrosplenial
 Ribosomes
@@ -431,9 +476,13 @@ Rishaan
 Ritesh
 RL
 RNN
+rostral
+rostrocaudal
 RR
+rst
 RTD
 saccade
+saccades
 saccadic
 sanjay
 saphenous
@@ -454,6 +503,7 @@ SilverLab
 Sinha
 SLM
 smtp
+SNNs
 snr
 somata
 somatostatin
@@ -466,6 +516,7 @@ spinogenesis
 Sprekeler
 SpringerLink
 Sqlite
+Srdjan
 Srinivas's
 Sst
 standalone
@@ -482,6 +533,7 @@ subserve
 substantia
 subsynaptic
 sudo
+suite2p
 supralinear
 suprathreshold
 Sussillo
@@ -492,6 +544,7 @@ synaptically
 synaptogenesis
 synaptogenic
 Syncthing
+Syntastic
 taskserver
 Taskwarrior
 Tata
@@ -506,6 +559,7 @@ tigroid
 timewarrior
 TMS
 tonotopic
+Torben
 transduce
 transduction
 transection
@@ -523,6 +577,7 @@ V1
 vacuolar
 varicosities
 vasoactive
+vergence
 vermis
 VGAT
 VGCC
@@ -530,6 +585,7 @@ VGlut1
 Visuo
 vivo
 Vogels
+VOR
 VSFP
 Waitrose
 Weechat
@@ -538,10 +594,13 @@ Wellcome
 wikipedia
 Willshaw
 Wodeyar
+xmllint
+XSD
 yaml
 younglings
 Zaphod
 zebrafish
 Zebrafish
+Zenke
 Zhang
 Zoraan
