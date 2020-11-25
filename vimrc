@@ -92,7 +92,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'Konfekt/vim-sentence-chopper'
 " Unicode marker
 Plug 'Konfekt/vim-unicode-homoglyphs'
-
+" DrawIt for ascii drawings
+Plug 'vim-scripts/DrawIt'
 call plug#end()
 
 " dirsettings
@@ -261,9 +262,9 @@ autocmd BufWinEnter *.* silent! loadview
 " printing
 "set printexpr=PrintFile(v:fname_in)
 "function PrintFile(fname)
-"	call system("a2ps " . a:fname)
-"	call delete(a:fname)
-"	return v:shell_error
+"   call system("a2ps " . a:fname)
+"   call delete(a:fname)
+"   return v:shell_error
 "endfunc
 "let &printexpr="(v:cmdarg=='' ? ".
 "    \"system('lpr' . (&printdevice == '' ? '' : ' -P' . &printdevice)".
@@ -385,7 +386,7 @@ let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
 let g:syntastic_mode_map = {
             \ "mode": "passive",
             \ "passive_filetypes": ["cpp", "c", "javascript"],
-            \ "active_filetypes": ["tex", "python", "sh", "spec", "rst"]
+            \ "active_filetypes": ["tex", "python", "sh", "spec", "rst", "xml"]
             \ }
 let g:syntastic_tex_checkers = ['chktex']
 let g:syntastic_python_checkers = ['flake8']
@@ -648,3 +649,53 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 augroup filetypedetect
   au! BufRead,BufNewFile *.m,*.oct set filetype=octave
 augroup END
+
+" Set neuroml files to xml
+autocmd BufNewFile *.nml setl filetype=xml
+let g:syntastic_xml_checkers = ['xmllint']
+" Set schema for xmllint
+autocmd BufRead,BufNewFile *.xml,*.nml call SetXmllintSchema()
+
+" A function to load the right schema file for NeuroML and LEMS files
+function! SetXmllintSchema ()
+    " Only work for XML files
+    let this_file_type = &filetype
+    if this_file_type != "xml"
+        return 1
+    endif
+    let NeuroMLSchemaDir = "~/Documents/02_Code/00_mine/2020-OSB/NeuroML2/Schemas/NeuroML2/"
+    let LEMSSchemaDir = "~/Documents/02_Code/00_mine/2020-OSB/LEMS/Schemas/LEMS/"
+
+    " Go to last line
+    let saved_cursor_position = getpos('.')
+
+    " NeuroML check
+    " Set cursor to file start
+    call cursor(0, 1)
+    " Is it a NeuroML file
+    let l:neuroml = search('xmlns.*neuroml2')
+    if neuroml != 0
+        call cursor(neuroml, 1)
+        let l:schemaloc = search('schemaLocation.*.xsd')
+        let l:schemaline = getline(schemaloc)
+        let l:xsdfile = matchstr(schemaline, '\C/NeuroML_.*.xsd')
+        let l:xsdfull = NeuroMLSchemaDir . xsdfile
+        let g:syntastic_xml_xmllint_args = "--schema ". xsdfull
+    endif
+    " LEMS
+    " Set cursor to file start
+    call cursor(0, 1)
+    " Is it a NeuroML file
+    let l:lems = search('xmlns.*/lems/')
+    if lems != 0
+        call cursor(lems, 1)
+        let l:schemaloc = search('schemaLocation.*.xsd')
+        let l:schemaline = getline(schemaloc)
+        let l:xsdfile = matchstr(schemaline, '\C/LEMS_.*.xsd')
+        let l:xsdfull = LEMSSchemaDir . xsdfile
+        let g:syntastic_xml_xmllint_args = "--schema ". xsdfull
+    endif
+
+    " Return cursor to the saved position
+    call setpos('.', saved_cursor_position)
+endfunction
