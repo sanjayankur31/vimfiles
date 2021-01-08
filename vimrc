@@ -651,7 +651,7 @@ augroup filetypedetect
 augroup END
 
 " Set neuroml files to xml
-autocmd BufNewFile *.nml setl filetype=xml
+autocmd BufRead,BufNewFile *.nml setl filetype=xml
 let g:syntastic_xml_checkers = ['xmllint']
 " Set schema for xmllint
 autocmd BufRead,BufNewFile *.xml,*.nml call SetXmllintSchema()
