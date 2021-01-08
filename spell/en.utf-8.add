@@ -58,6 +58,7 @@ Biocomputation
 biocytin
 biomimetic
 bioRxiv
+BMTK
 Bongwoori
 bouton
 boutons
@@ -181,6 +182,7 @@ flouxetine
 folia
 folium
 fontawesome
+Friston
 frontend
 furloughed
 GABA
@@ -195,6 +197,7 @@ geppetto
 Geppetto
 GEVI
 Gjorgjieva
+Gleeson
 glia
 glial
 glutamatergic
@@ -216,6 +219,7 @@ Hebbian
 Helisoma
 help
 heterosynaptic
+hindlimb
 hippocampal
 hippocampus
 Hoare
@@ -245,12 +249,15 @@ INCF
 indegree
 infragranular
 INSA
+interarea
 interhemispheric
 intracortical
+invasively
 IO
 ionotropic
 ipsi
 ipsilateral
+IPython
 ischemia
 isoxazole
 Izhikevich
@@ -327,6 +334,7 @@ mGluRs
 minikube
 MNTB
 moby
+Moco
 mommy
 Monodelphis
 monosynaptic
@@ -337,6 +345,10 @@ msmtp
 MSP
 Mukesh
 multiplot
+musculoskeletal
+Musculoskeletal
+musculotendon
+musculus
 mutative
 myelinated
 mysql
@@ -346,7 +358,9 @@ Namit
 Nanaji
 Nananji
 nanomodules
+NDK
 Neomutt
+Neosim
 Nerst
 NetPyNE
 NetworkML
@@ -392,6 +406,7 @@ oligodendricytes
 olivary
 OMV
 OpenConnect
+OpenSim
 opensourcebrain
 opsin
 opsins
@@ -447,6 +462,7 @@ prefrontal
 presubiculum
 Prinz
 priors
+Procrustes
 propionic
 PSD
 PTP
@@ -476,6 +492,7 @@ Rishaan
 Ritesh
 RL
 RNN
+RNNs
 rostral
 rostrocaudal
 RR
@@ -484,6 +501,7 @@ RTD
 saccade
 saccades
 saccadic
+Salva
 sanjay
 saphenous
 SAS
@@ -491,6 +509,7 @@ SBC
 Schaffer
 Sched
 Schuemann
+SciDash
 SciUnit
 scotoma
 Scousers
@@ -500,6 +519,7 @@ sendmail
 Shri
 SIGKDD
 SilverLab
+SimTK
 Sinha
 SLM
 smtp
@@ -571,12 +591,14 @@ tryptamine
 tubulin
 TurnItIn
 UGC
+UKRI
 uncaging
 unlesioned
 V1
 vacuolar
 varicosities
 vasoactive
+Vella
 vergence
 vermis
 VGAT
@@ -603,4 +625,5 @@ zebrafish
 Zebrafish
 Zenke
 Zhang
+Zodbot
 Zoraan
