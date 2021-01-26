@@ -189,6 +189,7 @@ GABA
 GABAergic
 GBC
 GC
+GCaMP6F
 GCs
 GECIs
 geniculocortical
@@ -215,6 +216,7 @@ Gyrus
 halorhodopsin
 Harsha
 Hazaribagh
+HBP
 Hebbian
 Helisoma
 help
@@ -369,6 +371,7 @@ neurites
 neuro
 neuroConstruct
 NeuroConstruct
+NeuroElectro
 NeuroFedora
 neurogranin
 Neurogranin
@@ -509,6 +512,7 @@ SBC
 Schaffer
 Sched
 Schuemann
+Scidash
 SciDash
 SciUnit
 scotoma
@@ -570,6 +574,7 @@ Taskwarrior
 Tata
 TBs
 TD
+tdTomato
 tegmental
 terminaux
 tetrodotoxin

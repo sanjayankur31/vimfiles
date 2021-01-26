@@ -699,3 +699,6 @@ function! SetXmllintSchema ()
     " Return cursor to the saved position
     call setpos('.', saved_cursor_position)
 endfunction
+
+" OSB omt and MEP files are yaml files
+autocmd BufRead,BufNewFile *.omt,*.mep setl filetype=yaml
