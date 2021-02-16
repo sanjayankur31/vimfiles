@@ -465,6 +465,7 @@ let g:ycm_key_list_previous_completion = ['<C-p>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
 
 let g:UltiSnipsUsePythonVersion = 3
+let g:ultisnips_python_style = "sphinx"
 " better key bindings for UltiSnipsExpandTrigger
 " let g:UltiSnipsExpandTrigger = "<tab>"
 " let g:UltiSnipsJumpForwardTrigger = "<tab>"
