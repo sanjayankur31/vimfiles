@@ -481,7 +481,7 @@ let g:LustyJugglerSuppressRubyWarning = 1
 
 " Update post date for rst blog source files
 function! UpdatePostDate()
-    %s/^:date: .*$/\=strftime(":date: %Y-%m-%d %H:%M:%S")/
+    %s/^:modified: .*$/\=strftime(":modified: %Y-%m-%d %H:%M:%S")/
 endfunction
 
 " Some easytag configs
