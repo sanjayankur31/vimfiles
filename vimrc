@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
 
 filetype off
 Plug 'sanjayankur31/hoc.vim'
+Plug 'rbgrouleff/bclose.vim'
 Plug 'sjbach/lusty'
 Plug 'sanjayankur31/nmodl.vim'
 Plug 'scrooloose/syntastic'
