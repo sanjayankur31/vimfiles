@@ -88,6 +88,7 @@ Cisco
 Clopath
 CN
 colliculus
+connectome
 Connectomics
 convulsants
 Copelli
@@ -181,6 +182,7 @@ FlicR1
 floccular
 flocculonodular
 flouxetine
+fMRI
 folia
 folium
 fontawesome
@@ -303,6 +305,8 @@ LDS
 LEMS
 LGN
 LHSP
+libneuroml
+libNeuroML
 localhost
 lpz
 LPZ
@@ -326,7 +330,9 @@ Mausaji's
 mausi
 maven
 Maven
+Memberclicks
 Merzenich
+mesoscopic
 metabotropic
 Metacell
 MetaCell
@@ -378,6 +384,7 @@ NeuroElectro
 NeuroFedora
 neurogranin
 Neurogranin
+neurolib
 neuroml
 NeuroML
 NeuroMLlite
@@ -433,6 +440,7 @@ Papez
 Parabrachial
 parameterized
 parasaggital
+parasagittal
 parasubiculum
 parvalbumin
 passant
@@ -473,8 +481,10 @@ propionic
 PSD
 PTP
 Purkinje
+PV
 Pvalb
 PyLEMS
+PyNeuroML
 Qantas
 Qutebrowser
 Rachel
@@ -504,6 +514,8 @@ rostrocaudal
 RR
 rst
 RTD
+S1
+S2
 saccade
 saccades
 saccadic
@@ -523,6 +535,7 @@ Scousers
 SELinux
 SEM
 sendmail
+sensorymotor
 Shri
 SIGKDD
 SilverLab
@@ -614,6 +627,7 @@ vermis
 VGAT
 VGCC
 VGlut1
+Vinings
 Visuo
 vivo
 Vogels
