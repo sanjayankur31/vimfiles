@@ -718,3 +718,7 @@ endfunction
 
 " OSB omt and MEP files are yaml files
 autocmd BufRead,BufNewFile *.omt,*.mep setl filetype=yaml
+
+" For vista
+" Otherwise the vista list is outdated
+let g:vista_update_on_text_changed = 0
