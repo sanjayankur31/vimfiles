@@ -429,8 +429,22 @@ autocmd BufRead,BufNewFile *.hoc,*.oc set filetype=hoc
 autocmd BufRead,BufNewFile *.mod set filetype=nmodl
 
 " Modelines for files
-set modeline
 set modelines=4
+set nomodeline
+" Allow toggling so that these aren't run automatically, which is a security issue
+" https://security.stackexchange.com/questions/36001/vim-modeline-vulnerabilities etc.
+" From https://www.gilesorr.com/blog/vim-tips-22-modelines.html
+nnoremap <leader>ml :setlocal invmodeline <bar> doautocmd BufRead<cr>
+" From https://vim.fandom.com/wiki/Modeline_magic
+" Append modeline after last line in buffer.
+" Use substitute() instead of printf() to handle '%%s' modeline in LaTeX
+" files.
+function! AppendModeline()
+  let l:modeline = printf(" vim: set ts=%d sw=%d tw=%d %set :",
+        \ &tabstop, &shiftwidth, &textwidth, &expandtab ? '' : 'no')
+  let l:modeline = substitute(&commentstring, "%s", l:modeline, "")
+  call append(line("$"), l:modeline)
+endfunction
 
 " NERDCommenter
 "" Add spaces after comment delimiters by default
