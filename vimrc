@@ -95,6 +95,7 @@ Plug 'Konfekt/vim-sentence-chopper'
 Plug 'Konfekt/vim-unicode-homoglyphs'
 " DrawIt for ascii drawings
 Plug 'vim-scripts/DrawIt'
+Plug 'vim-scripts/TaskList.vim'
 call plug#end()
 
 " dirsettings
