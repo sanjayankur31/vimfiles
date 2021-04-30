@@ -55,10 +55,15 @@ Plug 'sanjayankur31/sli.vim'
 Plug 'szw/vim-dict'
 Plug 'sanjayankur31/vim-extra-ultisnips'
 Plug 'tpope/vim-repeat'
+
 " http://www.dotnetsurfers.com/blog/2016/02/08/using-vim-as-a-javascript-ide/
 " https://oli.me.uk/2013/06/29/equipping-vim-for-javascript/
 Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
+" Not required because Polyglot already includes vim-jsx-pretty
+" Plug 'yuezk/vim-js'
+" Plug 'maxmellon/vim-jsx-pretty'
+
 " Requires the server to be installed. Install in the pelican virtual-env:
 " pip install https://github.com/gu-fan/instant-rst.py/archive/master.zip --upgrade
 " Upstream needs to merge a PR, so use this until that is done
