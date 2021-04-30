@@ -479,18 +479,20 @@ nnoremap <leader>bd :bd<CR>
 nnoremap <Leader>bc :bp\|bd #<CR>
 
 
+let g:ycm_use_ultisnips_completer = 1
 " make YCM compatible with UltiSnips (using supertab)
-let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_key_list_select_completion = ['<C-n>']
-let g:ycm_key_list_previous_completion = ['<C-p>']
+" https://stackoverflow.com/a/22253548/375067
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 let g:UltiSnipsUsePythonVersion = 3
 let g:ultisnips_python_style = "sphinx"
-" better key bindings for UltiSnipsExpandTrigger
-" let g:UltiSnipsExpandTrigger = "<tab>"
-" let g:UltiSnipsJumpForwardTrigger = "<tab>"
-" let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 
 " Permit per project vimrc customisations
