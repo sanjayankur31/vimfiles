@@ -475,12 +475,15 @@ let g:indentLine_concealcursor = 'nc'
 " Lustyjuggler
 let g:LustyJugglerDefaultMappings = 0
 nnoremap <Leader>ljb :LustyJuggler<CR>
+nnoremap <Leader>ljbe :LustyBufferExplorer<CR>
+
 
 " For buffers
 nnoremap <Leader>bn :bn<CR>
 nnoremap <Leader>bp :bp<CR>
 nnoremap <leader>bd :bd<CR>
 nnoremap <Leader>bc :bp\|bd #<CR>
+nnoremap <leader>b :ls<cr>:b<space>
 
 
 let g:ycm_use_ultisnips_completer = 1
