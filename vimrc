@@ -101,6 +101,10 @@ Plug 'Konfekt/vim-unicode-homoglyphs'
 " DrawIt for ascii drawings
 Plug 'vim-scripts/DrawIt'
 Plug 'vim-scripts/TaskList.vim'
+" To automatically change directory
+Plug 'airblade/vim-rooter'
+" Highlight CSS colours: useful for css editing
+Plug 'ap/vim-css-color'
 call plug#end()
 
 " dirsettings
@@ -743,3 +747,13 @@ let g:vista_update_on_text_changed = 0
 " seem to happen.
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
+
+" For rooter (currently using defaults)
+let g:rooter_pattern = ['.git', '_darcs', '.hg', '.bzr', '.svn', 'Makefile']
+
+" Set default font for GVim, since it does not pick up the value from the
+" terminal
+" Reference: https://stackoverflow.com/questions/16882696/settings-default-font-in-gvim
+if has("gui_running")
+  set guifont=Anka/Coder Condensed\, Semi-Condensed 16
+endif
