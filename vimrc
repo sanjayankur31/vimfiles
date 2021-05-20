@@ -122,7 +122,7 @@ syntax on
 set laststatus=2
 
 " set some context
-set scrolloff=1
+set scrolloff=2
 
 " enable increamental search
 set incsearch
