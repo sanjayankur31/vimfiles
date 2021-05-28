@@ -758,5 +758,5 @@ let g:rooter_pattern = ['.git', '_darcs', '.hg', '.bzr', '.svn', 'Makefile']
 " terminal
 " Reference: https://stackoverflow.com/questions/16882696/settings-default-font-in-gvim
 if has("gui_running")
-  set guifont=Anka/Coder Condensed\, Semi-Condensed 16
+  set guifont=Anka/Coder\ Condensed\\,\ Semi-Condensed\ 16
 endif
