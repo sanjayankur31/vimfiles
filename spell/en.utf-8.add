@@ -85,6 +85,7 @@ ChannelML
 channelrhodopsin
 ChR2
 Cisco
+cleveref
 Clopath
 CN
 colliculus
@@ -140,6 +141,7 @@ DRL
 DRN
 dysregulated
 dysrhythmia
+ecore
 EDLDS
 EE
 efference
@@ -148,6 +150,7 @@ eigen
 eigenspace
 ELFN2
 eLife
+Elijah's
 emboliform
 EMG
 endocytosis
@@ -193,6 +196,7 @@ frontend
 furloughed
 GABA
 GABAergic
+Gaviscon
 GBC
 GC
 GCaMP6F
@@ -213,6 +217,7 @@ gmail
 gnuplot
 Gogolla
 Golgi
+Goodreads
 GSoC
 GTP
 GTPase
@@ -274,6 +279,7 @@ Izhikevich
 JabRef
 Jamsetji
 Jaya
+JDT
 jLEMS
 jNeuroML
 jnml
@@ -340,6 +346,7 @@ mesoscopic
 metabotropic
 Metacell
 MetaCell
+metaclass
 metaplasticity
 Metzner
 mGluR
@@ -373,6 +380,7 @@ Namit
 Nanaji
 Nananji
 nanomodules
+#nconceivable
 NDK
 Neomutt
 Neosim
@@ -489,6 +497,8 @@ PTP
 Purkinje
 PV
 Pvalb
+pyecore
+Pygeppetto
 PyLEMS
 pyNeuroML
 PyNeuroML
@@ -530,6 +540,7 @@ saccade
 saccades
 saccadic
 Salva
+Samaiyaar
 sanjay
 saphenous
 SAS
@@ -546,6 +557,7 @@ SELinux
 SEM
 sendmail
 sensorymotor
+Sheesh
 Shri
 SIGKDD
 SilverLab
@@ -656,6 +668,7 @@ Wodeyar
 xmllint
 XSD
 yaml
+YCM
 younglings
 Zaphod
 zebrafish
