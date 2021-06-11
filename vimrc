@@ -383,7 +383,9 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
+" NOTE: KEEP DISABLED
+" When set to 1, causes errors with ultisnips and ycm
+let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_cpp_auto_refresh_includes = 0
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
