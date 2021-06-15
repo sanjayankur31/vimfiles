@@ -732,3 +732,8 @@ let g:rooter_pattern = ['.git', '_darcs', '.hg', '.bzr', '.svn', 'Makefile']
 if has("gui_running")
   set guifont=Anka/Coder\ Condensed\\,\ Semi-Condensed\ 16
 endif
+
+" Add new line without entering insert mode
+" https://stackoverflow.com/questions/16134457/insert-a-newline-without-entering-in-insert-mode-vim
+nmap oo o<Esc>k
+nmap OO O<Esc>j
