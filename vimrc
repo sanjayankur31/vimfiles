@@ -710,6 +710,7 @@ autocmd BufRead,BufNewFile *.omt,*.mep setl filetype=yaml
 " For vista
 " Otherwise the vista list is outdated
 let g:vista_update_on_text_changed = 0
+let g:vista_default_executive = 'ctags'
 
 " For C/CPP to run make from vim
 " Reference: https://vim.fandom.com/wiki/Automatically_open_the_quickfix_window_on_:make
