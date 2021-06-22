@@ -350,6 +350,8 @@ command! GetTagList :read !grep -o -h '^:tags:.*' content/*rst  | sed 's/:tags: 
 
 " Ale
 let g:airline#extensions#ale#enabled = 1
+" Not when opening files: sometimes we just want to read them
+let g:ale_lint_on_enter = 0
 
 let g:table_mode_corner_corner="+"
 let g:table_mode_header_fillchar="="
