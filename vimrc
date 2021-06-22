@@ -13,7 +13,7 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'sjbach/lusty'
 Plug 'sanjayankur31/nmodl.vim'
 Plug 'alkino/vim-mod-syntax'
-Plug 'scrooloose/syntastic'
+Plug 'dense-analysis/ale'
 Plug 'bling/vim-airline'
 Plug 'lifepillar/vim-solarized8'
 " Git
@@ -348,43 +348,8 @@ let g:sh_fold_enabled = 1
 command! GetCategoryList :read !grep -o -h '^:category:.*' content/*rst  | sed 's/:category: //' | tr ',' '\n' | sed 's/^[[:space:]]*//' | sort | uniq | sed '/^[[:space:]]*$/ d' | tr '\n' ',' | sed 's/,/, /g' | sed 's/,[[:space:]]*$//'
 command! GetTagList :read !grep -o -h '^:tags:.*' content/*rst  | sed 's/:tags: //' | tr ',' '\n' | sed 's/^[[:space:]]*//' | sort | uniq | sed '/^[[:space:]]*$/ d' | tr '\n' ',' | sed 's/,/, /g' | sed 's/,[[:space:]]*$//'
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-" NOTE: KEEP DISABLED
-" When set to 1, causes errors with ultisnips and ycm
-let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_cpp_auto_refresh_includes = 0
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_cpp_no_default_include_dirs = 1
-let g:syntastic_cpp_remove_include_errors = 1
-let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_no_include_search = 1
-let g:syntastic_cpp_checkers = ['gcc', 'clang_check', 'cppcheck']
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_cpp_config_file = '.syntastic_cpp_config'
-let g:syntastic_mode_map = {
-            \ "mode": "passive",
-            \ "passive_filetypes": ["cpp", "c", "javascript"],
-            \ "active_filetypes": ["tex", "python", "sh", "spec", "rst", "xml"]
-            \ }
-let g:syntastic_tex_checkers = ['chktex']
-let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_python_flake8_exec = "flake8-3"
-let g:syntastic_python_flake8_quiet_messages = {
-            \ "level": [],
-            \ "type": [],
-            \ }
-let g:syntastic_rst_checkers = ['rstcheck']
-let g:syntastic_rst_rstcheck_exec = "rstcheck"
-let g:syntastic_perl_checkers = ['perlcritic']
-let g:syntastic_ignore_files = ['texlive.spec']
-let g:syntastic_javascript_checkers = ['closurecompiler']
-let g:syntastic_javascript_closurecompiler_script = 'closure-compiler'
+" Ale
+let g:airline#extensions#ale#enabled = 1
 
 let g:table_mode_corner_corner="+"
 let g:table_mode_header_fillchar="="
@@ -656,7 +621,6 @@ augroup END
 
 " Set neuroml files to xml
 autocmd BufRead,BufNewFile *.nml setl filetype=xml
-let g:syntastic_xml_checkers = ['xmllint']
 " Set schema for xmllint
 autocmd BufRead,BufNewFile *.xml,*.nml call SetXmllintSchema()
 
@@ -684,7 +648,7 @@ function! SetXmllintSchema ()
         let l:schemaline = getline(schemaloc)
         let l:xsdfile = matchstr(schemaline, '\C/NeuroML_.*.xsd')
         let l:xsdfull = NeuroMLSchemaDir . xsdfile
-        let g:syntastic_xml_xmllint_args = "--schema ". xsdfull
+        let g:ale_xml_xmllint_options = "--schema ". xsdfull
     endif
     " LEMS
     " Set cursor to file start
@@ -697,7 +661,7 @@ function! SetXmllintSchema ()
         let l:schemaline = getline(schemaloc)
         let l:xsdfile = matchstr(schemaline, '\C/LEMS_.*.xsd')
         let l:xsdfull = LEMSSchemaDir . xsdfile
-        let g:syntastic_xml_xmllint_args = "--schema ". xsdfull
+        let g:ale_xml_xmllint_options = "--schema ". xsdfull
     endif
 
     " Return cursor to the saved position
