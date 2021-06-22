@@ -534,7 +534,7 @@ let g:instant_rst_slow = 1
 
 " ignore these file types completely
 " LaTeX temporary files
-set wildignore+=*.aux,*.bbl,*.bcf,*.blg,*.fls,*.idx,*.ilg,*.ind,*.log,*.out,*.run.xml,*synctex.gz,*.fdb_latexmk,*.nav,*.snm,*.toc,*.vrb,*.cut,*.lo,*.brf
+autocmd FileType tex set wildignore+=*.log,*.aux,*.bbl,*.bcf,*.blg,*.fls,*.idx,*.ilg,*.ind,*.out,*.run.xml,*synctex.gz,*.fdb_latexmk,*.nav,*.snm,*.toc,*.vrb,*.cut,*.lo,*.brf
 
 " set relative numbers for use with numbertoggle
 set number relativenumber
