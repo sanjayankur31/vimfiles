@@ -507,8 +507,8 @@ autocmd FileType tex set wildignore+=*.log,*.aux,*.bbl,*.bcf,*.blg,*.fls,*.idx,*
 set number relativenumber
 
 " Use silver searcher instead of ack
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
+if executable('rg')
+  let g:ackprg = 'rg --vimgrep'
 endif
 
 " Open browser plugin
