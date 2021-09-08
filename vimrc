@@ -397,8 +397,8 @@ function! AppendModeline()
 endfunction
 
 " NERDCommenter
-"" Add spaces after comment delimiters by default
-let g:NERDSpaceDelims = 1
+" Do not add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 0
 " Use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
 " Allow commenting and inverting empty lines (useful when commenting a region)
@@ -407,6 +407,8 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 " Ignore temporary files
 let NERDTreeIgnore = ['\.pyc$', '\.aux$', '\.bbl$', '\.blg', '\.brf$', '\.out$', '\.fls$']
+" Align comments to left
+let NERDDefaultAlign="left"
 
 let g:indentLine_setColors = 0
 " Do not conceal in insert mode
