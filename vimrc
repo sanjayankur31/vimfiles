@@ -133,7 +133,7 @@ set hidden
 
 " Enable conceal
 set conceallevel=2
-set concealcursor=nc
+set concealcursor=c
 
 " Abbreviations
 ab inout input
@@ -410,7 +410,7 @@ let NERDTreeIgnore = ['\.pyc$', '\.aux$', '\.bbl$', '\.blg', '\.brf$', '\.out$',
 
 let g:indentLine_setColors = 0
 " Do not conceal in insert mode
-let g:indentLine_concealcursor = 'nc'
+let g:indentLine_concealcursor = 'c'
 
 " Lustyjuggler
 let g:LustyJugglerDefaultMappings = 0
