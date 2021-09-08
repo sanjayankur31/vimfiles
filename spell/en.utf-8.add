@@ -15,6 +15,7 @@ allothetic
 ALM
 alveus
 AMPA
+AMPAR
 Ankit
 ankur
 Ankur
@@ -22,6 +23,7 @@ ANNs
 Antora
 apodictic
 apposed
+Appukuttan
 APs
 arbor
 Arborization
@@ -50,6 +52,7 @@ AWS
 BAC
 BDNF
 BeRST1
+Bezaire
 Bhabha
 bhabhi
 bhaiya
@@ -72,6 +75,7 @@ CA1
 CA3
 callosotomy
 calmodulin
+calpain
 CaMKII
 CaMKIV
 Casellato
@@ -89,19 +93,23 @@ cleveref
 Clinilab
 Clopath
 CN
+Colaboratory
 colliculus
 connectome
 Connectomics
 convulsants
 Copelli
 COPR
+Coqfighter
 CORS
 cortico
 corticocerebellar
+Corticofugal
 corticopontine
 corticothalamic
 Corticothalamic
 cortio
+Covasim
 COVID
 Cowan
 Cre
@@ -109,6 +117,7 @@ Curzon
 cytoarchitectural
 Cytosol
 D3D
+Dadaji
 Dandi
 DCN
 deafferent
@@ -124,7 +133,9 @@ dentate
 Dentate
 devel
 DG
+Dhanbad
 didi
+Dimitris
 dirac
 disinhibition
 DM
@@ -132,6 +143,7 @@ DMD
 dMEC
 DMFC
 dnf
+DNNs
 Dockerfile
 domestica
 dopaminergic
@@ -142,6 +154,7 @@ DRL
 DRN
 dysregulated
 dysrhythmia
+EAAT4
 ecore
 EDLDS
 EE
@@ -156,6 +169,7 @@ emboliform
 EMG
 endocytosis
 eNpHR
+enquote
 ensheathe
 entorhinal
 EPBs
@@ -182,6 +196,7 @@ fibronectin
 Filippo
 Fillippo
 Firewalld
+flake8
 Flake8
 Fleur
 Fleur's
@@ -204,6 +219,7 @@ GC
 GCaMP6F
 GCs
 GECIs
+generateDS
 geniculocortical
 gephyrin
 geppetto
@@ -213,6 +229,8 @@ Gjorgjieva
 Gleeson
 glia
 glial
+globus
+Globus
 glutamatergic
 glycinegic
 gmail
@@ -226,6 +244,8 @@ GTPase
 Guassian
 gyrus
 Gyrus
+Habenula
+hacky
 halorhodopsin
 Harsha
 Harsha's
@@ -245,6 +265,7 @@ homeostasis
 homeostatic
 Homi
 homoeostatically
+homoglyphs
 hostname
 Hotmail
 HPF
@@ -252,6 +273,7 @@ Hrm
 HT
 hydroxy
 hyperexcitable
+Hyperkitty
 hyperoxia
 hyperpolarizing
 I18N
@@ -276,6 +298,7 @@ ipsi
 ipsilateral
 IPython
 ischemia
+ISI
 isoxazole
 Izhikevich
 JabRef
@@ -297,6 +320,8 @@ Kanban
 Kandel
 Kandel's
 KDD
+Ketamine
+Ketki
 kickstart
 kinesin
 kinesthetic
@@ -310,8 +335,10 @@ L1
 L5
 L5a
 L5b
+lacunosum
 lamellipodium
 laminin
+Laplacian
 LC
 LCoS
 LDS
@@ -320,6 +347,7 @@ LGN
 LHSP
 libneuroml
 libNeuroML
+Litwin
 localhost
 lpz
 LPZ
@@ -336,6 +364,7 @@ Manish
 Marder
 Marr
 MatLab
+matplotlib
 Matteo
 Mauro
 mausaji
@@ -343,6 +372,7 @@ Mausaji's
 mausi
 maven
 Maven
+MEC
 Memberclicks
 Merzenich
 mesoscopic
@@ -356,10 +386,13 @@ mGluR
 mGluR2
 mGluR7
 mGluRs
+micturition
 minikube
+Mirian
 MNTB
 moby
 Moco
+moleculare
 mommy
 Monodelphis
 monosynaptic
@@ -370,6 +403,7 @@ msmtp
 MSP
 Mukesh
 multiplot
+mumma
 musculoskeletal
 Musculoskeletal
 musculotendon
@@ -385,6 +419,7 @@ Nananji
 nanomodules
 #nconceivable
 NDK
+Negrello
 Neomutt
 Neosim
 Nerst
@@ -399,6 +434,8 @@ NeuroElectro
 NeuroFedora
 neurogranin
 Neurogranin
+neuroinformatics
+Neuroinformatics
 neurolib
 neuroml
 NeuroML
@@ -422,6 +459,7 @@ npm
 NTC
 NullPointerException
 nullspace
+numpy
 Nusserwanji
 NWB
 NWBE
@@ -438,6 +476,7 @@ OMV
 OpenConnect
 OpenSim
 opensourcebrain
+OpenSourceBrain
 opsin
 opsins
 optogenetic
@@ -452,6 +491,7 @@ Ostojic
 outdegree
 Padshah
 Pagure
+pallidus
 palmar
 Papez
 Parabrachial
@@ -470,6 +510,8 @@ peri
 perisomatic
 peroxidation
 peroxisomes
+Petascale
+Petrut
 photoinhibition
 piriform
 PKA
@@ -491,6 +533,7 @@ PR2
 pranayaam
 precentral
 prefrontal
+Premotor/!
 presubiculum
 Prinz
 priors
@@ -508,9 +551,11 @@ pyNeuroML
 PyNeuroML
 Qantas
 Qutebrowser
+Raam
 Rachel
 Rachel's
 raphe
+Rasima
 RCaMP
 React's
 readthedocs
@@ -521,6 +566,8 @@ reconsolidation
 Redish
 redmine
 redux
+#remotor
+representability
 reStructuredText
 Reticulata
 retinotopic
@@ -533,6 +580,7 @@ Ritesh
 RL
 RNN
 RNNs
+Ronak
 rostral
 rostrocaudal
 RR
@@ -561,8 +609,11 @@ SELinux
 SEM
 sendmail
 sensorymotor
+Shailesh
 Sharma
 Sheesh
+Sheryll
+shite
 Shri
 SIGKDD
 SilverLab
@@ -578,6 +629,7 @@ somatostatin
 spatiotemporal
 spatiotemporally
 spec
+SpiNNaker
 spinocerebellar
 spinocerebellum
 spinogenesis
@@ -598,6 +650,7 @@ STP
 striatal
 striatum
 STVs
+subiculum
 subserve
 substantia
 subsynaptic
@@ -615,12 +668,15 @@ synaptogenic
 Syncthing
 Syntastic
 taskserver
+taskwarrior
 Taskwarrior
 Tata
 TBs
 TD
+tDCS
 tdTomato
 tegmental
+tele
 terminaux
 tetrodotoxin
 thalamic
@@ -653,6 +709,7 @@ varicosities
 vasoactive
 Vella
 vergence
+Verma
 vermis
 VGAT
 VGCC
@@ -668,6 +725,7 @@ Webpack
 Weechat
 Weisel
 Wellcome
+Whatsapp
 wikipedia
 Willshaw
 Wodeyar
@@ -675,6 +733,7 @@ xmllint
 XSD
 yaml
 YCM
+yeh
 younglings
 Zaphod
 zebrafish
