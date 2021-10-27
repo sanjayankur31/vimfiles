@@ -178,10 +178,10 @@ set smartcase
 autocmd FileType python,cpp,c,sh,sli setl textwidth=79
 
 " latex stuff
-set grepprg="grep\ -nH\ $*"
+set grepprg="rg\ -nH\ $*"
 let g:tex_flavor='latex'
 " indentation for tex files
-autocmd BufRead,BufNewFile *.sty setl filetype=tex
+autocmd BufRead,BufNewFile *.sty *.eps_tex setl filetype=tex
 autocmd FileType tex setl sw=2
 autocmd FileType tex setl tabstop=2
 autocmd FileType tex setl softtabstop=2
@@ -242,7 +242,8 @@ let g:vimtex_view_general_viewer = "zathura"
 " Folding in C,CPP files
 autocmd FileType c,cpp setl foldenable foldmethod=syntax
 " Folding in javascript
-autocmd FileType js,javascript setl foldenable foldmethod=syntax
+" tab width (docs seem to use 2 spaces, so lets follow that)
+autocmd FileType js,javascript setl foldenable foldmethod=syntax tabstop=2 shiftwidth=2 et
 
 " This is for vertical indenting
 set list
