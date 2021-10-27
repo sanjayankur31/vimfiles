@@ -254,8 +254,6 @@ set listchars=tab:\|\ ,trail:-,eol:$
 " Different file comment templates
 " Python
 autocmd BufNewFile *.py 0r ~/.vim/file-templates/py.vim
-" Fedora review
-autocmd BufNewFile *.fedreview 0r ~/.vim/file-templates/fedreview.vim
 " GNUPlot
 autocmd BufNewFile,BufRead *.plt,.gnuplot setf gnuplot
 autocmd BufNewFile *.plt,.gnuplot 0r ~/.vim/file-templates/gnuplot.vim
