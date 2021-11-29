@@ -13,6 +13,7 @@ Alessandro
 Alessandro's
 allothetic
 ALM
+Alt
 alveus
 AMPA
 AMPAR
@@ -97,6 +98,7 @@ Clopath
 CN
 Colaboratory
 colliculus
+ComponentTypes
 connectome
 Connectomics
 convulsants
@@ -114,7 +116,9 @@ cortio
 Covasim
 COVID
 Cowan
+Coyle
 Cre
+Ctrl
 Curzon
 cytoarchitectural
 Cytosol
@@ -136,6 +140,7 @@ Dentate
 devel
 DG
 Dhanbad
+Diccon
 didi
 Dimitris
 dirac
@@ -210,6 +215,7 @@ fMRI
 folia
 folium
 fontawesome
+FORCE11
 Friston
 frontend
 furloughed
@@ -234,6 +240,7 @@ glia
 glial
 globus
 Globus
+Glomb
 glutamatergic
 glycinegic
 gmail
@@ -245,6 +252,7 @@ GSoC
 GTP
 GTPase
 Guassian
+Guillermo
 gyrus
 Gyrus
 Habenula
@@ -285,6 +293,7 @@ idiothetic
 IE
 iGlu
 IISc
+ImageJ
 immunofluorescence
 INAE
 INCF
@@ -316,13 +325,16 @@ jPCA
 JS
 json
 JSON
+Juliane
 Julijana
 Jupyter
+JupyterLab
 JVM
 kainate
 Kanban
 Kandel
 Kandel's
+Katharina
 KDD
 Ketamine
 Ketki
@@ -343,6 +355,7 @@ L5b
 lacunosum
 lamellipodium
 laminin
+lansoprazole
 Laplacian
 LC
 LCoS
@@ -430,6 +443,7 @@ Neosim
 Nerst
 NetPyNE
 NetworkML
+NeuralEnsemble
 neurite
 neurites
 neuro
@@ -445,6 +459,8 @@ neurolib
 neuroml
 NeuroML
 NeuroMLlite
+NeuroMLLite
+NeuroMLv2
 neuromodulatory
 neuromorphic
 neuropil
@@ -453,6 +469,7 @@ neurotrophins
 newsboat
 Newsboat
 nigra
+NineML
 NMDA
 NMDAR
 NMDARs
@@ -494,6 +511,7 @@ OSBv1
 OSBv2
 Ostojic
 outdegree
+Outreachy
 Padshah
 Pagure
 pallidus
@@ -554,6 +572,7 @@ Pygeppetto
 PyLEMS
 pyNeuroML
 PyNeuroML
+PyNN
 Qantas
 Qutebrowser
 Raam
@@ -588,6 +607,7 @@ RNNs
 Ronak
 rostral
 rostrocaudal
+roti
 RR
 rst
 RTD
@@ -627,6 +647,7 @@ Sinha
 SLM
 SMA
 smtp
+Snakemake
 SNNs
 snr
 somata
@@ -634,6 +655,7 @@ somatostatin
 spatiotemporal
 spatiotemporally
 spec
+SpineML
 SpiNNaker
 spinocerebellar
 spinocerebellum
@@ -667,6 +689,7 @@ Sussillo
 SVG
 Svoboda's
 Swarnajayanti
+SynapseJ
 synaptically
 synaptogenesis
 synaptogenic
@@ -734,6 +757,7 @@ Whatsapp
 wikipedia
 Willshaw
 Wodeyar
+X11
 xmllint
 XSD
 yaml
