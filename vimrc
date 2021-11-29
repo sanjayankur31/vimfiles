@@ -80,8 +80,6 @@ Plug 'mileszs/ack.vim'
 Plug 'tyru/open-browser.vim'
 " Taskjuggler
 Plug 'sigmike/vim-taskjuggler'
-" man pages using vim plugin when available
-Plug 'jez/vim-superman'
 " Media wiki syntax highlight
 Plug 'chikamichi/mediawiki.vim'
 " For ledger
@@ -527,7 +525,8 @@ runtime ftplugin/man.vim
 " Use this for shift K
 set keywordprg=:Man
 " Make it cleaner
-autocmd FileType man setlocal nomod nolist noexpandtab tabstop=8 softtabstop=8 shiftwidth=8
+autocmd FileType man setlocal nomod nolist noexpandtab tabstop=8 softtabstop=8 shiftwidth=8 nonu noma noswapfile colorcolumn=0
+autocmd FileType man IndentLinesDisable
 
 " Fedora antora rebuild
 augroup fedora_docs
