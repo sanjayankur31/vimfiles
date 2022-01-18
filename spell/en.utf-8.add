@@ -98,6 +98,7 @@ Clopath
 CN
 Colaboratory
 colliculus
+CompNeuro
 ComponentTypes
 connectome
 Connectomics
@@ -152,6 +153,7 @@ DMFC
 dnf
 DNNs
 Dockerfile
+DOI
 domestica
 dopaminergic
 dorsocaudal
@@ -343,6 +345,7 @@ kickstart
 kinesin
 kinesthetic
 Kolkata
+Koschei
 Koyla
 Krishnaraja
 Kubectl
@@ -550,11 +553,14 @@ Podman
 Poisson
 pomodoros
 pontine
+ponto
 Pos6
 positus
+postrhinal
 postsubicular
 postsubiculum
 potentiation
+Pottermore
 PR2
 pranayaam
 precentral
@@ -571,11 +577,13 @@ Purkinje
 PV
 Pvalb
 pyecore
+PyElectro
 Pygeppetto
 PyLEMS
 pyNeuroML
 PyNeuroML
 PyNN
+PyNWB
 Qantas
 Qutebrowser
 Raam
@@ -615,6 +623,7 @@ rotis
 RR
 rst
 RTD
+rTMS
 S1
 S2
 saccade
@@ -648,12 +657,14 @@ SIGKDD
 SilverLab
 SimTK
 Sinha
+Skaffold
 SLM
 SMA
 smtp
 Snakemake
 SNNs
 snr
+SOAS
 somata
 somatostatin
 spatiotemporal
@@ -752,6 +763,7 @@ vivo
 Vogels
 VOR
 VSFP
+VWM
 Waitrose
 Webpack
 Weechat
@@ -772,6 +784,7 @@ Zaphod
 zebrafish
 Zebrafish
 Zenke
+Zenodo
 Zhang
 Zodbot
 Zoraan
