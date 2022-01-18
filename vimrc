@@ -559,6 +559,8 @@ if exists('g:ycm_filetype_blacklist')
 endif
 let g:ledger_bin = 'ledger'
 let g:ledger_date_format = '%m-%d'
+au FileType ledger nnoremap <Leader>= :call ledger#align_commodity()<CR>
+au FileType ledger vnoremap <Leader>= :call ledger#align_commodity()<CR>
 
 
 " Add syntax for Cref and cref from cleverref
