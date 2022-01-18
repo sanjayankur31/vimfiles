@@ -241,7 +241,7 @@ let g:vimtex_view_general_viewer = "zathura"
 autocmd FileType c,cpp setl foldenable foldmethod=syntax
 " Folding in javascript
 " tab width (docs seem to use 2 spaces, so lets follow that)
-autocmd FileType js,javascript setl foldenable foldmethod=syntax tabstop=2 shiftwidth=2 et
+autocmd FileType js,javascript,typescriptreact setl foldenable foldmethod=syntax tabstop=2 shiftwidth=2 et
 
 " This is for vertical indenting
 set list
@@ -349,6 +349,10 @@ command! GetTagList :read !grep -o -h '^:tags:.*' content/*rst  | sed 's/:tags: 
 let g:airline#extensions#ale#enabled = 1
 " Not when opening files: sometimes we just want to read them
 let g:ale_lint_on_enter = 0
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\   'typescriptreact': ['eslint'],
+\}
 
 let g:table_mode_corner_corner="+"
 let g:table_mode_header_fillchar="="
