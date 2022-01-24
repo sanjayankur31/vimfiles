@@ -172,8 +172,8 @@ set ignorecase
 set smartcase
 
 " Line length above which to break a line
-" Don't break for text writing: TeX, md, rst
-autocmd FileType python,cpp,c,sh,sli setl textwidth=79
+" Don't break for text writing: TeX, md, rst, sh
+autocmd FileType python,cpp,c,sli setl textwidth=79
 
 " latex stuff
 set grepprg="rg\ -nH\ $*"
