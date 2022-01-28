@@ -236,6 +236,17 @@ let g:vimtex_toc_config = {
 
 let g:vimtex_view_method = "zathura"
 let g:vimtex_view_general_viewer = "zathura"
+let g:vimtex_include_search_enabled = 0
+let g:vimtex_syntax_custom_cmds = [
+            \{
+                \ 'name': 'href',
+                \ 'argspell': 0
+            \},
+            \{
+                \ 'name': 'url',
+                \ 'argspell': 0
+            \},
+            \]
 
 " Folding in C,CPP files
 autocmd FileType c,cpp setl foldenable foldmethod=syntax
