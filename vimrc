@@ -722,3 +722,18 @@ endif
 " https://stackoverflow.com/questions/16134457/insert-a-newline-without-entering-in-insert-mode-vim
 nmap oo o<Esc>k
 nmap OO O<Esc>j
+
+" https://github.com/preservim/tagbar/wiki#typescript
+let g:tagbar_type_typescript = {
+  \ 'ctagstype': 'typescript',
+  \ 'kinds': [
+    \ 'c:classes',
+    \ 'n:modules',
+    \ 'f:functions',
+    \ 'v:variables',
+    \ 'v:varlambdas',
+    \ 'm:members',
+    \ 'i:interfaces',
+    \ 'e:enums',
+  \ ]
+\ }
