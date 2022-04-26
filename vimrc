@@ -343,6 +343,12 @@ let g:ycm_server_python_interpreter = 'python3'
 let g:ycm_python_binary_path = 'python3'
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 
+nmap <leader>ygw <Plug>(YCMFindSymbolInWorkspace)
+nmap <leader>ygh <Plug>(YCMFindSymbolInDocument)
+nmap <leader>ygd :YcmCompleter GoToDeclaration<CR>
+nmap <leader>ygf :YcmCompleter GoToDefinition<CR>
+nmap <leader>yge :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 " Vim airline show buffers
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = '>'
