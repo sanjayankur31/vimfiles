@@ -243,6 +243,10 @@ let g:vimtex_syntax_custom_cmds = [
                 \ 'argspell': 0
             \},
             \{
+                \ 'name': 'fullcite',
+                \ 'argspell': 0
+            \},
+            \{
                 \ 'name': 'url',
                 \ 'argspell': 0
             \},
