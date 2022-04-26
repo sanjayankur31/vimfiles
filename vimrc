@@ -368,8 +368,13 @@ command! GetTagList :read !grep -o -h '^:tags:.*' content/*rst  | sed 's/:tags: 
 
 " Ale
 let g:airline#extensions#ale#enabled = 1
+" Not when text saved, it's disruptive
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
 " Not when opening files: sometimes we just want to read them
 let g:ale_lint_on_enter = 0
+" Only when I save
+let g:ale_lint_on_save = 1
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \   'typescriptreact': ['eslint'],
