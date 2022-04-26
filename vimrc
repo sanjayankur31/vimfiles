@@ -546,8 +546,14 @@ nmap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
 let g:openbrowser_default_search = "ddg"
 let g:openbrowser_search_engines = {
-            \ 'ddg': 'http://duckduckgo.com/?q={query}',
-            \ 'github': 'http://github.com/search?q={query}',
+            \ 'ddg': 'https://duckduckgo.com/?q={query}',
+            \ 'github': 'https://github.com/search?q={query}',
+            \ 'askfedora': 'https://ask.fedoraproject.org/search?q={query}',
+            \ 'fedorapackages': 'https://packages.fedoraproject.org/search?query={query}',
+            \ 'koji': 'https://koji.fedoraproject.org/koji/search?match=glob&type=package&terms={query}',
+            \ 'bodhi': 'https://bodhi.fedoraproject.org/updates/?packages={query}',
+            \ 'rhbzall': 'https://bugzilla.redhat.com/buglist.cgi?classification=Fedora&component={query}&product=Fedora',
+            \ 'rhbzopen': 'https://bugzilla.redhat.com/buglist.cgi?bug_status=__open__&classification=Fedora&component={query}&product=Fedora&query_format=advanced',
             \ }
 
 " Activate vim man page viewer
