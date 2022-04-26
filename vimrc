@@ -452,7 +452,7 @@ nnoremap <Leader>bn :bn<CR>
 nnoremap <Leader>bp :bp<CR>
 nnoremap <leader>bd :bd<CR>
 nnoremap <Leader>bc :bp\|bd #<CR>
-nnoremap <leader>b :ls<cr>:b<space>
+nnoremap <leader>bl :ls<cr>:b<space>
 
 
 let g:ycm_use_ultisnips_completer = 1
