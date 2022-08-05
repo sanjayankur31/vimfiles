@@ -539,7 +539,7 @@ autocmd FileType tex set wildignore+=*.log,*.aux,*.bbl,*.bcf,*.blg,*.fls,*.idx,*
 " set relative numbers for use with numbertoggle
 set number relativenumber
 " workaround to work with ctrl c
-inoremap <silent> <C-C> <C-C> :set rnu<CR>
+inoremap <silent> <C-C> <C-C>:set rnu<CR>
 
 " Use silver searcher instead of ack
 if executable('rg')
