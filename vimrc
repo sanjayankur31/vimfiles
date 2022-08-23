@@ -564,13 +564,6 @@ set keywordprg=:Man
 autocmd FileType man setlocal nomod nolist noexpandtab tabstop=8 softtabstop=8 shiftwidth=8 nonu noma noswapfile colorcolumn=0
 autocmd FileType man IndentLinesDisable
 
-" Fedora antora rebuild
-augroup fedora_docs
-    autocmd!
-    autocmd BufWritePost *adoc !./build.sh
-augroup END
-
-
 " Do not list quickfix and location list buffer in the buffer list, otherwise
 " :bnext goes to quickfix
 " https://stackoverflow.com/questions/28613190/exclude-quickfix-buffer-from-bnext-bprevious
