@@ -3,6 +3,7 @@ AAVs
 ACC
 ACDC
 acousto
+Ada
 adeno
 AdEx
 adoc
@@ -20,6 +21,7 @@ ALM
 Alt
 alveus
 Ambika
+Amitabh
 AMPA
 AMPAR
 Ankit
@@ -27,7 +29,9 @@ ankur
 Ankur
 ANNarchy
 ANNs
+antivaxer
 Antora
+AOL
 AP
 apodictic
 apposed
@@ -58,10 +62,12 @@ attractorless
 Auryn
 autapses
 autocorrelogram
+automaticity
 AWS
 axo
 Babbar
 BAC
+Barbera
 BDNF
 Bernal
 BeRST1
@@ -111,7 +117,9 @@ channelrhodopsin
 Chan's
 Charing
 ChR2
+Christos
 chundering
+Churchland's
 Cisco
 cleveref
 Clinilab
@@ -122,6 +130,7 @@ colliculus
 CompNeuro
 ComponentTypes
 connectome
+Connectomic
 Connectomics
 convulsants
 Copelli
@@ -132,6 +141,8 @@ cortico
 corticocerebellar
 Corticofugal
 corticopontine
+corticospinal
+Corticospinal
 corticothalamic
 Corticothalamic
 cortio
@@ -142,9 +153,12 @@ Cowan
 Coyle
 Cre
 Cresswell
+CTC
 Ctrl
 Curzon
 cytoarchitectural
+cytokine
+Cytokines
 Cytosol
 D3D
 dadaji
@@ -194,6 +208,7 @@ dysrhythmia
 EAAT4
 ecore
 EDLDS
+Eduroam
 EE
 efference
 eGFP
@@ -205,6 +220,7 @@ Elijah's
 emboliform
 EMG
 endocytosis
+eNeuro
 eNpHR
 enquote
 ensheathe
@@ -219,6 +235,7 @@ epileptogenic
 eps
 EPSCs
 EPSP
+Esomeprazole
 euthanised
 excitotoxicity
 eYFP
@@ -246,6 +263,7 @@ flouxetine
 fMRI
 folia
 folium
+FOMO
 fontawesome
 FORCE11
 Friston
@@ -278,6 +296,7 @@ glutamatergic
 glycinegic
 gmail
 gnuplot
+gobi
 Gogolla
 Golgi
 Goodreads
@@ -294,6 +313,7 @@ Gyrus
 Habenula
 hacky
 halorhodopsin
+Haroon's
 Harsha
 Harsha's
 Hazaribagh
@@ -307,6 +327,7 @@ heterosynaptic
 hindlimb
 hippocampal
 hippocampus
+hissy
 Hoare
 hoc
 Holi
@@ -318,6 +339,7 @@ homoglyphs
 hostname
 Hotmail
 Housesteads
+HPC
 HPF
 Hrm
 HT
@@ -340,6 +362,7 @@ INCF
 indegree
 infragranular
 INSA
+Integrins
 interarea
 interhemispheric
 intracortical
@@ -349,15 +372,19 @@ ionotropic
 ipsi
 ipsilateral
 IPython
+ISA
 ischemia
 ISI
 isoxazole
 Izhikevich
+Izzy
 JabRef
 Jamsetji
+Jarne
 Jaya
 JDT
 Jio
+Jitsi
 jLEMS
 jNeuroML
 jnml
@@ -415,6 +442,8 @@ LHSP
 libneuroml
 libNeuroML
 Litwin
+LLM
+LLMs
 localhost
 Longtown
 lpz
@@ -427,6 +456,7 @@ mAChRs
 macular
 Magrela
 Maharaja
+Malin
 mami
 mammillary
 Manish
@@ -442,9 +472,12 @@ Mausaji's
 mausi
 maven
 Maven
+McDougal
+MDF
 MEC
 Memberclicks
 Merzenich
+Mesencephalic
 mesoscopic
 metabotropic
 Metacell
@@ -465,6 +498,7 @@ MNTB
 moby
 mocktail
 Moco
+ModECI
 Moira
 moleculare
 mommy
@@ -523,9 +557,11 @@ NeuroML2
 NeuroMLlite
 NeuroMLLite
 NeuroMLv2
+neuromodulation
 neuromodulatory
 neuromorphic
 neuropil
+Neurorobotics
 neuroscientific
 neurotrophins
 Neurotune
@@ -584,6 +620,7 @@ OSBv2
 Ostojic
 outdegree
 Outreachy
+oximeter
 Padshah
 Pagure
 pallidus
@@ -594,6 +631,8 @@ parameterized
 parasaggital
 parasagittal
 parasubiculum
+parathas
+Parikshit
 parvalbumin
 passant
 Pasteur
@@ -609,6 +648,8 @@ peroxidation
 peroxisomes
 Petascale
 Petrut
+PHATE
+phosphoinositide
 photoinhibition
 piriform
 PKA
@@ -619,6 +660,7 @@ PNG
 podman
 Podman
 Poisson
+polyribosomes
 pomodoros
 pontine
 ponto
@@ -630,6 +672,7 @@ postsubicular
 postsubiculum
 potentiation
 Pottermore
+Povray
 PR2
 pranayaam
 precentral
@@ -657,6 +700,7 @@ PyNWB
 Qantas
 Qutebrowser
 Raam
+Rab10
 Rachel
 Rachel's
 Ramaswamy
@@ -677,6 +721,7 @@ reStructuredText
 Reticulata
 retinotopic
 retrosplenial
+Reza
 RFLO
 Ribosomes
 Richa
@@ -697,12 +742,15 @@ RTD
 rTMS
 S1
 S2
+Saahil
 saccade
 saccades
 saccadic
+Sadra
 Sainsbury's
 Salva
 Samaiyaar
+Sameer
 samosas
 sanjay
 saphenous
@@ -722,6 +770,7 @@ SELinux
 SEM
 sendmail
 sensorymotor
+Shadmehr's
 Shailesh
 Sharma
 Sheesh
@@ -729,6 +778,7 @@ Sheryll
 shite
 Shri
 SIGKDD
+Silvana
 SilverLab
 SimTK
 Sinha
@@ -740,8 +790,10 @@ Snakemake
 SNNs
 snr
 SOAS
+SoftwareWG
 somata
 somatostatin
+Sotirios
 spatiotemporal
 spatiotemporally
 spec
@@ -786,8 +838,10 @@ SynapseJ
 synaptically
 synaptogenesis
 synaptogenic
+Synaptotagmin
 Syncthing
 Syntastic
+tACS
 tagmental
 TaleSpin
 taskserver
@@ -809,6 +863,7 @@ timewarrior
 TMS
 tonotopic
 Torben
+transcranial
 transduce
 transduction
 transection
@@ -818,10 +873,13 @@ TrKC
 trophic
 tryptamine
 tubulin
+Tuomo
+Tuomo's
 TurnItIn
 Turrigiano's
 Typography
 UGC
+Uhm
 UKRI
 UML
 uncaging
@@ -842,6 +900,7 @@ VGlut1
 Vinings
 Visuo
 vivo
+vmPFC
 Vogels
 VOR
 VSFP
@@ -853,6 +912,7 @@ Webpack
 Weechat
 Weisel
 Wellcome
+WG
 Whatsapp
 wikipedia
 Willshaw

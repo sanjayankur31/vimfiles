@@ -247,6 +247,10 @@ let g:vimtex_syntax_custom_cmds = [
                 \ 'argspell': 0
             \},
             \{
+                \ 'name': 'textcite',
+                \ 'argspell': 0
+            \},
+            \{
                 \ 'name': 'url',
                 \ 'argspell': 0
             \},
@@ -534,6 +538,8 @@ autocmd FileType tex set wildignore+=*.log,*.aux,*.bbl,*.bcf,*.blg,*.fls,*.idx,*
 
 " set relative numbers for use with numbertoggle
 set number relativenumber
+" workaround to work with ctrl c
+inoremap <silent> <C-C> <C-C>:set rnu<CR>
 
 " Use silver searcher instead of ack
 if executable('rg')
@@ -563,6 +569,7 @@ set keywordprg=:Man
 " Make it cleaner
 autocmd FileType man setlocal nomod nolist noexpandtab tabstop=8 softtabstop=8 shiftwidth=8 nonu noma noswapfile colorcolumn=0
 autocmd FileType man IndentLinesDisable
+
 
 " Do not list quickfix and location list buffer in the buffer list, otherwise
 " :bnext goes to quickfix
