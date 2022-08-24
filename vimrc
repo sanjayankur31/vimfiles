@@ -758,3 +758,8 @@ let g:tagbar_type_typescript = {
     \ 'e:enums',
   \ ]
 \ }
+
+" https://vim.fandom.com/wiki/Vim_as_XML_Editor
+let g:xml_syntax_folding=1
+au FileType xml setlocal foldmethod=syntax
+au FileType xsd setlocal foldmethod=syntax
