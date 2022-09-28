@@ -352,6 +352,7 @@ nmap <leader>ygh <Plug>(YCMFindSymbolInDocument)
 nmap <leader>ygd :YcmCompleter GoToDeclaration<CR>
 nmap <leader>ygf :YcmCompleter GoToDefinition<CR>
 nmap <leader>yge :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nmap <leader>ygk :YcmCompleter GetDoc<CR>
 
 " Vim airline show buffers
 let g:airline#extensions#tabline#enabled = 1
@@ -763,3 +764,7 @@ let g:tagbar_type_typescript = {
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
 au FileType xsd setlocal foldmethod=syntax
+
+
+" for YAML
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab foldmethod=indent
