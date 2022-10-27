@@ -527,7 +527,7 @@ autocmd FileType gitcommit setlocal spell
 set thesaurus+=~/.vim/mthesaur.txt
 
 " Disable the complete window
-" set completeopt-=preview
+set completeopt+=popup,preview
 "
 
 " InstantRst
@@ -764,7 +764,10 @@ let g:tagbar_type_typescript = {
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
 au FileType xsd setlocal foldmethod=syntax
-
-
 " for YAML
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab foldmethod=indent
+
+" use rg for gutentags
+if executable('rg')
+  let g:gutentags_file_list_command = 'rg --files'
+endif
