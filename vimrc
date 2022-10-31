@@ -771,3 +771,7 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab foldmethod=indent
 if executable('rg')
   let g:gutentags_file_list_command = 'rg --files'
 endif
+
+" set mouse
+set ttymouse=xterm2
+set mouse=a
