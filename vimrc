@@ -384,6 +384,7 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \   'typescriptreact': ['eslint'],
 \}
+let g:ale_virtualtext_cursor = 0
 
 let g:table_mode_corner_corner="+"
 let g:table_mode_header_fillchar="="
