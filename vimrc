@@ -663,6 +663,10 @@ autocmd BufRead,BufNewFile *.nml setl filetype=xml
 " Set schema for xmllint
 autocmd BufRead,BufNewFile *.xml,*.nml call SetXmllintSchema()
 
+" set schema locations
+let g:NeuroMLSchemaDir = expand("~/Documents/02_Code/00_mine/NeuroML/software/NeuroML2/Schemas/NeuroML2/")
+let g:LEMSSchemaDir = expand("~/Documents/02_Code/00_mine/NeuroML/software/LEMS/Schemas/LEMS/")
+
 " A function to load the right schema file for NeuroML and LEMS files
 function! SetXmllintSchema ()
     " Only work for XML files
@@ -670,9 +674,6 @@ function! SetXmllintSchema ()
     if this_file_type != "xml"
         return 1
     endif
-    let NeuroMLSchemaDir = "~/Documents/02_Code/00_mine/2020-OSB/NeuroML2/Schemas/NeuroML2/"
-    let LEMSSchemaDir = "~/Documents/02_Code/00_mine/2020-OSB/LEMS/Schemas/LEMS/"
-
     " Go to last line
     let saved_cursor_position = getpos('.')
 
@@ -686,7 +687,12 @@ function! SetXmllintSchema ()
         let l:schemaloc = search('schemaLocation.*.xsd')
         let l:schemaline = getline(schemaloc)
         let l:xsdfile = matchstr(schemaline, '\C/NeuroML_.*.xsd')
-        let l:xsdfull = NeuroMLSchemaDir . xsdfile
+        let l:xsdfull = g:NeuroMLSchemaDir . xsdfile
+        if filereadable(xsdfull) == 0
+            echoerr $"Readable XSD file not found at {xsdfull}"
+            return 1
+        endif
+        echom $"Using schema: {xsdfull}"
         let g:ale_xml_xmllint_options = "--schema ". xsdfull
     endif
     " LEMS
@@ -699,7 +705,12 @@ function! SetXmllintSchema ()
         let l:schemaloc = search('schemaLocation.*.xsd')
         let l:schemaline = getline(schemaloc)
         let l:xsdfile = matchstr(schemaline, '\C/LEMS_.*.xsd')
-        let l:xsdfull = LEMSSchemaDir . xsdfile
+        let l:xsdfull = g:LEMSSchemaDir . xsdfile
+        if filereadable(xsdfull) == 0
+            echoerr $"Readable XSD file not found at {xsdfull}"
+            return 1
+        endif
+        echom $"Using schema: {xsdfull}"
         let g:ale_xml_xmllint_options = "--schema ". xsdfull
     endif
 
