@@ -382,6 +382,7 @@ let g:ale_fixers = {
 \   'typescriptreact': ['eslint'],
 \}
 let g:ale_virtualtext_cursor = 0
+let g:ale_maximum_file_size = 1024
 
 let g:table_mode_corner_corner="+"
 let g:table_mode_header_fillchar="="
