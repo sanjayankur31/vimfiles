@@ -179,7 +179,7 @@ autocmd FileType python,cpp,c,sli setl textwidth=79
 set grepprg="rg\ -nH\ $*"
 let g:tex_flavor='latex'
 " indentation for tex files
-autocmd BufRead,BufNewFile *.sty,*.eps_tex setl filetype=tex
+autocmd BufRead,BufNewFile *.sty,*.eps_tex,*.pdf_tex setl filetype=tex
 autocmd FileType tex setl sw=2
 autocmd FileType tex setl tabstop=2
 autocmd FileType tex setl softtabstop=2
