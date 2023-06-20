@@ -254,6 +254,10 @@ let g:vimtex_syntax_custom_cmds = [
                 \ 'name': 'url',
                 \ 'argspell': 0
             \},
+            \{
+                \ 'name': 'ac',
+                \ 'argspell': 0
+            \},
             \]
 
 " Folding in C,CPP files
@@ -596,7 +600,7 @@ au FileType ledger vnoremap <Leader>= :call ledger#align_commodity()<CR>
 
 
 " Add syntax for Cref and cref from cleverref
-" Tweaked from /usr/share/vim/vim82/syntax/tex.vim
+" Tweaked from /usr/share/vim/vim90/syntax/tex.vim
 syn region texRefZone     matchgroup=texStatement start="\\v\=cref{"       end="}\|%stopzone\>"    contains=@texRefGroup
 
 " A function to load the right signature when I'm using neomutt
