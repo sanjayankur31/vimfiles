@@ -51,7 +51,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mtth/scratch.vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'Valloric/YouCompleteMe'
-Plug 'KeitaNakamura/tex-conceal.vim'
+"does not work with vimtex v2
+"Plug 'KeitaNakamura/tex-conceal.vim'
 Plug 'sanjayankur31/sli.vim'
 Plug 'szw/vim-dict'
 Plug 'sanjayankur31/vim-extra-ultisnips'
@@ -256,7 +257,38 @@ let g:vimtex_syntax_custom_cmds = [
             \},
             \{
                 \ 'name': 'ac',
-                \ 'argspell': 0
+                \ 'argspell': 0,
+                \ 'conceal': 1
+            \},
+            \]
+let g:vimtex_syntax_custom_cmds_with_concealed_delims = [
+            \{
+                \ 'name': 'enquote',
+                \ 'nargs': 1,
+                \ 'argspell': 1,
+                \ 'cchar_open': '"',
+                \ 'cchar_close': '"',
+            \},
+            \{
+                \ 'name': 'ref',
+                \ 'nargs': 1,
+                \ 'argspell': 0,
+                \ 'cchar_open': '[',
+                \ 'cchar_close': ']',
+            \},
+            \{
+                \ 'name': 'cref',
+                \ 'nargs': 1,
+                \ 'argspell': 0,
+                \ 'cchar_open': '[',
+                \ 'cchar_close': ']',
+            \},
+            \{
+                \ 'name': 'footref',
+                \ 'nargs': 1,
+                \ 'argspell': 0,
+                \ 'cchar_open': '[',
+                \ 'cchar_close': ']',
             \},
             \]
 
@@ -598,10 +630,6 @@ let g:ledger_date_format = '%m-%d'
 au FileType ledger nnoremap <Leader>= :call ledger#align_commodity()<CR>
 au FileType ledger vnoremap <Leader>= :call ledger#align_commodity()<CR>
 
-
-" Add syntax for Cref and cref from cleverref
-" Tweaked from /usr/share/vim/vim90/syntax/tex.vim
-syn region texRefZone     matchgroup=texStatement start="\\v\=cref{"       end="}\|%stopzone\>"    contains=@texRefGroup
 
 " A function to load the right signature when I'm using neomutt
 function! LoadSignature(signature)
