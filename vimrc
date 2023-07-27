@@ -105,6 +105,8 @@ Plug 'vim-scripts/TaskList.vim'
 Plug 'airblade/vim-rooter'
 " Highlight CSS colours: useful for css editing
 Plug 'ap/vim-css-color'
+" Virtualenv
+Plug 'jmcantrell/vim-virtualenv'
 call plug#end()
 
 " dirsettings
@@ -391,6 +393,7 @@ nmap <leader>ygk :YcmCompleter GetDoc<CR>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = '>'
 let g:airline#extensions#tabline#left_alt_sep = '>'
+let g:airline#extensions#virtualenv#enabled = 1
 "let g:airline_theme='wombat'
 
 
