@@ -823,3 +823,6 @@ endif
 " set mouse
 set ttymouse=xterm2
 set mouse=a
+
+" vista options
+let g:vista#renderer#enable_icon = 0
