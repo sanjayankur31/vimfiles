@@ -39,7 +39,7 @@ Plug 'lervag/vimtex'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'vim-python/python-syntax'
 Plug 'Konfekt/FastFold'
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ivalkeen/nerdtree-execute'
 Plug 'ervandew/supertab'
@@ -107,6 +107,8 @@ Plug 'airblade/vim-rooter'
 Plug 'ap/vim-css-color'
 " Virtualenv
 Plug 'jmcantrell/vim-virtualenv'
+" better netrw
+Plug 'tpope/vim-vinegar'
 call plug#end()
 
 " dirsettings
@@ -381,6 +383,7 @@ autocmd BufEnter /* call LoadCscope()
 "let g:ycm_server_python_interpreter = 'python3'
 "let g:ycm_python_binary_path = 'python3'
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+let g:ycm_update_diagnostics_in_insert_mode = 0
 
 nmap <leader>ygw <Plug>(YCMFindSymbolInWorkspace)
 nmap <leader>ygh <Plug>(YCMFindSymbolInDocument)
@@ -482,6 +485,8 @@ let g:NERDTrimTrailingWhitespace = 1
 let NERDTreeIgnore = ['\.pyc$', '\.aux$', '\.bbl$', '\.blg', '\.brf$', '\.out$', '\.fls$']
 " Align comments to left
 let NERDDefaultAlign="left"
+" http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/
+let NERDTreeHijackNetrw=1
 
 let g:indentLine_setColors = 0
 " Do not conceal in insert mode
@@ -826,3 +831,4 @@ set mouse=a
 
 " vista options
 let g:vista#renderer#enable_icon = 0
+
