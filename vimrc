@@ -39,9 +39,6 @@ Plug 'lervag/vimtex'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'vim-python/python-syntax'
 Plug 'Konfekt/FastFold'
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ivalkeen/nerdtree-execute'
 Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -481,12 +478,8 @@ let g:NERDCompactSexyComs = 1
 let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
-" Ignore temporary files
-let NERDTreeIgnore = ['\.pyc$', '\.aux$', '\.bbl$', '\.blg', '\.brf$', '\.out$', '\.fls$']
 " Align comments to left
 let NERDDefaultAlign="left"
-" http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/
-let NERDTreeHijackNetrw=1
 
 let g:indentLine_setColors = 0
 " Do not conceal in insert mode
