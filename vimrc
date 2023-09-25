@@ -390,6 +390,7 @@ nmap <leader>yge :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nmap <leader>ygk :YcmCompleter GetDoc<CR>
 
 " Vim airline show buffers
+let g:airline_symbols_ascii = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = '>'
 let g:airline#extensions#tabline#left_alt_sep = '>'
