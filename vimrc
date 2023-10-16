@@ -63,12 +63,6 @@ Plug 'jelera/vim-javascript-syntax'
 " Plug 'yuezk/vim-js'
 " Plug 'maxmellon/vim-jsx-pretty'
 
-" Requires the server to be installed. Install in the pelican virtual-env:
-" pip install https://github.com/gu-fan/instant-rst.py/archive/master.zip --upgrade
-" Upstream needs to merge a PR, so use this until that is done
-" pip install https://github.com/tlinhart/instant-rst.py/archive/master.zip --upgrade
-" Requires python3-gevent on Fedora
-Plug 'gu-fan/InstantRst'
 " sideways
 Plug 'AndrewRadev/sideways.vim'
 " ack for ag
