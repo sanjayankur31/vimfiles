@@ -3,6 +3,9 @@
 " Need to be done at top of vimrc
 let g:polyglot_disabled = ['python']
 let g:python_highlight_all = 1
+"
+" https://github.com/ledger/vim-ledger/issues/143#issuecomment-1562279948
+let g:ledger_is_hledger=v:false
 
 set nocompatible
 call plug#begin('~/.vim/plugged')
