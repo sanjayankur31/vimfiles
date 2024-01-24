@@ -1,9 +1,14 @@
-syntax case ignore
-syntax match gdbBuild /\[.*\] \(Building\|Built\).*$/
-syntax match gdbLink /\[.*\] Linking.*$/
-syntax match gdbError /\(Error\|Warning\|error\|warn\):/
+" include log.vim, make some changes
+runtime! syntax/log.vim
+syntax match gccBuild /\[.*\] \(Building\|Built\).*$/
+syntax match gccLink /\[.*\] Linking.*$/
+syntax match gccError /.*\(Error\|error\):.*$/
+syntax match gccWarning /.*\(Warning\|warning\):.*/
+"syntax match gccGcc /\(gcc\|g++\|cc\|cxx\|CC\|CXX\) /
 
 
-highlight link gdbBuild Statement
-highlight link gdbLink Type
-highlight link gdbError Error
+"highlight link gccOptions Statement
+highlight link gccBuild Number
+highlight link gccLink Type
+highlight link gccError Error
+highlight link gccWarning PreProc
