@@ -310,6 +310,8 @@ autocmd BufNewFile,BufRead *.plt,.gnuplot setf gnuplot
 autocmd BufNewFile *.plt,.gnuplot 0r ~/.vim/file-templates/gnuplot.vim
 " Shell scripts
 autocmd BufNewFile *.sh 0r ~/.vim/file-templates/sh.vim
+" Tex
+autocmd BufNewFile *.tex 0r ~/.vim/file-templates/tex.vim
 
 " Jquery and javascript syntax
 autocmd BufRead,BufNewFile jquery.*.js setl ft=javascript syntax=jquery
