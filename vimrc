@@ -829,3 +829,4 @@ let g:vista#renderer#enable_icon = 0
 " to close netrw buffers:
 " https://github.com/tpope/vim-vinegar/issues/13#issuecomment-47133890
 autocmd FileType netrw setl bufhidden=delete
+let g:netrw_fastbrowse = 0
