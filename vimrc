@@ -830,3 +830,30 @@ let g:vista#renderer#enable_icon = 0
 " https://github.com/tpope/vim-vinegar/issues/13#issuecomment-47133890
 autocmd FileType netrw setl bufhidden=delete
 let g:netrw_fastbrowse = 0
+
+" scroll popup
+" https://vi.stackexchange.com/a/40085/6918
+function! ScrollPopup(nlines)
+    let winids = popup_list()
+    if len(winids) == 0
+        return
+    endif
+
+    " Ignore hidden popups
+    let prop = popup_getpos(winids[0])
+    if prop.visible != 1
+        return
+    endif
+
+    let firstline = prop.firstline + a:nlines
+    let buf_lastline = str2nr(trim(win_execute(winids[0], "echo line('$')")))
+    if firstline < 1
+        let firstline = 1
+    elseif prop.lastline + a:nlines > buf_lastline
+        let firstline = buf_lastline + prop.firstline - prop.lastline
+    endif
+
+    call popup_setoptions(winids[0], {'firstline': firstline})
+endfunction
+nnoremap <C-j> :call ScrollPopup(3)<CR>
+nnoremap <C-k> :call ScrollPopup(-3)<CR>
