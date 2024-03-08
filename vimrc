@@ -103,6 +103,8 @@ Plug 'ap/vim-css-color'
 Plug 'jmcantrell/vim-virtualenv'
 " better netrw
 Plug 'tpope/vim-vinegar'
+" snakemake syntax
+Plug 'snakemake/snakemake', { 'rtp': 'misc/vim' }
 call plug#end()
 
 " dirsettings
