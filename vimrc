@@ -859,3 +859,7 @@ function! ScrollPopup(nlines)
 endfunction
 nnoremap <C-j> :call ScrollPopup(3)<CR>
 nnoremap <C-k> :call ScrollPopup(-3)<CR>
+
+" word count for LaTeX docs using detex
+" comment in https://tex.stackexchange.com/a/590/11281
+command! -range=% WC <line1>,<line2>w !detex | wc
