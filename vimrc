@@ -450,8 +450,8 @@ autocmd FileType sli setl foldenable foldmethod=syntax
 command! GetIndexList :read !grep -nro '\\index{[a-zA-Z!-]\+}' * | sed 's/\\index{\(.*\)}/\1/' | cut -d ":" -f 3 |  sort | uniq | tr '!' ':' | tr '\n' ',' | sed 's/,/, /g'
 
 " Some neuron stuff
-autocmd BufRead,BufNewFile *.hoc,*.oc set filetype=hoc
-autocmd BufRead,BufNewFile *.mod set filetype=nmodl
+autocmd BufRead, BufNewFile *.hoc,*.oc set filetype=hoc
+autocmd BufRead, BufNewFile *.mod set filetype=nmodl
 
 " Modelines for files
 set modelines=4
