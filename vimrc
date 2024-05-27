@@ -865,3 +865,12 @@ nnoremap <C-k> :call ScrollPopup(-3)<CR>
 command! -range=% WC <line1>,<line2>w ! sed '/detex: ignore/ d' | detex | wc
 " neomuttrc files
 autocmd BufRead,BufNewFile *.neomuttrc setl filetype=neomuttrc
+
+function! LedgerMyUpdate (newVal)
+    " select current transaction
+    normal vip
+    " replace
+    :execute "'<,'>s/£\\(\\d\\|\\.\\)\\+/£" . a:newVal . '/g'
+    :call ledger#align_commodity()
+endfunction
+
