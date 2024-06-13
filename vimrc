@@ -14,7 +14,6 @@ filetype off
 Plug 'sanjayankur31/hoc.vim'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'sjbach/lusty'
-Plug 'sanjayankur31/nmodl.vim'
 Plug 'alkino/vim-mod-syntax'
 Plug 'dense-analysis/ale'
 Plug 'bling/vim-airline'
@@ -450,8 +449,7 @@ autocmd FileType sli setl foldenable foldmethod=syntax
 command! GetIndexList :read !grep -nro '\\index{[a-zA-Z!-]\+}' * | sed 's/\\index{\(.*\)}/\1/' | cut -d ":" -f 3 |  sort | uniq | tr '!' ':' | tr '\n' ',' | sed 's/,/, /g'
 
 " Some neuron stuff
-autocmd BufRead, BufNewFile *.hoc,*.oc set filetype=hoc
-autocmd BufRead, BufNewFile *.mod set filetype=nmodl
+autocmd BufRead,BufNewFile *.hoc,*.oc set filetype=hoc
 
 " Modelines for files
 set modelines=4
