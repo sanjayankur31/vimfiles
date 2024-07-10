@@ -871,10 +871,10 @@ command! -range=% WC <line1>,<line2>w ! sed '/detex: ignore/ d' | detex | wc
 " neomuttrc files
 autocmd BufRead,BufNewFile *.neomuttrc setl filetype=neomuttrc
 
-function! UpdateLedgerEntry (newVal)
+function! UpdateLedgerAmount (newVal)
     " select current transaction
     :normal Vip\=
     :normal Vip
     :execute "'<,'>s/£\\(\\d\\|\\.\\)\\+/£" . a:newVal . '/g'
-    :normal V
+    :normal \=
 endfunction
