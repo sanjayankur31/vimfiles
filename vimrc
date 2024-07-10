@@ -409,6 +409,9 @@ command! GetCategoryList :read !grep -o -h '^:category:.*' content/*rst  | sed '
 command! GetTagList :read !grep -o -h '^:tags:.*' content/*rst  | sed 's/:tags: //' | tr ',' '\n' | sed 's/^[[:space:]]*//' | sort | uniq | sed '/^[[:space:]]*$/ d' | tr '\n' ',' | sed 's/,/, /g' | sed 's/,[[:space:]]*$//'
 
 " Ale
+nmap <leader>an :ALENextWrap<CR>
+nmap <leader>ap :ALEPreviousWrap<CR>
+
 let g:airline#extensions#ale#enabled = 1
 " Not when text saved, it's disruptive
 let g:ale_lint_on_text_changed = 'never'
