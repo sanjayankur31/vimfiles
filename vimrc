@@ -104,6 +104,10 @@ Plug 'jmcantrell/vim-virtualenv'
 Plug 'tpope/vim-vinegar'
 " snakemake syntax
 Plug 'snakemake/snakemake', { 'rtp': 'misc/vim' }
+" for writing: highlights overused words
+Plug 'dbmrq/vim-ditto'
+" corrects common typos
+Plug 'preservim/vim-litecorrect'
 call plug#end()
 
 " dirsettings
