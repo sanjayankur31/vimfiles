@@ -102,7 +102,6 @@ Plug 'dbmrq/vim-ditto'
 Plug 'preservim/vim-litecorrect'
 " Git
 Plug 'tpope/vim-fugitive'
-Plug 'rbong/vim-flog'
 " Fugitive + Github
 Plug 'tpope/vim-rhubarb'
 " Fugitive + Pagure
