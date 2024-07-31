@@ -18,15 +18,7 @@ Plug 'alkino/vim-mod-syntax'
 Plug 'dense-analysis/ale'
 Plug 'bling/vim-airline'
 Plug 'lifepillar/vim-solarized8'
-" Git
-Plug 'tpope/vim-fugitive'
-Plug 'rbong/vim-flog'
-" Fugitive + Github
-Plug 'tpope/vim-rhubarb'
-" Fugitive + Pagure
-Plug 'FrostyX/fugitive-pagure-vim'
 Plug 'tpope/vim-unimpaired'
-Plug 'gregsexton/gitv'
 Plug 'mhinz/vim-signify'
 Plug 'mantiz/vim-plugin-dirsettings'
 Plug 'tpope/vim-speeddating'
@@ -108,6 +100,13 @@ Plug 'snakemake/snakemake', { 'rtp': 'misc/vim' }
 Plug 'dbmrq/vim-ditto'
 " corrects common typos
 Plug 'preservim/vim-litecorrect'
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'rbong/vim-flog'
+" Fugitive + Github
+Plug 'tpope/vim-rhubarb'
+" Fugitive + Pagure
+Plug 'FrostyX/fugitive-pagure-vim'
 call plug#end()
 
 " dirsettings
