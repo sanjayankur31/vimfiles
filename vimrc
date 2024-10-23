@@ -876,3 +876,11 @@ function! UpdateLedgerAmount (newVal)
     :execute "'<,'>s/£\\(\\d\\|\\.\\)\\+/£" . a:newVal . '/g'
     :normal \=
 endfunction
+
+" ensure that jdt.ls knows where to find java17 for YCM because I set my
+" default java to 11 for some tools to work
+" let g:ycm_java_binary_path = "/usr/lib/jvm/java-17-openjdk-17.0.12.0.7-2.fc40.x86_64/bin/java"
+"
+
+" ignore markdown in javadocs
+let g:java_ignore_markdown = 1
