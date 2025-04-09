@@ -428,7 +428,7 @@ let g:ale_fixers = {
 \}
 let g:ale_virtualtext_cursor = 0
 " in bytes
-"let g:ale_maximum_file_size = 1024
+let g:ale_maximum_file_size = 10000
 " python virtualenv support
 let g:ale_python_auto_virtualenv = 1
 
