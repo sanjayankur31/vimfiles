@@ -581,10 +581,10 @@ let g:instant_rst_slow = 1
 " LaTeX temporary files
 autocmd FileType tex set wildignore+=*.log,*.aux,*.bbl,*.bcf,*.blg,*.fls,*.idx,*.ilg,*.ind,*.out,*.run.xml,*synctex.gz,*.fdb_latexmk,*.nav,*.snm,*.toc,*.vrb,*.cut,*.lo,*.brf
 
-" set relative numbers for use with numbertoggle
+" ctrl c does not work:
+" https://github.com/jeffkreeftmeijer/vim-numbertoggle/issues/30
+" use ctrl [, which is equivalent to esc
 set number relativenumber
-" workaround to work with ctrl c
-inoremap <silent> <C-C> <C-C>:set rnu<CR>
 
 " Use silver searcher instead of ack
 if executable('rg')
