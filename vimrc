@@ -884,8 +884,3 @@ endfunction
 
 " ignore markdown in javadocs
 let g:java_ignore_markdown = 1
-
-" Add custom commenting for taskjuggler, sent upstream
-let g:NERDCustomDelimiters = {
-    \ 'tjp': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' }
-\ }
