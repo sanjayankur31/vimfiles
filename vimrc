@@ -106,6 +106,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 " Fugitive + Pagure
 Plug 'FrostyX/fugitive-pagure-vim'
+" Sync spelling files
+Plug 'micarmst/vim-spellsync'
 call plug#end()
 
 " dirsettings
