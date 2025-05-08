@@ -12,6 +12,3 @@ plugged/*
 
 # do not track the thesaurus file
 mthesaur.txt
-
-spell
-spell/
