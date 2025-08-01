@@ -57,8 +57,6 @@ Plug 'jelera/vim-javascript-syntax'
 " Plug 'yuezk/vim-js'
 " Plug 'maxmellon/vim-jsx-pretty'
 
-" sideways
-Plug 'AndrewRadev/sideways.vim'
 " ack for ag
 Plug 'mileszs/ack.vim'
 " Open browser since netrw's gx no longer works for URLs
@@ -430,7 +428,7 @@ let g:ale_fixers = {
 \}
 let g:ale_virtualtext_cursor = 0
 " in bytes
-let g:ale_maximum_file_size = 10000
+let g:ale_maximum_file_size = 2 * 1024 * 1024
 " python virtualenv support
 let g:ale_python_auto_virtualenv = 1
 
