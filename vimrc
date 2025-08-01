@@ -519,6 +519,11 @@ let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
 let g:UltiSnipsUsePythonVersion = 3
 let g:ultisnips_python_style = "sphinx"
 
+" For ensuring that snippets are available in a git commit buffer that
+" vim-fugitive opens
+autocmd FileType gitcommit call UltiSnips#RefreshSnippets()
+
+
 
 " Permit per project vimrc customisations
 set exrc
