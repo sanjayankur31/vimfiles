@@ -351,9 +351,8 @@ autocmd BufNewFile,BufRead *.tj3,*.taskjuggler,*.tji,*.tjp set ft=tjp
 autocmd FileType tjp nmap <Leader>tm :make %<CR>
 
 " For rpmbuilding
-nnoremap <Leader>rbs :!git clean -dfx ; spectool -g %<CR>
-nnoremap <Leader>mlrx :tabedit /var/lib/mock/fedora-rawhide-x86_64/result<CR>
-nnoremap <Leader>mlri :tabedit /var/lib/mock/fedora-rawhide-i386/result<CR>
+nnoremap <Leader>rbs :!rpmbuild -bs %<CR>
+nnoremap <Leader>rgs :!git clean -dfx ; spectool -g %<CR>
 " ChangeLog for specs
 autocmd BufNewFile,BufRead *.spec set ft=spec
 let spec_chglog_format = "%a %b %d %Y Ankur Sinha <ankursinha AT fedoraproject DOT org>"
