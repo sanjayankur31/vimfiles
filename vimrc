@@ -11,6 +11,9 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 
 filetype off
+" for help tags
+Plug 'junegunn/vim-plug'
+
 Plug 'sanjayankur31/hoc.vim'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'sjbach/lusty'
