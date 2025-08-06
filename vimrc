@@ -106,6 +106,8 @@ Plug 'tpope/vim-rhubarb'
 Plug 'FrostyX/fugitive-pagure-vim'
 " Sync spelling files
 Plug 'micarmst/vim-spellsync'
+" keymaps
+Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!']  }
 call plug#end()
 
 " dirsettings
