@@ -86,6 +86,7 @@ Plug 'Konfekt/vim-sentence-chopper'
 Plug 'Konfekt/vim-unicode-homoglyphs'
 " DrawIt for ascii drawings
 Plug 'vim-scripts/DrawIt'
+" show todos and so on
 Plug 'vim-scripts/TaskList.vim'
 " To automatically change directory
 Plug 'airblade/vim-rooter'
