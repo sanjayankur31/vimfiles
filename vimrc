@@ -1,9 +1,3 @@
-" disable polyglot for python for the time being
-" https://github.com/sheerun/vim-polyglot/issues/209
-" Need to be done at top of vimrc
-let g:polyglot_disabled = ['python']
-let g:python_highlight_all = 1
-"
 " https://github.com/ledger/vim-ledger/issues/143#issuecomment-1562279948
 let g:ledger_is_hledger=v:false
 
@@ -33,8 +27,6 @@ Plug 'liuchengxu/vista.vim'
 Plug 'preservim/tagbar', { 'on': 'TagbarToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'lervag/vimtex'
-Plug 'Vimjas/vim-python-pep8-indent'
-Plug 'vim-python/python-syntax'
 Plug 'Konfekt/FastFold'
 Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
