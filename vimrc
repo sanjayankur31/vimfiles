@@ -304,8 +304,10 @@ autocmd FileType js,javascript,typescriptreact setl foldenable foldmethod=syntax
 " This is for vertical indenting
 set list
 set listchars=tab:\|\ ,trail:-,eol:$
+"
 " Folding
 " set foldenable
+autocmd FileType python setlocal foldenable foldmethod=indent
 
 " Different file comment templates
 " Python
