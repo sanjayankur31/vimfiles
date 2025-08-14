@@ -112,6 +112,10 @@ call dirsettings#Install()
 "Syntax
 syntax on
 
+" do not use smartindent
+" https://www.reddit.com/r/vim/wiki/vimrctips/#wiki_do_not_use_smartindent
+set nosmartindent
+
 " vim-plug does this already, not required
 " Enable filetype plugins
 " filetype on
