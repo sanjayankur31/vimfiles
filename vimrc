@@ -894,3 +894,6 @@ endfunction
 
 " ignore markdown in javadocs
 let g:java_ignore_markdown = 1
+
+" for tasklist
+ let g:tlTokenList = ["TODO", "Todo", "todo", "FIXME", "Fixme", "FixMe", "XXX"]
