@@ -98,8 +98,6 @@ Plug 'preservim/vim-litecorrect'
 Plug 'tpope/vim-fugitive'
 " Fugitive + Github
 Plug 'tpope/vim-rhubarb'
-" Fugitive + Pagure
-Plug 'FrostyX/fugitive-pagure-vim'
 " Sync spelling files
 Plug 'micarmst/vim-spellsync'
 " keymaps
