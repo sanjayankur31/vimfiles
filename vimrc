@@ -173,6 +173,9 @@ set title
 set ignorecase
 set smartcase
 
+" for which key, reduce the time out
+set timeoutlen=500
+
 " Line length above which to break a line
 " Don't break for text writing: TeX, md, rst, sh
 autocmd FileType python,cpp,c,sli setl textwidth=79
@@ -894,3 +897,6 @@ let g:java_ignore_markdown = 1
 
 " for tasklist
  let g:tlTokenList = ["TODO", "Todo", "todo", "FIXME", "Fixme", "FixMe", "XXX"]
+
+" which key
+nnoremap <silent> <leader> :WhichKey '<leader>'<CR>
