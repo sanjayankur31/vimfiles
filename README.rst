@@ -1,4 +1,5 @@
-My vim plugins and things
--------------------------
+My vim config
+-------------
 
-Just plugins and things - nothing much to see here. 
+My vim config and plugins, collected over years of using vim.
+
