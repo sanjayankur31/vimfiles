@@ -10,7 +10,6 @@ Plug 'junegunn/vim-plug'
 
 Plug 'sanjayankur31/hoc.vim'
 Plug 'rbgrouleff/bclose.vim'
-Plug 'sjbach/lusty'
 Plug 'alkino/vim-mod-syntax'
 Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
@@ -494,17 +493,14 @@ let g:indentLine_setColors = 0
 " Do not conceal in insert mode
 let g:indentLine_concealcursor = 'c'
 
-" Lustyjuggler
-let g:LustyJugglerDefaultMappings = 0
-nnoremap <Leader>ljb :LustyJuggler<CR>
-nnoremap <Leader>ljbe :LustyBufferExplorer<CR>
-
 
 " For buffers
 nnoremap <Leader>bn :bn<CR>
 nnoremap <Leader>bp :bp<CR>
-nnoremap <leader>bd :bd<CR>
-nnoremap <Leader>bc :bp\|bd #<CR>
+" does not close the window, useful when working with split windows
+nnoremap <Leader>bd :bp\|bd #<CR>
+" standard buffer delete
+nnoremap <leader>bc :bd<CR>
 nnoremap <leader>bl :ls<cr>:b<space>
 
 
@@ -533,8 +529,6 @@ autocmd FileType gitcommit call UltiSnips#RefreshSnippets()
 set exrc
 set secure
 
-
-let g:LustyJugglerSuppressRubyWarning = 1
 
 " Update post date for rst blog source files
 function! UpdatePostDate()
