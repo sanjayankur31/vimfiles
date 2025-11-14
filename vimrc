@@ -4,7 +4,6 @@ let g:ledger_is_hledger=v:false
 set nocompatible
 call plug#begin('~/.vim/plugged')
 
-filetype off
 " for help tags
 Plug 'junegunn/vim-plug'
 
