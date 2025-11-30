@@ -627,6 +627,7 @@ augroup qf
 augroup END
 
 " For ledger
+let g:ledger_fuzzy_account_completion = 1
 let g:ledger_maxwidth = 120
 let g:ledger_align_at = 117
 autocmd BufRead,BufNewFile *.ledger set filetype=ledger
