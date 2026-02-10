@@ -44,14 +44,12 @@ Plug 'tpope/vim-repeat'
 
 " http://www.dotnetsurfers.com/blog/2016/02/08/using-vim-as-a-javascript-ide/
 " https://oli.me.uk/2013/06/29/equipping-vim-for-javascript/
-Plug 'pangloss/vim-javascript'
-Plug 'jelera/vim-javascript-syntax'
-" Not required because Polyglot already includes vim-jsx-pretty
+" Not required because Polyglot already includes these
+" Plug 'pangloss/vim-javascript'
+" Plug 'jelera/vim-javascript-syntax'
 " Plug 'yuezk/vim-js'
 " Plug 'maxmellon/vim-jsx-pretty'
 
-" ack for ag
-Plug 'mileszs/ack.vim'
 " Open browser since netrw's gx no longer works for URLs
 " https://github.com/vim/vim/issues/4738
 Plug 'tyru/open-browser.vim'
@@ -174,9 +172,9 @@ set smartcase
 " for which key, reduce the time out
 set timeoutlen=500
 
-" Line length above which to break a line
+" Line length above which to break a line: not needed, use a linter/formatter
 " Don't break for text writing: TeX, md, rst, sh
-autocmd FileType python,cpp,c,sli setl textwidth=79
+" autocmd FileType python,cpp,c,sli setl textwidth=79
 
 " latex stuff
 set grepprg="rg\ -nH\ $*"
