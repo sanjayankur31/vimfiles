@@ -98,6 +98,8 @@ Plug 'tpope/vim-rhubarb'
 Plug 'micarmst/vim-spellsync'
 " keymaps
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!']  }
+" nextflow
+Plug 'nextflow-io/vim-language-nextflow'
 call plug#end()
 
 " dirsettings
