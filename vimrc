@@ -895,3 +895,7 @@ let g:java_ignore_markdown = 1
 
 " which key
 nnoremap <silent> <leader> :WhichKey '<leader>'<CR>
+
+
+" bodhi templates
+autocmd BufRead,BufNewFile bodhi.template* setl filetype=conf
