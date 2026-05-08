@@ -594,7 +594,9 @@ if executable('rg')
 endif
 
 " Open browser plugin
+let g:nogx = 1 " disable netrw's gx mapping.
 let g:netrw_nogx = 1 " disable netrw's gx mapping.
+let g:Openprg = "gio open"
 nmap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
 let g:openbrowser_default_search = "ddg"
