@@ -602,6 +602,7 @@ vmap gx <Plug>(openbrowser-smart-search)
 let g:openbrowser_default_search = "ddg"
 let g:openbrowser_search_engines = {
             \ 'ddg': 'https://duckduckgo.com/?q={query}',
+            \ 'devdocs': 'https://devdocs.io/#q={query}',
             \ 'github': 'https://github.com/search?q={query}',
             \ 'askfedora': 'https://ask.fedoraproject.org/search?q={query}',
             \ 'fedorapackages': 'https://packages.fedoraproject.org/search?query={query}',
