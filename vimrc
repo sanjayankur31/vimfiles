@@ -902,3 +902,6 @@ nnoremap <silent> <leader> :WhichKey '<leader>'<CR>
 
 " bodhi templates
 autocmd BufRead,BufNewFile bodhi.template* setl filetype=conf
+
+" ssh config
+autocmd BufRead,BufNewFile *ssh/config setl filetype=sshconfig
