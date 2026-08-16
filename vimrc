@@ -97,7 +97,7 @@ Plug 'tpope/vim-rhubarb'
 " Sync spelling files
 Plug 'micarmst/vim-spellsync'
 " keymaps
-Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!']  }
+Plug 'liuchengxu/vim-which-key'
 " nextflow
 Plug 'nextflow-io/vim-language-nextflow'
 call plug#end()
@@ -897,8 +897,41 @@ let g:java_ignore_markdown = 1
  let g:tlTokenList = ["TODO", "Todo", "todo", "FIXME", "Fixme", "FixMe", "XXX"]
 
 " which key
-nnoremap <silent> <leader> :WhichKey '<leader>'<CR>
+" Define labels for ] mappings
+let g:which_key_map_right_bracket = {
+      \ 'c' : 'next-hunk/change',
+      \ 'n' : 'next-conflict',
+      \ 's' : 'next-spelling-error',
+      \ 'd' : 'next-diagnostic',
+      \ 'e' : 'next-error',
+      \ 'q' : 'next-quickfix',
+      \ 'l' : 'next-location-list',
+      \ 'b' : 'next-buffer',
+      \ 'm' : 'next-method-start',
+      \ ']' : 'next-section',
+      \ }
 
+" Define labels for [ mappings
+let g:which_key_map_left_bracket = {
+      \ 'c' : 'prev-hunk/change',
+      \ 'n' : 'prev-conflict',
+      \ 's' : 'prev-spelling-error',
+      \ 'd' : 'prev-diagnostic',
+      \ 'e' : 'prev-error',
+      \ 'q' : 'prev-quickfix',
+      \ 'l' : 'prev-location-list',
+      \ 'b' : 'prev-buffer',
+      \ 'm' : 'prev-method-start',
+      \ '[' : 'prev-section',
+      \ }
+
+" Register and bind
+call which_key#register(']', "g:which_key_map_right_bracket")
+call which_key#register('[', "g:which_key_map_left_bracket")
+
+nnoremap <silent> ] :<c-u>WhichKey ']'<CR>
+nnoremap <silent> [ :<c-u>WhichKey '['<CR>
+nnoremap <silent> <leader> :WhichKey '<leader>'<CR>
 
 " bodhi templates
 autocmd BufRead,BufNewFile bodhi.template* setl filetype=conf
