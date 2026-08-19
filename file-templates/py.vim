@@ -9,9 +9,17 @@ Author: Ankur Sinha <sanjay DOT ankur AT gmail DOT com>
 """
 
 import logging
+import colorlog
 
-
-logging.basicConfig(format="%(name)s (%(levelname)s) >>> %(message)s\n", level=logging.WARNING)
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
+
+formatter = colorlog.ColoredFormatter(
+    "%(log_color)s%(name)s (%(levelname)s): %(message)s"
+)
+handler = colorlog.StreamHandler()
+handler.setLevel(logging.INFO)
+handler.setFormatter(formatter)
+
+logger.addHandler(handler)
