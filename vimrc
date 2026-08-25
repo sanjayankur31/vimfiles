@@ -238,6 +238,7 @@ let g:vimtex_toc_config = {
             \}
 
 let g:vimtex_view_method = "zathura"
+let g:vimtex_callback_progpath = "/usr/bin/vimx"
 let g:vimtex_view_general_viewer = "zathura"
 let g:vimtex_include_search_enabled = 0
 let g:vimtex_syntax_custom_cmds = [
