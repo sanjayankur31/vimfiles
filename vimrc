@@ -898,39 +898,18 @@ let g:java_ignore_markdown = 1
 
 " which key
 " Define labels for ] mappings
-let g:which_key_map_right_bracket = {
-      \ 'c' : 'next-hunk/change',
-      \ 'n' : 'next-conflict',
-      \ 's' : 'next-spelling-error',
-      \ 'd' : 'next-diagnostic',
-      \ 'e' : 'next-error',
-      \ 'q' : 'next-quickfix',
-      \ 'l' : 'next-location-list',
-      \ 'b' : 'next-buffer',
-      \ 'm' : 'next-method-start',
-      \ ']' : 'next-section',
-      \ }
+let g:which_key_map_right_bracket = {}
 
 " Define labels for [ mappings
-let g:which_key_map_left_bracket = {
-      \ 'c' : 'prev-hunk/change',
-      \ 'n' : 'prev-conflict',
-      \ 's' : 'prev-spelling-error',
-      \ 'd' : 'prev-diagnostic',
-      \ 'e' : 'prev-error',
-      \ 'q' : 'prev-quickfix',
-      \ 'l' : 'prev-location-list',
-      \ 'b' : 'prev-buffer',
-      \ 'm' : 'prev-method-start',
-      \ '[' : 'prev-section',
-      \ }
+let g:which_key_map_left_bracket = {}
 
 " Register and bind
+let g:which_key_fallback_to_native = 1
 call which_key#register(']', "g:which_key_map_right_bracket")
 call which_key#register('[', "g:which_key_map_left_bracket")
 
-nnoremap <silent> ] :<c-u>WhichKey ']'<CR>
-nnoremap <silent> [ :<c-u>WhichKey '['<CR>
+nnoremap <silent> ] :WhichKey ']'<CR>
+nnoremap <silent> [ :WhichKey '['<CR>
 nnoremap <silent> <leader> :WhichKey '<leader>'<CR>
 
 " bodhi templates
@@ -938,3 +917,20 @@ autocmd BufRead,BufNewFile bodhi.template* setl filetype=conf
 
 " ssh config
 autocmd BufRead,BufNewFile *ssh/config setl filetype=sshconfig
+
+" remap so whichkeys sees these too
+" whichkey does not see default vim motion commands
+function! s:setup_native_bracket_fallbacks() abort
+    for l:k in ['b', 'c', 'd', 'e', 'l', 'm', 'n', 'q', 's', 'z', '[', ']']
+        " check that this isn't already mapped by a plugin
+        if empty(maparg(']' . l:k, 'n'))
+            execute 'nnoremap <silent> ]' . l:k . ' ]' . l:k
+        endif
+        if empty(maparg('[' . l:k, 'n'))
+            execute 'nnoremap <silent> [' . l:k . ' [' . l:k
+        endif
+    endfor
+endfunction
+" Run on VimEneter so that this runs after all plugins have finished
+" loading/sourcing
+autocmd VimEnter * call s:setup_native_bracket_fallbacks()
